@@ -15,6 +15,7 @@ type FormData = {
   phone: string;
   email: string;
   message: string;
+  honeypot?: string;
 };
 
 const serviceOptions = [
@@ -44,7 +45,10 @@ export default function QuoteForm() {
   const toggleService = (s: string) => {
     const current = selectedServices;
     if (current.includes(s)) {
-      setValue("services", current.filter((x) => x !== s));
+      setValue(
+        "services",
+        current.filter((x) => x !== s),
+      );
     } else {
       setValue("services", [...current, s]);
     }
@@ -52,11 +56,20 @@ export default function QuoteForm() {
 
   const onSubmit = async (data: FormData) => {
     setLoading(true);
-    // In production: send to API route / email service
-    await new Promise((r) => setTimeout(r, 1200));
-    console.log("Quote request:", data);
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      const res = await fetch("/send-mail.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, type: "quote" }),
+      });
+      const result = await res.json();
+      if (!res.ok || result.error) throw new Error(result.error);
+      setSubmitted(true);
+    } catch {
+      alert("A apărut o eroare. Te rugăm să ne contactezi direct pe WhatsApp.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -85,6 +98,15 @@ export default function QuoteForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+      {/* Honeypot — invisible to real users, bots fill it in */}
+      <input
+        type="text"
+        {...register("honeypot")}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0 }}
+      />
       {/* Step 1: Event basics */}
       <div>
         <p className="overline-text text-gold text-[10px] mb-5">

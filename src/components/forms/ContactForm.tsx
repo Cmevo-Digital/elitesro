@@ -10,6 +10,7 @@ type FormData = {
   email: string;
   subject: string;
   message: string;
+  honeypot?: string;
 };
 
 export default function ContactForm() {
@@ -24,10 +25,20 @@ export default function ContactForm() {
 
   const onSubmit = async (data: FormData) => {
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1000));
-    console.log("Contact form:", data);
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      const res = await fetch("/send-mail.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, type: "contact" }),
+      });
+      const result = await res.json();
+      if (!res.ok || result.error) throw new Error(result.error);
+      setSubmitted(true);
+    } catch {
+      alert("A apărut o eroare. Te rugăm să ne contactezi direct pe WhatsApp.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -46,6 +57,15 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      {/* Honeypot — invisible to real users, bots fill it in */}
+      <input
+        type="text"
+        {...register("honeypot")}
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0 }}
+      />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label className="block text-xs font-medium text-charcoal/70 mb-1.5">
