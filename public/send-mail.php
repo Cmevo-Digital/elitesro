@@ -83,7 +83,7 @@ if (!empty($input['honeypot'])) {
 
 // ─── Sanitise & validate ─────────────────────────────────────────────────────
 function s($v): string {
-    return htmlspecialchars(strip_tags(trim($v ?? '')));
+    return strip_tags(trim($v ?? ''));
 }
 
 $to      = 'contact@elites.ro';
@@ -144,12 +144,71 @@ if ($type === 'quote') {
     ]);
 }
 
-// ─── Send ─────────────────────────────────────────────────────────────────────
-$headers  = "From: noreply@elites.ro\r\n";
-$headers .= "Reply-To: {$email}\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion();
+// ─── SMTP sender ─────────────────────────────────────────────────────────────
+function smtpSend(string $to, string $subject, string $body, string $from, string $replyTo): array {
+    $host = 'ssl://mail.elites.ro';
+    $port = 465;
+    $user = 'noreply@elites.ro';
+    $pass = 't,Wruu%Ee3{*u@J9';
 
-if (mail($to, $subject, $body, $headers)) {
+    $log = [];
+    $fp  = @fsockopen($host, $port, $errno, $errstr, 10);
+    if (!$fp) return ['ok' => false, 'step' => 'connect', 'err' => "$errstr ($errno)"];
+
+    $r = function() use ($fp, &$log) {
+        $line = fgets($fp, 512);
+        $log[] = 'S: ' . trim($line ?? '');
+        return $line;
+    };
+    $w = function(string $s) use ($fp, &$log) {
+        $log[] = 'C: ' . $s;
+        fwrite($fp, $s . "\r\n");
+    };
+
+    while (($line = $r()) !== false) { if (isset($line[3]) && $line[3] === ' ') break; }
+    $w('EHLO localhost');
+    while (($line = $r()) !== false) { if (isset($line[3]) && $line[3] === ' ') break; }
+
+    $w('AUTH LOGIN');         $r();
+    $w(base64_encode($user)); $r();
+    $w(base64_encode($pass));
+    $authResp = $r();
+    if (!isset($authResp[0]) || $authResp[0] !== '2') {
+        fclose($fp);
+        return ['ok' => false, 'step' => 'auth', 'log' => $log];
+    }
+
+    $w("MAIL FROM:<{$from}>"); $mailResp = $r();
+    $w("RCPT TO:<{$to}>");     $rcptResp = $r();
+    $w('DATA');                 $r();
+
+    $encodedSubject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
+    $msg  = "From: Elites Events <{$from}>\r\n";
+    $msg .= "To: <{$to}>\r\n";
+    $msg .= "Reply-To: {$replyTo}\r\n";
+    $msg .= "Subject: {$encodedSubject}\r\n";
+    $msg .= "MIME-Version: 1.0\r\n";
+    $msg .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $msg .= "Content-Transfer-Encoding: 8bit\r\n";
+    $msg .= "\r\n";
+    $normalizedBody = str_replace(["\r\n", "\r", "\n"], "\r\n", $body);
+    $msg .= str_replace("\r\n.", "\r\n..", $normalizedBody) . "\r\n";
+    $msg .= '.';
+    $w($msg);
+    $response = $r();
+
+    $w('QUIT');
+    fclose($fp);
+
+    $ok = isset($response[0]) && $response[0] === '2';
+    return ['ok' => $ok, 'step' => 'done', 'log' => $log];
+}
+
+// ─── Send ─────────────────────────────────────────────────────────────────────
+$from   = 'noreply@elites.ro';
+$result = smtpSend($to, $subject, $body, $from, $email);
+
+if ($result['ok']) {
     echo json_encode(['ok' => true]);
 } else {
     http_response_code(500);
