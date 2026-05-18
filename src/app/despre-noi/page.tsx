@@ -7,7 +7,7 @@ import { ShieldCheck, Clock, Sparkles, Handshake, MapPin } from "lucide-react";
 export const metadata: Metadata = {
   title: "Despre Noi",
   description:
-    "Cunoaște echipa Elites Events — partenerul tău premium pentru organizarea și logistica evenimentelor în București, Ilfov și Pitești.",
+    "Cunoaște echipa Elites Events — partenerul tău premium pentru organizarea și logistica evenimentelor în București, Ilfov, Pitești și Ploiești.",
 };
 
 const values = [
@@ -38,24 +38,15 @@ export default function AboutPage() {
     <div className="min-h-screen bg-ivory">
       {/* Hero */}
       <div className="relative bg-obsidian pt-28 pb-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <Image
-            src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=1600&auto=format&fit=crop"
-            alt="Elites Events echipa"
-            fill
-            className="object-cover"
-            sizes="100vw"
-          />
-        </div>
         <div className="relative container-brand">
           <p className="overline-text text-gold mb-4">Despre noi</p>
           <h1 className="font-display text-3xl md:text-5xl text-white max-w-2xl leading-tight">
             Suntem partenerul tău pentru evenimente executate impecabil.
           </h1>
           <p className="mt-5 text-white/50 text-base font-light max-w-xl leading-relaxed">
-            Nu suntem o simplă firmă de închirieri. Suntem o echipă de profesioniști
-            dedicați să facă fiecare eveniment memorabil prin execuție fără
-            compromisuri.
+            Nu suntem o simplă firmă de închirieri. Suntem o echipă de
+            profesioniști dedicați să facă fiecare eveniment memorabil prin
+            execuție fără compromisuri.
           </p>
         </div>
       </div>
@@ -87,12 +78,13 @@ export default function AboutPage() {
                   {BRAND.locationsShort}
                 </strong>
                 , pentru evenimente de 50–150+ invitați: nunți, corporate,
-                petreceri private și orice moment care merită o execuție deosebită.
+                petreceri private și orice moment care merită o execuție
+                deosebită.
               </p>
             </div>
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1613128517587-08dc18819ebe?q=80&w=1287&auto=format&fit=crop"
                 alt="Eveniment elegant amenajat de Elites Events"
                 fill
                 className="object-cover"
@@ -117,10 +109,7 @@ export default function AboutPage() {
             {values.map((v) => {
               const Icon = v.icon;
               return (
-                <div
-                  key={v.title}
-                  className="bg-white p-7 rounded-sm"
-                >
+                <div key={v.title} className="bg-white p-7 rounded-sm">
                   <div className="w-10 h-10 rounded-full bg-warm flex items-center justify-center mb-4">
                     <Icon size={18} className="text-gold" strokeWidth={1.5} />
                   </div>

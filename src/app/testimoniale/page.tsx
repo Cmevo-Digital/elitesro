@@ -6,7 +6,7 @@ import { Star } from "lucide-react";
 export const metadata: Metadata = {
   title: "Testimoniale — Ce Spun Clienții Noștri",
   description:
-    "Recenzii reale de la clienții Elites Events — nunți, corporate și evenimente private în București, Ilfov și Pitești.",
+    "Recenzii reale de la clienții Elites Events — nunți, corporate și evenimente private în București, Ilfov, Pitești și Ploiești.",
 };
 
 export default function TestimonialsPage() {
@@ -61,7 +61,8 @@ export default function TestimonialsPage() {
             Vrei să fii următorul eveniment reușit?
           </p>
           <p className="text-sm text-charcoal/60 mb-6 font-light">
-            Solicită oferta gratuită și descoperă de ce clienții noștri ne recomandă.
+            Solicită oferta gratuită și descoperă de ce clienții noștri ne
+            recomandă.
           </p>
           <Link
             href="/cerere-oferta"

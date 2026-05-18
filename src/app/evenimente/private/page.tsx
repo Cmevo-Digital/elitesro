@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Evenimente Private — Aniversări & Petreceri Speciale",
   description:
-    "Organizăm evenimente private de neuitat — aniversări, petreceri și reuniuni în București, Ilfov și Pitești. Mobilier, corturi, DJ și logistică completă.",
+    "Organizăm evenimente private de neuitat — aniversări, petreceri și reuniuni în București, Ilfov, Pitești și Ploiești. Mobilier, corturi, DJ și logistică completă.",
 };
 
 export default function PrivatePage() {
@@ -30,7 +30,8 @@ export default function PrivatePage() {
           </h1>
           <p className="mt-4 text-white/60 font-light max-w-lg">
             Aniversări, reuniuni de familie, petreceri tematice — tratăm fiecare
-            eveniment privat cu aceeași atenție la detalii ca o nuntă sau un corporate.
+            eveniment privat cu aceeași atenție la detalii ca o nuntă sau un
+            corporate.
           </p>
         </div>
       </div>
@@ -39,14 +40,17 @@ export default function PrivatePage() {
         <div className="container-brand">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="overline-text text-gold mb-4">Pentru evenimentul tău</p>
+              <p className="overline-text text-gold mb-4">
+                Pentru evenimentul tău
+              </p>
               <h2 className="font-display text-3xl text-obsidian mb-5">
                 Personalizat după viziunea ta
               </h2>
               <p className="text-charcoal/60 text-sm leading-relaxed font-light mb-6">
-                Fiecare eveniment privat este unic. Lucrăm cu tine să construim exact
-                setul de echipamente și servicii care se potrivesc bugetului și
-                viziunii tale — fără pachete rigide, fără costuri inutile.
+                Fiecare eveniment privat este unic. Lucrăm cu tine să construim
+                exact setul de echipamente și servicii care se potrivesc
+                bugetului și viziunii tale — fără pachete rigide, fără costuri
+                inutile.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
@@ -57,7 +61,10 @@ export default function PrivatePage() {
                   "Iluminat decorativ și ambiental",
                   "Logistică completă",
                 ].map((s) => (
-                  <li key={s} className="flex items-start gap-2.5 text-sm text-charcoal/70">
+                  <li
+                    key={s}
+                    className="flex items-start gap-2.5 text-sm text-charcoal/70"
+                  >
                     <span className="text-gold">✓</span>
                     {s}
                   </li>
@@ -73,7 +80,7 @@ export default function PrivatePage() {
             <div className="grid grid-cols-2 gap-3">
               <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?q=80&w=800&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1653821355692-03666613499f?w=900&auto=format&fit=crop&q=60"
                   alt="Decor eveniment privat"
                   fill
                   className="object-cover"
@@ -82,7 +89,7 @@ export default function PrivatePage() {
               </div>
               <div className="relative aspect-[3/4] rounded-sm overflow-hidden mt-6">
                 <Image
-                  src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1556125574-d7f27ec36a06?w=900&auto=format&fit=crop&q=60"
                   alt="Masă elegantă petrecere privată"
                   fill
                   className="object-cover"
@@ -100,7 +107,8 @@ export default function PrivatePage() {
             Hai să organizăm evenimentul tău
           </h2>
           <p className="text-white/50 mb-8 font-light text-sm">
-            Indiferent de dimensiune, fiecare eveniment privat merită execuție impecabilă.
+            Indiferent de dimensiune, fiecare eveniment privat merită execuție
+            impecabilă.
           </p>
           <Link
             href="/cerere-oferta"

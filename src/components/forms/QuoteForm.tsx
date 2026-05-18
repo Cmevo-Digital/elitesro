@@ -156,6 +156,8 @@ export default function QuoteForm() {
               className="w-full px-4 py-3 bg-warm border border-warm-dark rounded-sm text-sm text-obsidian focus:outline-none focus:border-gold transition-colors duration-200"
             >
               <option value="">Selectează...</option>
+              <option value="<25">sub 25 invitați</option>
+              <option value="25-50">25–50 invitați</option>
               <option value="50-75">50–75 invitați</option>
               <option value="75-100">75–100 invitați</option>
               <option value="100-125">100–125 invitați</option>
@@ -176,6 +178,7 @@ export default function QuoteForm() {
               <option value="bucuresti">București</option>
               <option value="ilfov">Ilfov</option>
               <option value="pitesti">Pitești</option>
+              <option value="ploiesti">Ploiești</option>
               <option value="alta">Altă locație</option>
             </select>
           </div>

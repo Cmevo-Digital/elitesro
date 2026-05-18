@@ -7,8 +7,8 @@ export const BRAND = {
   phoneRaw: "+40725868615",
   whatsapp: "40725868615",
   email: "contact@elites.ro",
-  locations: ["București", "Ilfov", "Pitești"],
-  locationsShort: "București · Ilfov · Pitești",
+  locations: ["București", "Ilfov", "Pitești", "Ploiești"],
+  locationsShort: "București · Ilfov · Pitești · Ploiești",
   social: {
     instagram: "https://instagram.com/elites.ro",
     facebook: "https://facebook.com/elites.ro",
@@ -19,7 +19,7 @@ export const WHATSAPP_URL = `https://wa.me/${BRAND.whatsapp}?text=Bun%C4%83%20zi
 
 export const NAV_LINKS = [
   { label: "Servicii", href: "/servicii" },
-  { label: "Evenimente", href: "/evenimente/nunti" },
+  { label: "Evenimente", href: "/evenimente" },
   { label: "Portofoliu", href: "/portofoliu" },
   { label: "Despre Noi", href: "/despre-noi" },
   { label: "FAQ", href: "/intrebari-frecvente" },
@@ -29,13 +29,15 @@ export const SERVICES = [
   {
     slug: "mobilier-evenimente",
     title: "Mobilier Evenimente",
-    short: "Mese, scaune, lounge seturi și cocktail tables — alese pentru estetică și confort.",
+    short:
+      "Mese, scaune, lounge seturi și cocktail tables — alese pentru estetică și confort.",
     icon: "armchair",
   },
   {
     slug: "corturi-evenimente",
     title: "Corturi & Structuri",
-    short: "Corturi premium pentru nunți, corporate și evenimente private în aer liber.",
+    short:
+      "Corturi premium pentru nunți, corporate și evenimente private în aer liber.",
     icon: "tent",
   },
   {
@@ -47,19 +49,22 @@ export const SERVICES = [
   {
     slug: "vesela-tacamuri",
     title: "Veselă, Pahare & Tacâmuri",
-    short: "Seturi complete pentru mese elegante. Fiecare piesă curată, verificată, impecabilă.",
+    short:
+      "Seturi complete pentru mese elegante. Fiecare piesă curată, verificată, impecabilă.",
     icon: "glass-water",
   },
   {
     slug: "iluminat",
     title: "Iluminat & Atmosferă",
-    short: "Lumini de ambient, fairy lights, spot-uri direcționale — atmosfera care face diferența.",
+    short:
+      "Lumini de ambient, fairy lights, spot-uri direcționale — atmosfera care face diferența.",
     icon: "lightbulb",
   },
   {
     slug: "dj-sunet",
     title: "DJ & Sisteme Audio",
-    short: "Echipament profesional și DJ cu experiență — sunet clar, energie potrivită.",
+    short:
+      "Echipament profesional și DJ cu experiență — sunet clar, energie potrivită.",
     icon: "music",
   },
 ];
@@ -143,7 +148,7 @@ export const FAQS = [
   },
   {
     q: "Operați și în afara Bucureștiului?",
-    a: "Da. Operăm activ în București, Ilfov și Pitești. Contactează-ne pentru alte locații și evaluăm împreună.",
+    a: "Da. Operăm activ în București, Ilfov, Pitești și Ploiești. Contactează-ne pentru alte locații și evaluăm împreună.",
   },
   {
     q: "Există un număr minim de invitați pentru a colabora cu voi?",
@@ -165,43 +170,43 @@ export const FAQS = [
 
 export const GALLERY_IMAGES = [
   {
-    src: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1200&auto=format&fit=crop",
-    alt: "Nuntă elegantă — amenajare sală",
+    src: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=2340&auto=format&fit=crop",
+    alt: "Nuntă elegantă — amenajare outdoor",
     category: "nunti",
   },
   {
-    src: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=1200&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1519750157634-b6d493a0f77c?q=80&w=2148&auto=format&fit=crop",
     alt: "Eveniment corporate — setup profesional",
     category: "corporate",
   },
   {
-    src: "https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=1200&auto=format&fit=crop",
-    alt: "Cort premium outdoor — nuntă",
+    src: "https://images.unsplash.com/photo-1695393386569-cf141ff2c552?q=80&w=2340&auto=format&fit=crop",
+    alt: "Cort premium",
     category: "corturi",
   },
   {
-    src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1200&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?q=80&w=1287&auto=format&fit=crop",
     alt: "Masă elegantă — veselă premium",
     category: "mobilier",
   },
   {
-    src: "https://images.unsplash.com/photo-1507504031003-b417219a0fde?q=80&w=1200&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1618106494700-4b0049e83ed8?q=80&w=1287&auto=format&fit=crop",
     alt: "Eveniment outdoor — cort și mobilier",
     category: "corturi",
   },
   {
-    src: "https://images.unsplash.com/photo-1478146896981-b80fe463b330?q=80&w=1200&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1556125574-d7f27ec36a06?q=80&w=2340&auto=format&fit=crop",
+    alt: "Evenimente private - majorat",
+    category: "private",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?q=80&w=2340&auto=format&fit=crop",
     alt: "Iluminat ambiental — atmosferă premium",
     category: "iluminat",
   },
   {
-    src: "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?q=80&w=1200&auto=format&fit=crop",
-    alt: "Decor nuntă — detalii florale",
+    src: "https://images.unsplash.com/photo-1670529776180-60e4132ab90c?w=900&auto=format&fit=crop&q=60",
+    alt: "Decor nuntă — amenajare elegantă",
     category: "nunti",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=1200&auto=format&fit=crop",
-    alt: "Recepție corporativă",
-    category: "corporate",
   },
 ];

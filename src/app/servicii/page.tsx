@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { Armchair, Tent, UtensilsCrossed, Wine, Lightbulb, Music, ArrowRight, Truck } from "lucide-react";
+import {
+  Armchair,
+  Tent,
+  UtensilsCrossed,
+  Wine,
+  Lightbulb,
+  Music,
+  ArrowRight,
+  Truck,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Servicii — Închirieri & Logistică Evenimente",
   description:
-    "Descoperă toate serviciile Elites Events: mobilier, corturi, veselă, iluminat, DJ și logistică completă pentru evenimente în București, Ilfov și Pitești.",
+    "Descoperă toate serviciile Elites Events: mobilier, corturi, veselă, iluminat, DJ și logistică completă pentru evenimente în București, Ilfov, Pitești și Ploiești.",
 };
 
 const services = [
@@ -15,7 +25,14 @@ const services = [
     description:
       "Mese elegante, scaune premium, lounge seturi și cocktail tables — fiecare piesă aleasă pentru estetică și confort. Disponibile în diverse stiluri pentru a se potrivi viziunii tale.",
     icon: Armchair,
-    features: ["Mese rotunde și dreptunghiulare", "Scaune Chiavari, Napoleon, tip banchet", "Lounge seturi premium", "Cocktail tables"],
+    image:
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=900&auto=format&fit=crop",
+    features: [
+      "Mese rotunde și dreptunghiulare",
+      "Scaune Chiavari, Napoleon, tip banchet",
+      "Lounge seturi premium",
+      "Cocktail tables",
+    ],
   },
   {
     slug: "corturi-evenimente",
@@ -23,7 +40,14 @@ const services = [
     description:
       "Corturi premium pentru nunți și corporate în aer liber. Montaj profesional, structuri stabile, posibilitate de climatizare și acces la electricitate.",
     icon: Tent,
-    features: ["Corturi pagodă și stretch", "Corturi cu pereți laterali", "Climatizare disponibilă", "Iluminat interior integrat"],
+    image:
+      "https://images.unsplash.com/photo-1692166927778-056466153552?q=80&w=2340&auto=format&fit=crop",
+    features: [
+      "Corturi pagodă și stretch",
+      "Corturi cu pereți laterali",
+      "Climatizare disponibilă",
+      "Iluminat interior integrat",
+    ],
   },
   {
     slug: "mese-scaune",
@@ -31,7 +55,14 @@ const services = [
     description:
       "Gama completă de mobilier pentru orice configurație — de la cine formale la cocktail parties în picioare.",
     icon: UtensilsCrossed,
-    features: ["Mese pentru 8–12 persoane", "Scaune în multiple stiluri", "Fețe de masă și huse", "Decoruri de masă"],
+    image:
+      "https://plus.unsplash.com/premium_photo-1711305771490-2d39ba080f4b?q=80&w=1287&auto=format&fit=crop",
+    features: [
+      "Mese pentru 8–12 persoane",
+      "Scaune în multiple stiluri",
+      "Fețe de masă și huse",
+      "Decoruri de masă",
+    ],
   },
   {
     slug: "vesela-tacamuri",
@@ -39,7 +70,14 @@ const services = [
     description:
       "Seturi complete pentru mese elegante. Farfurii, pahare de vin, apă și șampanie, tacâmuri inox — fiecare piesă curată, verificată și ambalată corespunzător.",
     icon: Wine,
-    features: ["Farfurii pentru toate cursurile", "Pahare pentru vin, apă, șampanie", "Tacâmuri inox premium", "Serviete și suporturi"],
+    image:
+      "https://images.unsplash.com/photo-1769230361493-f1f365a99878?q=80&w=2338&auto=format&fit=crop",
+    features: [
+      "Farfurii pentru toate cursurile",
+      "Pahare pentru vin, apă, șampanie",
+      "Tacâmuri inox premium",
+      "Serviete și suporturi",
+    ],
   },
   {
     slug: "iluminat",
@@ -47,7 +85,14 @@ const services = [
     description:
       "Iluminatul face diferența dintre un eveniment obișnuit și unul memorabil. Oferim soluții complete de iluminat ambiental și tehnic.",
     icon: Lightbulb,
-    features: ["Fairy lights și lumini decorative", "Spot-uri direcționale", "Lumini colorate și LED", "Instalații personalizate"],
+    image:
+      "https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?q=80&w=2340&auto=format&fit=crop",
+    features: [
+      "Fairy lights și lumini decorative",
+      "Spot-uri direcționale",
+      "Lumini colorate și LED",
+      "Instalații personalizate",
+    ],
   },
   {
     slug: "dj-sunet",
@@ -55,7 +100,14 @@ const services = [
     description:
       "Echipament audio profesional și DJ cu experiență în nunți, corporate și petreceri private. Sunet clar, energie potrivită, atmosfera perfectă.",
     icon: Music,
-    features: ["Sisteme audio profesionale", "DJ cu experiență", "Microfoane wireless", "Instalare și operare completă"],
+    image:
+      "https://images.unsplash.com/photo-1665221965525-87fe35deabdd?q=80&w=1356&auto=format&fit=crop",
+    features: [
+      "Sisteme audio profesionale",
+      "DJ cu experiență",
+      "Microfoane wireless",
+      "Instalare și operare completă",
+    ],
   },
 ];
 
@@ -69,7 +121,8 @@ export default function ServicesPage() {
             Tot ce ai nevoie pentru un eveniment impecabil
           </h1>
           <p className="mt-4 text-white/50 font-light max-w-xl">
-            Un singur partener pentru toate nevoile evenimentului tău. Livrăm, montăm și demontăm — tu te bucuri.
+            Un singur partener pentru toate nevoile evenimentului tău. Livrăm,
+            montăm și demontăm — tu te bucuri.
           </p>
         </div>
       </div>
@@ -80,8 +133,9 @@ export default function ServicesPage() {
           <div className="flex items-center gap-3">
             <Truck size={18} className="text-gold shrink-0" />
             <p className="text-sm text-charcoal">
-              <strong>Livrare, montaj și demontaj incluse</strong> în toate pachetele noastre.
-              Operăm în București, Ilfov și Pitești.
+              <strong>Livrare, montaj și demontaj incluse</strong> în toate
+              pachetele noastre. Operăm în București, Ilfov, Pitești și
+              Ploiești.
             </p>
           </div>
         </div>
@@ -95,46 +149,62 @@ export default function ServicesPage() {
             return (
               <div
                 key={service.slug}
-                className="bg-white rounded-sm p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-start hover:shadow-hover transition-shadow duration-300"
+                className="bg-white rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-[280px_1fr] hover:shadow-hover transition-shadow duration-300"
               >
-                <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-full bg-warm flex items-center justify-center">
-                      <Icon size={18} className="text-gold" strokeWidth={1.5} />
-                    </div>
-                    <span className="overline-text text-gold text-[10px]">
+                {/* Image column */}
+                <div className="relative h-52 md:h-auto min-h-[180px]">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 280px"
+                  />
+                  <div className="absolute inset-0 bg-obsidian/25" />
+                  <div className="absolute bottom-4 left-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center">
+                    <Icon size={18} className="text-gold" strokeWidth={1.5} />
+                  </div>
+                </div>
+
+                {/* Content column */}
+                <div className="p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                  <div>
+                    <span className="overline-text text-gold text-[10px] block mb-3">
                       0{i + 1}
                     </span>
+                    <h2 className="font-display text-2xl text-obsidian mb-3">
+                      {service.title}
+                    </h2>
+                    <p className="text-sm text-charcoal/60 leading-relaxed font-light mb-5">
+                      {service.description}
+                    </p>
+                    <Link
+                      href={`/servicii/${service.slug}`}
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-gold hover:text-gold-dark transition-colors group"
+                    >
+                      Detalii complete
+                      <ArrowRight
+                        size={13}
+                        className="transition-transform group-hover:translate-x-1"
+                      />
+                    </Link>
                   </div>
-                  <h2 className="font-display text-2xl text-obsidian mb-3">
-                    {service.title}
-                  </h2>
-                  <p className="text-sm text-charcoal/60 leading-relaxed font-light mb-5">
-                    {service.description}
-                  </p>
-                  <Link
-                    href={`/servicii/${service.slug}`}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-gold hover:text-gold-dark transition-colors group"
-                  >
-                    Detalii complete
-                    <ArrowRight
-                      size={13}
-                      className="transition-transform group-hover:translate-x-1"
-                    />
-                  </Link>
-                </div>
-                <div>
-                  <p className="overline-text text-[10px] text-charcoal/40 mb-3">
-                    Include
-                  </p>
-                  <ul className="space-y-2">
-                    {service.features.map((f) => (
-                      <li key={f} className="flex items-center gap-2 text-sm text-charcoal/70">
-                        <span className="text-gold">✓</span>
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
+                  <div>
+                    <p className="overline-text text-[10px] text-charcoal/40 mb-3">
+                      Include
+                    </p>
+                    <ul className="space-y-2">
+                      {service.features.map((f) => (
+                        <li
+                          key={f}
+                          className="flex items-center gap-2 text-sm text-charcoal/70"
+                        >
+                          <span className="text-gold">✓</span>
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             );
@@ -143,7 +213,8 @@ export default function ServicesPage() {
 
         <div className="mt-12 text-center">
           <p className="text-charcoal/50 text-sm mb-5">
-            Ai nevoie de mai mult? Avem și parteneri pentru foto/video, cocktail bar și planning complet.
+            Ai nevoie de mai mult? Avem și parteneri pentru foto/video, cocktail
+            bar și planning complet.
           </p>
           <Link
             href="/cerere-oferta"

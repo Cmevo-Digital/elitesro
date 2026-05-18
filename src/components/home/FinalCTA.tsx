@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Mail } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { WHATSAPP_URL } from "@/lib/constants";
 
@@ -52,6 +53,13 @@ export default function FinalCTA() {
               </svg>
               Scrie-ne pe WhatsApp
             </a>
+            <Link
+              href="/contact"
+              className="px-8 py-4 border border-white/40 text-white text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:border-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
+            >
+              <Mail size={14} />
+              Scrie-ne pe Email
+            </Link>
           </div>
 
           <p className="mt-6 text-white/30 text-xs">

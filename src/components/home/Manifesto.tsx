@@ -10,7 +10,7 @@ export default function Manifesto() {
           <AnimatedSection direction="up">
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1613128517587-08dc18819ebe?q=80&w=1287&auto=format&fit=crop"
                 alt="Masă elegantă — detalii premium Elites Events"
                 fill
                 className="object-cover"
@@ -47,8 +47,11 @@ export default function Manifesto() {
                   nevoie de ele.
                 </p>
                 <p>
-                  Operăm în <strong className="text-obsidian font-medium">București, Ilfov și Pitești</strong>.
-                  Răspundem în ore, nu în zile.
+                  Operăm în{" "}
+                  <strong className="text-obsidian font-medium">
+                    București, Ilfov, Pitești și Ploiești
+                  </strong>
+                  . Răspundem în ore, nu în zile.
                 </p>
               </div>
 

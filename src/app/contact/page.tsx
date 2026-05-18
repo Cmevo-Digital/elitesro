@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactează Elites Events pentru evenimentul tău. Suntem disponibili în București, Ilfov și Pitești.",
+    "Contactează Elites Events pentru evenimentul tău. Suntem disponibili în București, Ilfov, Pitești și Ploiești.",
 };
 
 export default function ContactPage() {
@@ -35,7 +35,9 @@ export default function ContactPage() {
                     <Phone size={15} className="text-gold" />
                   </div>
                   <div>
-                    <p className="text-xs text-charcoal/50 mb-0.5">Telefon & WhatsApp</p>
+                    <p className="text-xs text-charcoal/50 mb-0.5">
+                      Telefon & WhatsApp
+                    </p>
                     <a
                       href={`tel:${BRAND.phoneRaw}`}
                       className="text-sm font-medium text-obsidian hover:text-gold transition-colors"
@@ -65,7 +67,9 @@ export default function ContactPage() {
                     <MapPin size={15} className="text-gold" />
                   </div>
                   <div>
-                    <p className="text-xs text-charcoal/50 mb-0.5">Zone de operare</p>
+                    <p className="text-xs text-charcoal/50 mb-0.5">
+                      Zone de operare
+                    </p>
                     <p className="text-sm font-medium text-obsidian">
                       {BRAND.locationsShort}
                     </p>

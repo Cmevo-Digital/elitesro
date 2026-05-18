@@ -12,6 +12,7 @@ const categories = [
   { slug: "corturi", label: "Corturi" },
   { slug: "mobilier", label: "Mobilier" },
   { slug: "iluminat", label: "Iluminat" },
+  { slug: "private", label: "Private" },
 ];
 
 export default function PortfolioPage() {
@@ -60,7 +61,9 @@ export default function PortfolioPage() {
             <div
               key={img.src}
               className={`group relative rounded-sm overflow-hidden bg-warm ${
-                i % 5 === 0 ? "col-span-2 md:col-span-1 aspect-[4/3]" : "aspect-square"
+                i % 5 === 0
+                  ? "col-span-2 md:col-span-1 aspect-[4/3]"
+                  : "aspect-square"
               }`}
             >
               <Image

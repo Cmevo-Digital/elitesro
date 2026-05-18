@@ -15,52 +15,124 @@ const serviceDetails: Record<
   }
 > = {
   "mobilier-evenimente": {
-    description: "Mobilier premium pentru evenimente elegante de orice dimensiune.",
+    description:
+      "Mobilier premium pentru evenimente elegante de orice dimensiune.",
     longDescription:
       "Gama noastră de mobilier pentru evenimente cuprinde piese selectate cu atenție pentru a crea un ambient impecabil. Fie că organizezi o nuntă intimă sau un corporate de anvergură, avem soluțiile potrivite.",
-    features: ["Mese rotunde și dreptunghiulare", "Scaune Chiavari și Napoleon", "Lounge seturi complete", "Cocktail tables și bar counters"],
-    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1200&auto=format&fit=crop",
-    included: ["Livrare la locație", "Montaj profesional", "Demontaj și preluare", "Verificare calitate înainte de livrare"],
+    features: [
+      "Mese rotunde și dreptunghiulare",
+      "Scaune Chiavari și Napoleon",
+      "Lounge seturi complete",
+      "Cocktail tables și bar counters",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1200&auto=format&fit=crop",
+    included: [
+      "Livrare la locație",
+      "Montaj profesional",
+      "Demontaj și preluare",
+      "Verificare calitate înainte de livrare",
+    ],
   },
   "corturi-evenimente": {
-    description: "Corturi și structuri premium pentru evenimente outdoor memorabile.",
+    description:
+      "Corturi și structuri premium pentru evenimente outdoor memorabile.",
     longDescription:
       "Corturile noastre transformă orice spațiu exterior într-un venue elegant și funcțional. Disponibile în diferite dimensiuni și configurații, cu posibilitate de climatizare și iluminat.",
-    features: ["Corturi stretch și pagodă", "Pereți laterali transparenți sau opaci", "Podele și platforme", "Climatizare la cerere"],
-    image: "https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=1200&auto=format&fit=crop",
-    included: ["Transport și instalare profesională", "Ancorare sigură", "Verificare meteo", "Demontaj complet"],
+    features: [
+      "Corturi stretch și pagodă",
+      "Pereți laterali transparenți sau opaci",
+      "Podele și platforme",
+      "Climatizare la cerere",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1692166927778-056466153552?q=80&w=2340&auto=format&fit=crop",
+    included: [
+      "Transport și instalare profesională",
+      "Ancorare sigură",
+      "Verificare meteo",
+      "Demontaj complet",
+    ],
   },
   "mese-scaune": {
-    description: "Gamă completă de mese și scaune pentru orice configurație de eveniment.",
+    description:
+      "Gamă completă de mese și scaune pentru orice configurație de eveniment.",
     longDescription:
       "De la mese banquet pentru cine formale la cocktail tables pentru recepții în picioare, avem exact ce ai nevoie pentru configurația evenimentului tău.",
-    features: ["Mese pentru 8, 10, 12 persoane", "Scaune în multiple stiluri", "Fețe de masă și huse", "Decoruri suport"],
-    image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=1200&auto=format&fit=crop",
-    included: ["Livrare și aranjare", "Fețe de masă incluse la cerere", "Configurare conform plan", "Demontaj"],
+    features: [
+      "Mese pentru 8, 10, 12 persoane",
+      "Scaune în multiple stiluri",
+      "Fețe de masă și huse",
+      "Decoruri suport",
+    ],
+    image:
+      "https://plus.unsplash.com/premium_photo-1711305771490-2d39ba080f4b?q=80&w=1287&auto=format&fit=crop",
+    included: [
+      "Livrare și aranjare",
+      "Fețe de masă incluse la cerere",
+      "Configurare conform plan",
+      "Demontaj",
+    ],
   },
   "vesela-tacamuri": {
-    description: "Veselă completă pentru mese elegante — pahare, farfurii, tacâmuri.",
+    description:
+      "Veselă completă pentru mese elegante — pahare, farfurii, tacâmuri.",
     longDescription:
       "Seturile noastre de veselă sunt perfect potrivite pentru evenimente premium. Fiecare piesă este verificată, curată și ambalată profesional pentru transport.",
-    features: ["Farfurii pentru toate cursurile", "Pahare vin, apă, șampanie", "Tacâmuri inox premium", "Boluri și platouri"],
-    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1200&auto=format&fit=crop",
-    included: ["Ambalare și transport sigur", "Inventar complet verificat", "Înlocuire imediată pentru lipsuri", "Preluare după eveniment"],
+    features: [
+      "Farfurii pentru toate cursurile",
+      "Pahare vin, apă, șampanie",
+      "Tacâmuri inox premium",
+      "Boluri și platouri",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1769230361493-f1f365a99878?q=80&w=2338&auto=format&fit=crop",
+    included: [
+      "Ambalare și transport sigur",
+      "Inventar complet verificat",
+      "Înlocuire imediată pentru lipsuri",
+      "Preluare după eveniment",
+    ],
   },
   iluminat: {
-    description: "Soluții de iluminat ambiental și tehnic pentru atmosfera perfectă.",
+    description:
+      "Soluții de iluminat ambiental și tehnic pentru atmosfera perfectă.",
     longDescription:
       "Iluminatul este elementul care transformă un spațiu obișnuit într-un ambient memorabil. Oferim soluții complete, de la fairy lights la instalaţii LED profesionale.",
-    features: ["Fairy lights și string lights", "Spot-uri direcționale", "Lumini colorate RGB", "Instalații personalizate"],
-    image: "https://images.unsplash.com/photo-1478146896981-b80fe463b330?q=80&w=1200&auto=format&fit=crop",
-    included: ["Instalare de specialist", "Cablare ascunsă", "Test înainte de eveniment", "Asistență în timpul evenimentului"],
+    features: [
+      "Fairy lights și string lights",
+      "Spot-uri direcționale",
+      "Lumini colorate RGB",
+      "Instalații personalizate",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?q=80&w=2340&auto=format&fit=crop",
+    included: [
+      "Instalare de specialist",
+      "Cablare ascunsă",
+      "Test înainte de eveniment",
+      "Asistență în timpul evenimentului",
+    ],
   },
   "dj-sunet": {
-    description: "DJ profesional și sisteme audio de înaltă calitate pentru evenimentul tău.",
+    description:
+      "DJ profesional și sisteme audio de înaltă calitate pentru evenimentul tău.",
     longDescription:
       "Muzica bună și sunetul clar sunt esențiale pentru orice eveniment reușit. Oferim atât sisteme audio pentru auto-operare cât și servicii complete de DJ cu experiență.",
-    features: ["Sisteme audio profesionale", "DJ cu experiență în nunți și corporate", "Microfoane wireless", "Iluminat de scenă"],
-    image: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=1200&auto=format&fit=crop",
-    included: ["Soundcheck înainte de eveniment", "DJ pe toată durata", "Playlist personalizat", "Echipament backup"],
+    features: [
+      "Sisteme audio profesionale",
+      "DJ cu experiență în nunți și corporate",
+      "Microfoane wireless",
+      "Iluminat de scenă",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1665221965525-87fe35deabdd?q=80&w=1356&auto=format&fit=crop",
+    included: [
+      "Soundcheck înainte de eveniment",
+      "DJ pe toată durata",
+      "Playlist personalizat",
+      "Echipament backup",
+    ],
   },
 };
 
@@ -68,7 +140,9 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) return { title: "Serviciu negăsit" };
@@ -125,10 +199,15 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               </p>
 
               <div>
-                <p className="overline-text text-gold text-[10px] mb-4">Disponibil</p>
+                <p className="overline-text text-gold text-[10px] mb-4">
+                  Disponibil
+                </p>
                 <ul className="space-y-2.5">
                   {detail.features.map((f) => (
-                    <li key={f} className="flex items-center gap-2 text-sm text-charcoal/70">
+                    <li
+                      key={f}
+                      className="flex items-center gap-2 text-sm text-charcoal/70"
+                    >
                       <span className="text-gold">✓</span>
                       {f}
                     </li>
@@ -146,10 +225,15 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
             <div className="space-y-5">
               <div className="bg-warm rounded-sm p-7">
-                <p className="overline-text text-gold text-[10px] mb-4">Inclus întotdeauna</p>
+                <p className="overline-text text-gold text-[10px] mb-4">
+                  Inclus întotdeauna
+                </p>
                 <ul className="space-y-2.5">
                   {detail.included.map((item) => (
-                    <li key={item} className="flex items-center gap-2 text-sm text-charcoal/70">
+                    <li
+                      key={item}
+                      className="flex items-center gap-2 text-sm text-charcoal/70"
+                    >
                       <span className="text-gold">✓</span>
                       {item}
                     </li>
@@ -193,8 +277,12 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   className="bg-white p-5 rounded-sm hover:-translate-y-0.5 hover:shadow-hover transition-all duration-300 flex items-center gap-3"
                 >
                   <div className="flex-1">
-                    <h3 className="font-medium text-sm text-obsidian mb-1">{s.title}</h3>
-                    <p className="text-xs text-charcoal/50 font-light leading-relaxed">{s.short}</p>
+                    <h3 className="font-medium text-sm text-obsidian mb-1">
+                      {s.title}
+                    </h3>
+                    <p className="text-xs text-charcoal/50 font-light leading-relaxed">
+                      {s.short}
+                    </p>
                   </div>
                   <span className="text-gold shrink-0">→</span>
                 </Link>

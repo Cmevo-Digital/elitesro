@@ -7,7 +7,7 @@ import { Star } from "lucide-react";
 export const metadata: Metadata = {
   title: "Servicii Nunți — Mobilier, Corturi & Logistică",
   description:
-    "Servicii complete pentru nunți de 50–150 invitați în București, Ilfov și Pitești. Mobilier premium, corturi, veselă, DJ și logistică completă.",
+    "Servicii complete pentru nunți de 50–150 invitați în București, Ilfov, Pitești și Ploiești. Mobilier premium, corturi, veselă, DJ și logistică completă.",
 };
 
 const weddingServices = [
@@ -21,8 +21,8 @@ const weddingServices = [
   "Cocktail bar (la cerere)",
 ];
 
-const weddingTestimonials = TESTIMONIALS.filter(
-  (t) => t.event.toLowerCase().includes("nunt")
+const weddingTestimonials = TESTIMONIALS.filter((t) =>
+  t.event.toLowerCase().includes("nunt"),
 );
 
 export default function WeddingsPage() {
@@ -64,7 +64,10 @@ export default function WeddingsPage() {
               </h2>
               <ul className="space-y-3">
                 {weddingServices.map((s) => (
-                  <li key={s} className="flex items-start gap-2.5 text-sm text-charcoal/70">
+                  <li
+                    key={s}
+                    className="flex items-start gap-2.5 text-sm text-charcoal/70"
+                  >
                     <span className="text-gold mt-0.5 shrink-0">✓</span>
                     {s}
                   </li>
@@ -81,7 +84,7 @@ export default function WeddingsPage() {
             </div>
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1525772764200-be829a350797?q=80&w=1287&auto=format&fit=crop"
                 alt="Aranjament nuntă Elites Events"
                 fill
                 className="object-cover"
@@ -115,8 +118,12 @@ export default function WeddingsPage() {
               },
             ].map((item) => (
               <div key={item.title} className="bg-white p-6 rounded-sm">
-                <h3 className="font-display text-lg text-gold mb-2">{item.title}</h3>
-                <p className="text-sm text-charcoal/60 font-light">{item.text}</p>
+                <h3 className="font-display text-lg text-gold mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-charcoal/60 font-light">
+                  {item.text}
+                </p>
               </div>
             ))}
           </div>
@@ -133,7 +140,10 @@ export default function WeddingsPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
               {weddingTestimonials.map((t, i) => (
-                <div key={i} className="bg-white/5 border border-white/10 rounded-sm p-7">
+                <div
+                  key={i}
+                  className="bg-white/5 border border-white/10 rounded-sm p-7"
+                >
                   <div className="flex gap-1 mb-4">
                     {[...Array(5)].map((_, j) => (
                       <Star key={j} size={12} className="text-gold fill-gold" />
@@ -143,7 +153,9 @@ export default function WeddingsPage() {
                     &ldquo;{t.quote}&rdquo;
                   </p>
                   <p className="text-xs font-semibold text-white">{t.name}</p>
-                  <p className="text-xs text-white/40">{t.event} · {t.location}</p>
+                  <p className="text-xs text-white/40">
+                    {t.event} · {t.location}
+                  </p>
                 </div>
               ))}
             </div>

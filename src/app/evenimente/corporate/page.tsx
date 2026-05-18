@@ -7,7 +7,7 @@ import { Star, Building2, Users, Zap } from "lucide-react";
 export const metadata: Metadata = {
   title: "Evenimente Corporate — Logistică & Echipamente Profesionale",
   description:
-    "Organizăm evenimente corporate profesionale în București, Ilfov și Pitești. Mobilier, sisteme audio, iluminat și logistică pentru conferințe, gale și teambuilding.",
+    "Organizăm evenimente corporate profesionale în București, Ilfov, Pitești și Ploiești. Mobilier, sisteme audio, iluminat și logistică pentru conferințe, gale și teambuilding.",
 };
 
 const corporateServices = [
@@ -21,7 +21,9 @@ const corporateServices = [
 ];
 
 const corporateTestimonials = TESTIMONIALS.filter(
-  (t) => t.event.toLowerCase().includes("corporate") || t.event.toLowerCase().includes("privat")
+  (t) =>
+    t.event.toLowerCase().includes("corporate") ||
+    t.event.toLowerCase().includes("privat"),
 );
 
 export default function CorporatePage() {
@@ -57,9 +59,21 @@ export default function CorporatePage() {
         <div className="container-brand py-8">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
-              { icon: Building2, title: "Setup profesional", text: "Echipamente de calitate pentru un ambient care reflectă standardele companiei tale." },
-              { icon: Users, title: "50–150 participanți", text: "Experiență dovedită în evenimente de business de orice dimensiune." },
-              { icon: Zap, title: "Execuție rapidă", text: "Livrare și montaj eficient, fără perturbarea activității de business." },
+              {
+                icon: Building2,
+                title: "Setup profesional",
+                text: "Echipamente de calitate pentru un ambient care reflectă standardele companiei tale.",
+              },
+              {
+                icon: Users,
+                title: "50–150 participanți",
+                text: "Experiență dovedită în evenimente de business de orice dimensiune.",
+              },
+              {
+                icon: Zap,
+                title: "Execuție rapidă",
+                text: "Livrare și montaj eficient, fără perturbarea activității de business.",
+              },
             ].map((item) => {
               const Icon = item.icon;
               return (
@@ -68,8 +82,12 @@ export default function CorporatePage() {
                     <Icon size={16} className="text-gold" strokeWidth={1.5} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-sm text-obsidian mb-1">{item.title}</h3>
-                    <p className="text-xs text-charcoal/60 font-light leading-relaxed">{item.text}</p>
+                    <h3 className="font-semibold text-sm text-obsidian mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-charcoal/60 font-light leading-relaxed">
+                      {item.text}
+                    </p>
                   </div>
                 </div>
               );
@@ -84,7 +102,7 @@ export default function CorporatePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded-sm overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1752766074168-44afdbaaf390?w=900&auto=format&fit=crop&q=60"
                 alt="Eveniment corporate setup"
                 fill
                 className="object-cover"
@@ -98,7 +116,10 @@ export default function CorporatePage() {
               </h2>
               <ul className="space-y-3">
                 {corporateServices.map((s) => (
-                  <li key={s} className="flex items-start gap-2.5 text-sm text-charcoal/70">
+                  <li
+                    key={s}
+                    className="flex items-start gap-2.5 text-sm text-charcoal/70"
+                  >
                     <span className="text-gold mt-0.5 shrink-0">✓</span>
                     {s}
                   </li>
@@ -124,7 +145,10 @@ export default function CorporatePage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {corporateTestimonials.slice(0, 2).map((t, i) => (
-              <div key={i} className="bg-white border border-warm-dark rounded-sm p-7">
+              <div
+                key={i}
+                className="bg-white border border-warm-dark rounded-sm p-7"
+              >
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, j) => (
                     <Star key={j} size={12} className="text-gold fill-gold" />
@@ -134,7 +158,9 @@ export default function CorporatePage() {
                   &ldquo;{t.quote}&rdquo;
                 </p>
                 <p className="text-xs font-semibold text-obsidian">{t.name}</p>
-                <p className="text-xs text-charcoal/40">{t.event} · {t.location}</p>
+                <p className="text-xs text-charcoal/40">
+                  {t.event} · {t.location}
+                </p>
               </div>
             ))}
           </div>

@@ -6,7 +6,7 @@ import { Phone, Mail } from "lucide-react";
 export const metadata: Metadata = {
   title: "Cerere Ofertă Gratuită",
   description:
-    "Solicită o ofertă gratuită pentru evenimentul tău. Mobilier, corturi, veselă, DJ și logistică în București, Ilfov și Pitești.",
+    "Solicită o ofertă gratuită pentru evenimentul tău. Mobilier, corturi, veselă, DJ și logistică în București, Ilfov, Pitești și Ploiești.",
 };
 
 export default function QuotePage() {
@@ -77,7 +77,10 @@ export default function QuotePage() {
                   "Detalii logistice (livrare, montaj, demontaj)",
                   "Disponibilitate pentru data ta",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-2 text-xs text-charcoal/70">
+                  <li
+                    key={item}
+                    className="flex items-start gap-2 text-xs text-charcoal/70"
+                  >
                     <span className="text-gold mt-0.5">✓</span>
                     {item}
                   </li>

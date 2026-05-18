@@ -23,11 +23,12 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://elites.ro"),
   title: {
-    default: "Elites Events — Închirieri & Logistică Evenimente București, Ilfov, Pitești",
+    default:
+      "Elites Events — Închirieri & Logistică Evenimente București, Ilfov, Pitești, Ploiești",
     template: "%s | Elites Events",
   },
   description:
-    "Partenerul tău premium pentru evenimente de 50–150 invitați. Mobilier, corturi, veselă, iluminat, DJ și logistică completă în București, Ilfov și Pitești.",
+    "Partenerul tău premium pentru evenimente de 50–150 invitați. Mobilier, corturi, veselă, iluminat, DJ și logistică completă în București, Ilfov, Pitești și Ploiești.",
   keywords: [
     "inchirieri mobilier evenimente bucuresti",
     "corturi evenimente bucuresti",
@@ -46,13 +47,13 @@ export const metadata: Metadata = {
     siteName: "Elites Events",
     title: "Elites Events — Închirieri & Logistică Evenimente",
     description:
-      "Partenerul tău premium pentru evenimente impecabile în București, Ilfov și Pitești.",
+      "Partenerul tău premium pentru evenimente impecabile în București, Ilfov, Pitești și Ploiești.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Elites Events — Închirieri & Logistică Evenimente",
     description:
-      "Partenerul tău premium pentru evenimente impecabile în București, Ilfov și Pitești.",
+      "Partenerul tău premium pentru evenimente impecabile în București, Ilfov, Pitești și Ploiești.",
   },
   robots: {
     index: true,

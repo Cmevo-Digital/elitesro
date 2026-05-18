@@ -13,9 +13,9 @@ import FinalCTA from "@/components/home/FinalCTA";
 
 export const metadata: Metadata = {
   title:
-    "Elites Events — Închirieri & Logistică Evenimente București, Ilfov, Pitești",
+    "Elites Events — Închirieri & Logistică Evenimente București, Ilfov, Pitești, Ploiești",
   description:
-    "Partenerul tău premium pentru evenimente de 50–150 invitați. Mobilier, corturi, veselă, iluminat, DJ și logistică completă în București, Ilfov și Pitești.",
+    "Partenerul tău premium pentru evenimente de 50–150 invitați. Mobilier, corturi, veselă, iluminat, DJ și logistică completă în București, Ilfov, Pitești și Ploiești.",
 };
 
 export default function HomePage() {

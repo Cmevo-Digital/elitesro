@@ -19,7 +19,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2098&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1775476793931-cb484f197760?q=80&w=2340&auto=format&fit=crop"
           alt="Eveniment elegant — Elites Events"
           fill
           priority
@@ -28,7 +28,7 @@ export default function Hero() {
         />
         {/* Layered overlays for cinematic depth */}
         <div className="absolute inset-0 bg-obsidian/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-obsidian/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/30 to-obsidian/20" />
       </div>
 
       {/* Content */}
@@ -61,16 +61,16 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p
-          className="mt-6 text-white/70 text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed font-light"
+          className="mt-6 text-white/85 text-base md:text-lg lg:text-xl max-w-2xl leading-relaxed font-light"
           style={{
             opacity: loaded ? 1 : 0,
             transform: loaded ? "translateY(0)" : "translateY(20px)",
             transition: "opacity 0.9s ease 0.45s, transform 0.9s ease 0.45s",
           }}
         >
-          De la mobilier premium și corturi elegante, până la logistică completă și
-          sisteme audio profesionale — suntem partenerul tău pentru evenimente la
-          care fiecare detaliu contează.
+          De la mobilier premium și corturi elegante, până la logistică completă
+          și sisteme audio profesionale — suntem partenerul tău pentru
+          evenimente la care fiecare detaliu contează.
         </p>
 
         {/* CTAs */}
