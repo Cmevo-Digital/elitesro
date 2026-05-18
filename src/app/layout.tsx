@@ -48,14 +48,14 @@ export const metadata: Metadata = {
     title: "Elites Events — Închirieri & Logistică Evenimente",
     description:
       "Partenerul tău premium pentru evenimente impecabile în București, Ilfov, Pitești și Ploiești.",
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Elites Events" }],
+    images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "Elites Events" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Elites Events — Închirieri & Logistică Evenimente",
     description:
       "Partenerul tău premium pentru evenimente impecabile în București, Ilfov, Pitești și Ploiești.",
-    images: ["/opengraph-image"],
+    images: ["/opengraph-image.png"],
   },
   robots: {
     index: true,
