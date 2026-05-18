@@ -18,7 +18,9 @@ export default function Navbar() {
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [menuOpen]);
 
   return (
@@ -28,7 +30,7 @@ export default function Navbar() {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
             ? "bg-ivory/95 backdrop-blur-sm shadow-[0_1px_0_0_rgba(0,0,0,0.06)]"
-            : "bg-transparent"
+            : "bg-transparent",
         )}
       >
         <div className="container-brand flex items-center justify-between h-16 lg:h-20">
@@ -37,7 +39,7 @@ export default function Navbar() {
             href="/"
             className={cn(
               "font-display text-xl lg:text-2xl tracking-tight transition-colors duration-300",
-              scrolled ? "text-obsidian" : "text-white"
+              scrolled ? "text-obsidian" : "text-white",
             )}
             onClick={() => setMenuOpen(false)}
           >
@@ -52,7 +54,7 @@ export default function Navbar() {
                 href={link.href}
                 className={cn(
                   "overline-text text-[11px] transition-colors duration-300 hover:text-gold relative group",
-                  scrolled ? "text-charcoal" : "text-white/80"
+                  scrolled ? "text-charcoal" : "text-white/80",
                 )}
               >
                 {link.label}
@@ -69,7 +71,7 @@ export default function Navbar() {
                 "px-5 py-2.5 text-[11px] font-semibold tracking-widest uppercase transition-all duration-300 rounded-full",
                 scrolled
                   ? "bg-obsidian text-white hover:bg-charcoal"
-                  : "bg-white text-obsidian hover:bg-gold-light"
+                  : "bg-white text-obsidian hover:bg-gold-light",
               )}
             >
               Solicită Ofertă
@@ -81,9 +83,13 @@ export default function Navbar() {
             onClick={() => setMenuOpen(!menuOpen)}
             className={cn(
               "lg:hidden p-2 transition-colors duration-300",
-              scrolled ? "text-obsidian" : "text-white"
+              menuOpen
+                ? "text-white"
+                : scrolled
+                  ? "text-obsidian"
+                  : "text-white",
             )}
-            aria-label="Meniu"
+            aria-label={menuOpen ? "Închide meniu" : "Meniu"}
           >
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -94,27 +100,12 @@ export default function Navbar() {
       <div
         className={cn(
           "fixed inset-0 z-40 bg-obsidian flex flex-col transition-all duration-500",
-          menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          menuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none",
         )}
       >
-        <div className="container-brand flex items-center justify-between h-16">
-          <Link
-            href="/"
-            className="font-display text-xl text-white tracking-tight"
-            onClick={() => setMenuOpen(false)}
-          >
-            ELITES<span className="text-gold">.</span>
-          </Link>
-          <button
-            onClick={() => setMenuOpen(false)}
-            className="p-2 text-white"
-            aria-label="Închide meniu"
-          >
-            <X size={22} />
-          </button>
-        </div>
-
-        <nav className="flex flex-col justify-center flex-1 container-brand gap-6 pb-20">
+        <nav className="flex flex-col justify-center flex-1 container-brand gap-6 pt-16 pb-20">
           {NAV_LINKS.map((link, i) => (
             <Link
               key={link.href}
@@ -131,14 +122,14 @@ export default function Navbar() {
             <Link
               href="/cerere-oferta"
               onClick={() => setMenuOpen(false)}
-              className="w-full text-center py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full"
+              className="w-full text-center px-6 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full"
             >
               Solicită Ofertă Gratuită
             </Link>
             <Link
               href={`tel:${BRAND.phoneRaw}`}
               onClick={() => setMenuOpen(false)}
-              className="w-full text-center py-4 border border-white/20 text-white text-[11px] font-semibold tracking-widest uppercase rounded-full"
+              className="w-full text-center px-6 py-4 border border-white/20 text-white text-[11px] font-semibold tracking-widest uppercase rounded-full"
             >
               {BRAND.phone}
             </Link>
