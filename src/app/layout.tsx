@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/Header";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
@@ -71,6 +72,7 @@ export default function RootLayout({
   return (
     <html lang="ro" className={`${inter.variable} ${playfair.variable}`}>
       <body className="bg-ivory text-obsidian antialiased">
+        <Header />
         <Navbar />
         <main>{children}</main>
         <Footer />
