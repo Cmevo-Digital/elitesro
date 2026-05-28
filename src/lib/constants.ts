@@ -10,8 +10,8 @@ export const BRAND = {
   locations: ["București", "Ilfov", "Pitești", "Ploiești"],
   locationsShort: "București · Ilfov · Pitești · Ploiești",
   social: {
-    instagram: "https://instagram.com/elites.ro",
-    facebook: "https://facebook.com/elites.ro",
+    instagram: "https://www.instagram.com/elitesro.events",
+    facebook: "https://www.facebook.com/elitesro.events",
   },
 };
 
