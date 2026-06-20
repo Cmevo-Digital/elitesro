@@ -144,26 +144,6 @@ export default async function CityServicePage({ params }: PageProps) {
         }}
       />
       <div className="min-h-screen bg-ivory">
-        {/* Breadcrumb */}
-        <div className="bg-warm border-b border-charcoal/10">
-          <div className="container-brand py-3">
-            <nav className="flex items-center gap-2 text-xs text-charcoal/50 font-light">
-              <Link href="/servicii" className="hover:text-gold transition-colors">
-                Servicii
-              </Link>
-              <span>/</span>
-              <Link
-                href={`/servicii/${slug}`}
-                className="hover:text-gold transition-colors"
-              >
-                {service.title}
-              </Link>
-              <span>/</span>
-              <span className="text-charcoal/80">{cityData.name}</span>
-            </nav>
-          </div>
-        </div>
-
         {/* Hero */}
         <div className="relative min-h-[45vh] flex items-end overflow-hidden">
           <div className="absolute inset-0">
@@ -176,6 +156,25 @@ export default async function CityServicePage({ params }: PageProps) {
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-obsidian/85 to-obsidian/30" />
+          </div>
+          {/* Breadcrumb overlaid at top */}
+          <div className="absolute top-0 left-0 right-0 pt-16 lg:pt-20">
+            <div className="container-brand py-3">
+              <nav className="flex items-center gap-2 text-xs text-white/50 font-light">
+                <Link href="/servicii" className="hover:text-gold transition-colors">
+                  Servicii
+                </Link>
+                <span>/</span>
+                <Link
+                  href={`/servicii/${slug}`}
+                  className="hover:text-gold transition-colors"
+                >
+                  {service.title}
+                </Link>
+                <span>/</span>
+                <span className="text-white/80">{cityData.name}</span>
+              </nav>
+            </div>
           </div>
           <div className="relative container-brand pb-14 pt-28">
             <p className="overline-text text-gold mb-3">{cityData.name}</p>
