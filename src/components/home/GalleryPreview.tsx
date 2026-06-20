@@ -39,12 +39,12 @@ export default function GalleryPreview() {
             <AnimatedSection
               key={img.src}
               delay={i * 50}
-              className={i === 0 || i === 3 ? "row-span-2" : ""}
+              className={i === 0 || i === 3 ? "row-span-2 h-full" : ""}
             >
               <Link
                 href="/portofoliu"
                 className={`group relative block rounded-sm overflow-hidden bg-warm ${
-                  i === 0 || i === 3 ? "aspect-[3/4] h-full" : "aspect-square"
+                  i === 0 || i === 3 ? "h-full" : "aspect-square"
                 }`}
               >
                 <Image
