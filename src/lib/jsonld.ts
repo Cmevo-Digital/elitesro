@@ -92,6 +92,24 @@ export function eventServiceSchema(params: {
   };
 }
 
+export function cityServiceSchema(params: {
+  name: string;
+  description: string;
+  slug: string;
+  city: string;
+  cityName: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `${params.name} ${params.cityName}`,
+    description: params.description,
+    url: `${BASE_URL}/servicii/${params.slug}/${params.city}/`,
+    provider: { "@id": ORG_ID },
+    areaServed: { "@type": "City", name: params.cityName },
+  };
+}
+
 export function faqPageSchema(faqs: Array<{ q: string; a: string }>) {
   return {
     "@context": "https://schema.org",

@@ -5,12 +5,22 @@ export const dynamic = "force-static";
 
 const BASE = "https://elites.ro";
 
+const CITY_SLUGS = ["bucuresti", "ilfov", "pitesti", "ploiesti"];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const serviceEntries: MetadataRoute.Sitemap = SERVICES.map((s) => ({
     url: `${BASE}/servicii/${s.slug}`,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
+
+  const cityServiceEntries: MetadataRoute.Sitemap = SERVICES.flatMap((s) =>
+    CITY_SLUGS.map((c) => ({
+      url: `${BASE}/servicii/${s.slug}/${c}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }))
+  );
 
   return [
     {
@@ -24,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     ...serviceEntries,
+    ...cityServiceEntries,
     {
       url: `${BASE}/evenimente`,
       changeFrequency: "monthly",
