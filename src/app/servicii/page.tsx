@@ -8,6 +8,8 @@ import {
   Wine,
   Lightbulb,
   Music,
+  GlassWater,
+  Camera,
   ArrowRight,
   Truck,
 } from "lucide-react";
@@ -108,6 +110,36 @@ const services = [
       "DJ cu experiență",
       "Microfoane wireless",
       "Instalare și operare completă",
+    ],
+  },
+  {
+    slug: "cocktail-bar",
+    title: "Cocktail Bar",
+    description:
+      "Adaugă un element spectaculos evenimentului tău cu un cocktail bar profesional. Barman cu experiență, ingrediente premium și setup elegant, complet inclus.",
+    icon: GlassWater,
+    image:
+      "https://images.unsplash.com/photo-1605270012917-bf157c5a9541?q=80&w=900&auto=format&fit=crop",
+    features: [
+      "Bar counter și accesorii complete",
+      "Barman profesionist cu experiență",
+      "Cocktailuri clasice și signature",
+      "Soft drinks și sucuri incluse",
+    ],
+  },
+  {
+    slug: "photo-booth",
+    title: "Photo Booth",
+    description:
+      "Photo booth-ul nostru interactiv transformă orice eveniment într-o experiență de neuitat. Imprimare instantă, props incluse și template personalizat cu detaliile evenimentului.",
+    icon: Camera,
+    image:
+      "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=900&auto=format&fit=crop",
+    features: [
+      "Cameră profesională de înaltă rezoluție",
+      "Imprimare instantă (10–15 secunde)",
+      "Props și accesorii incluse",
+      "Template personalizat cu logo eveniment",
     ],
   },
 ];

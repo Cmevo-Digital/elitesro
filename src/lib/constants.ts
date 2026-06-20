@@ -67,6 +67,20 @@ export const SERVICES = [
       "Echipament profesional și DJ cu experiență — sunet clar, energie potrivită.",
     icon: "music",
   },
+  {
+    slug: "cocktail-bar",
+    title: "Cocktail Bar",
+    short:
+      "Cocktail bar profesional pentru evenimente — cocktailuri signature, barman cu experiență, setup elegant.",
+    icon: "cocktail",
+  },
+  {
+    slug: "photo-booth",
+    title: "Photo Booth",
+    short:
+      "Photo booth interactiv cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
+    icon: "camera",
+  },
 ];
 
 export const EVENT_TYPES = [

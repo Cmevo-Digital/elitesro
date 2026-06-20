@@ -135,6 +135,46 @@ const serviceDetails: Record<
       "Echipament backup",
     ],
   },
+  "cocktail-bar": {
+    description:
+      "Cocktail bar profesional pentru o experiență premium la evenimentul tău.",
+    longDescription:
+      "Un cocktail bar bine amenajat ridică nivelul oricărui eveniment. Barmanul nostru cu experiență pregătește cocktailuri clasice și signature, folosind ingrediente premium. Setup-ul elegant se integrează perfect în decorul evenimentului, devenind un punct de atracție pentru invitați.",
+    features: [
+      "Bar counter și accesorii complete",
+      "Barman profesionist cu experiență",
+      "Cocktailuri clasice și signature",
+      "Soft drinks și sucuri incluse",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1605270012917-bf157c5a9541?q=80&w=1356&auto=format&fit=crop",
+    included: [
+      "Setup și decorare bar",
+      "Barman pe toată durata evenimentului",
+      "Pahare și accesorii de bar",
+      "Demontaj și curățenie",
+    ],
+  },
+  "photo-booth": {
+    description:
+      "Photo booth interactiv cu imprimare instantă — amintiri de neuitat pentru toți invitații.",
+    longDescription:
+      "Photo booth-ul nostru transformă orice eveniment într-o experiență interactivă și memorabilă. Invitații se pot fotografia cu props amuzante, iar pozele sunt imprimate instant și personalizate cu detaliile evenimentului tău. Un element de entertainment care mulțumește tuturor vârstelor.",
+    features: [
+      "Cameră profesională de înaltă rezoluție",
+      "Imprimare instantă (10–15 secunde)",
+      "Props și accesorii incluse",
+      "Template personalizat cu logo și data evenimentului",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=1356&auto=format&fit=crop",
+    included: [
+      "Transport și instalare",
+      "Operator dedicat pe toată durata",
+      "Consumabile (hârtie foto, cerneală)",
+      "Customizare template cu detaliile evenimentului",
+    ],
+  },
 };
 
 interface PageProps {

@@ -7,6 +7,8 @@ import {
   Wine,
   Lightbulb,
   Music,
+  GlassWater,
+  Camera,
   ArrowRight,
 } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
@@ -19,6 +21,8 @@ const iconMap = {
   "glass-water": Wine,
   lightbulb: Lightbulb,
   music: Music,
+  cocktail: GlassWater,
+  camera: Camera,
 };
 
 const services = [
@@ -75,6 +79,24 @@ const services = [
     icon: "music",
     image:
       "https://images.unsplash.com/photo-1665221965525-87fe35deabdd?q=80&w=1356&auto=format&fit=crop",
+  },
+  {
+    slug: "cocktail-bar",
+    title: "Cocktail Bar",
+    description:
+      "Cocktail bar profesional pentru evenimente — cocktailuri signature, barman cu experiență, setup elegant.",
+    icon: "cocktail",
+    image:
+      "https://images.unsplash.com/photo-1605270012917-bf157c5a9541?q=80&w=800&auto=format&fit=crop",
+  },
+  {
+    slug: "photo-booth",
+    title: "Photo Booth",
+    description:
+      "Photo booth interactiv cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
+    icon: "camera",
+    image:
+      "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=800&auto=format&fit=crop",
   },
 ];
 
