@@ -21,6 +21,7 @@ export const NAV_LINKS = [
   { label: "Servicii", href: "/servicii" },
   { label: "Evenimente", href: "/evenimente" },
   { label: "Portofoliu", href: "/portofoliu" },
+  { label: "Blog", href: "/blog" },
   { label: "Despre Noi", href: "/despre-noi" },
   { label: "FAQ", href: "/intrebari-frecvente" },
 ];

@@ -110,6 +110,47 @@ export function cityServiceSchema(params: {
   };
 }
 
+export function blogPostSchema(params: {
+  post: {
+    title: string;
+    description: string;
+    slug: string;
+    date: string;
+    coverImage: string;
+    author?: string;
+  };
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: params.post.title,
+    description: params.post.description,
+    url: `${BASE_URL}/blog/${params.post.slug}/`,
+    datePublished: params.post.date,
+    image: params.post.coverImage,
+    author: {
+      "@type": "Organization",
+      "@id": ORG_ID,
+      name: params.post.author ?? "Elites Events",
+    },
+    publisher: { "@id": ORG_ID },
+    inLanguage: "ro",
+  };
+}
+
+export function blogListingSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: "Blog Elites Events",
+    url: `${BASE_URL}/blog/`,
+    description:
+      "Sfaturi, ghiduri și inspirație pentru organizarea evenimentelor.",
+    publisher: { "@id": ORG_ID },
+    inLanguage: "ro",
+  };
+}
+
 export function faqPageSchema(faqs: Array<{ q: string; a: string }>) {
   return {
     "@context": "https://schema.org",
