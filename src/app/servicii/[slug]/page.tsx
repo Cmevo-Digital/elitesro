@@ -150,6 +150,7 @@ export async function generateMetadata({
   return {
     title: `${service.title} — Elites Events`,
     description: service.short,
+    alternates: { canonical: `/servicii/${slug}/` },
   };
 }
 

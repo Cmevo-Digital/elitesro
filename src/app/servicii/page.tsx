@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Servicii — Închirieri & Logistică Evenimente",
   description:
     "Descoperă toate serviciile Elites Events: mobilier, corturi, veselă, iluminat, DJ și logistică completă pentru evenimente în București, Ilfov, Pitești și Ploiești.",
+  alternates: { canonical: "/servicii/" },
 };
 
 const services = [

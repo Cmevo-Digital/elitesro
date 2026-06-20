@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Servicii Nunți — Mobilier, Corturi & Logistică",
   description:
     "Servicii complete pentru nunți de 50–150 invitați în București, Ilfov, Pitești și Ploiești. Mobilier premium, corturi, veselă, DJ și logistică completă.",
+  alternates: { canonical: "/evenimente/nunti/" },
 };
 
 const weddingServices = [

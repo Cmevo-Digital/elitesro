@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Contactează Elites Events pentru evenimentul tău. Suntem disponibili în București, Ilfov, Pitești și Ploiești.",
+  alternates: { canonical: "/contact/" },
 };
 
 export default function ContactPage() {

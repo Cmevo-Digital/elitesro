@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Cerere Ofertă Gratuită",
   description:
     "Solicită o ofertă gratuită pentru evenimentul tău. Mobilier, corturi, veselă, DJ și logistică în București, Ilfov, Pitești și Ploiești.",
+  alternates: { canonical: "/cerere-oferta/" },
 };
 
 export default function QuotePage() {

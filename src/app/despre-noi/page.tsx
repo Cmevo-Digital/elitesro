@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Despre Noi",
   description:
     "Cunoaște echipa Elites Events — partenerul tău premium pentru organizarea și logistica evenimentelor în București, Ilfov, Pitești și Ploiești.",
+  alternates: { canonical: "/despre-noi/" },
 };
 
 const values = [

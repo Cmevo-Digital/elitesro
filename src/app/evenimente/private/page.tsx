@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Evenimente Private — Aniversări & Petreceri Speciale",
   description:
     "Organizăm evenimente private de neuitat — aniversări, petreceri și reuniuni în București, Ilfov, Pitești și Ploiești. Mobilier, corturi, DJ și logistică completă.",
+  alternates: { canonical: "/evenimente/private/" },
 };
 
 export default function PrivatePage() {

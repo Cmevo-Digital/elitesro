@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Evenimente Corporate — Logistică & Echipamente Profesionale",
   description:
     "Organizăm evenimente corporate profesionale în București, Ilfov, Pitești și Ploiești. Mobilier, sisteme audio, iluminat și logistică pentru conferințe, gale și teambuilding.",
+  alternates: { canonical: "/evenimente/corporate/" },
 };
 
 const corporateServices = [

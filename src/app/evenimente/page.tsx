@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Evenimente — Nunți, Corporate & Private",
   description:
     "Descoperă cum Elites Events transformă orice eveniment în o experiență memorabilă — nunți, corporate, private. Livrare, montaj și logistică completă în București, Ilfov, Pitești și Ploiești.",
+  alternates: { canonical: "/evenimente/" },
 };
 
 export default function EventsPage() {

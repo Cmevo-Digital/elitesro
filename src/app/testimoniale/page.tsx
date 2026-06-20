@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Testimoniale — Ce Spun Clienții Noștri",
   description:
     "Recenzii reale de la clienții Elites Events — nunți, corporate și evenimente private în București, Ilfov, Pitești și Ploiești.",
+  alternates: { canonical: "/testimoniale/" },
 };
 
 export default function TestimonialsPage() {
