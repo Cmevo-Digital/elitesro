@@ -154,7 +154,7 @@ export const TESTIMONIALS = [
 
 export const FAQS = [
   {
-    q: "Livreați și montați echipamentele sau trebuie să le ridic eu?",
+    q: "Livrați și montați echipamentele sau trebuie să le ridic eu?",
     a: "Livrăm, montăm și demontăm tot — în locația ta, conform programului agreat. Nu trebuie să ridici niciun scaun.",
   },
   {

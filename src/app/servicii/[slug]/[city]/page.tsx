@@ -28,7 +28,7 @@ const CITY_DATA: Record<
       "Echipă locală disponibilă pentru vizite tehnice și consultanță prealabilă",
     ],
     faq: {
-      q: "Livreați și montați în toate sectoarele din București?",
+      q: "Livrați și montați în toate sectoarele din București?",
       a: "Da, acoperim toate cele 6 sectoare ale Bucureștiului. Indiferent de locație — de la Băneasa la Berceni, de la Militari la Pipera — livrăm și montăm fără costuri suplimentare de transport.",
     },
   },
@@ -44,7 +44,7 @@ const CITY_DATA: Record<
       "Adaptare la spații exterioare și proprietăți private din zona suburbană",
     ],
     faq: {
-      q: "Livreați și în localitățile mai mici din județul Ilfov?",
+      q: "Livrați și în localitățile mai mici din județul Ilfov?",
       a: "Da, acoperim întreg județul Ilfov, inclusiv localitățile mai mici. Dacă nu ești sigur că locația ta este în zona noastră de operare, contactează-ne și verificăm împreună fără nicio obligație.",
     },
   },
@@ -76,7 +76,7 @@ const CITY_DATA: Record<
       "Montaj rapid cu respectarea strictă a programului agreat",
     ],
     faq: {
-      q: "Livreați și montați și în localitățile din jurul Ploieștiului?",
+      q: "Livrați și montați și în localitățile din jurul Ploieștiului?",
       a: "Da, acoperim Ploiești și o rază extinsă în județul Prahova — Câmpina, Sinaia, Breaza și altele. Discutăm detaliile la confirmarea comenzii, în funcție de locația exactă.",
     },
   },
@@ -93,7 +93,9 @@ interface PageProps {
   params: Promise<{ slug: string; city: string }>;
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const { slug, city } = await params;
   const service = SERVICES.find((s) => s.slug === slug);
   const cityData = CITY_DATA[city];
@@ -107,7 +109,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export async function generateStaticParams() {
   return SERVICES.flatMap((s) =>
-    ALL_CITIES.map((c) => ({ slug: s.slug, city: c.slug }))
+    ALL_CITIES.map((c) => ({ slug: s.slug, city: c.slug })),
   );
 }
 
@@ -133,7 +135,7 @@ export default async function CityServicePage({ params }: PageProps) {
               slug,
               city,
               cityName: cityData.name,
-            })
+            }),
           ),
         }}
       />
@@ -161,7 +163,10 @@ export default async function CityServicePage({ params }: PageProps) {
           <div className="absolute top-0 left-0 right-0 pt-16 lg:pt-20">
             <div className="container-brand py-3">
               <nav className="flex items-center gap-2 text-xs text-white/50 font-light">
-                <Link href="/servicii" className="hover:text-gold transition-colors">
+                <Link
+                  href="/servicii"
+                  className="hover:text-gold transition-colors"
+                >
                   Servicii
                 </Link>
                 <span>/</span>
