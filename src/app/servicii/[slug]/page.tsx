@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
+import { serviceSchema, safeStringify } from "@/lib/jsonld";
 
 const serviceDetails: Record<
   string,
@@ -164,7 +165,16 @@ export default async function ServiceDetailPage({ params }: PageProps) {
   if (!service || !detail) notFound();
 
   return (
-    <div className="min-h-screen bg-ivory">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeStringify(
+            serviceSchema({ name: service.title, description: detail.description, slug })
+          ),
+        }}
+      />
+      <div className="min-h-screen bg-ivory">
       {/* Hero */}
       <div className="relative min-h-[45vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
@@ -291,5 +301,6 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </section>
     </div>
+    </>
   );
 }

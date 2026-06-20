@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { eventServiceSchema, safeStringify } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Evenimente Private — Aniversări & Petreceri Speciale",
@@ -10,7 +11,21 @@ export const metadata: Metadata = {
 
 export default function PrivatePage() {
   return (
-    <div className="min-h-screen bg-ivory">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeStringify(
+            eventServiceSchema({
+              name: "Servicii Evenimente Private",
+              description:
+                "Organizăm evenimente private de neuitat — aniversări, petreceri și reuniuni în București, Ilfov, Pitești și Ploiești. Mobilier, corturi, DJ și logistică completă.",
+              slug: "private",
+            })
+          ),
+        }}
+      />
+      <div className="min-h-screen bg-ivory">
       <div className="relative min-h-[55vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
@@ -119,5 +134,6 @@ export default function PrivatePage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TESTIMONIALS } from "@/lib/constants";
 import { Star } from "lucide-react";
+import { eventServiceSchema, safeStringify } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   title: "Servicii Nunți — Mobilier, Corturi & Logistică",
@@ -27,7 +28,21 @@ const weddingTestimonials = TESTIMONIALS.filter((t) =>
 
 export default function WeddingsPage() {
   return (
-    <div className="min-h-screen bg-ivory">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeStringify(
+            eventServiceSchema({
+              name: "Servicii Complete Nunți",
+              description:
+                "Servicii complete pentru nunți de 50–150 invitați în București, Ilfov, Pitești și Ploiești. Mobilier premium, corturi, veselă, DJ și logistică completă.",
+              slug: "nunti",
+            })
+          ),
+        }}
+      />
+      <div className="min-h-screen bg-ivory">
       {/* Hero */}
       <div className="relative min-h-[55vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
@@ -181,5 +196,6 @@ export default function WeddingsPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

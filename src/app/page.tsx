@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { organizationAndLocalBusinessSchema, safeStringify } from "@/lib/jsonld";
 import Hero from "@/components/home/Hero";
 import TrustBar from "@/components/home/TrustBar";
 import Manifesto from "@/components/home/Manifesto";
@@ -21,6 +22,10 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: safeStringify(organizationAndLocalBusinessSchema()) }}
+      />
       <Hero />
       <TrustBar />
       <Manifesto />

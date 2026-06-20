@@ -168,6 +168,21 @@ export const FAQS = [
   },
 ];
 
+export const EXTRA_FAQS = [
+  {
+    q: "Puteți amenaja și în locații proprii (grădini, proprietăți private)?",
+    a: "Da. Lucrăm în orice locație din zonele noastre de operare — fie că e o sală de evenimente, o grădină privată sau un spațiu neconvențional. Evaluăm fezabilitatea montajului în prealabil.",
+  },
+  {
+    q: "Ce se întâmplă dacă un echipament se deteriorează la eveniment?",
+    a: "Toate echipamentele sunt asigurate și verificate înainte de livrare. În caz de deteriorare accidentală, discutăm soluțiile în mod transparent — menționăm condițiile exact în contract.",
+  },
+  {
+    q: "Puteți livra și monta în aceeași zi cu evenimentul?",
+    a: "De regulă livrăm cu o zi înainte. Pentru instalări complexe (corturi, sisteme audio) avem nevoie de minimum 24h. Discutăm programul exact la confirmare.",
+  },
+];
+
 export const GALLERY_IMAGES = [
   {
     src: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=2340&auto=format&fit=crop",
