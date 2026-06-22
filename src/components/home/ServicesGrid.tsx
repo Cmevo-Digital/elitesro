@@ -25,7 +25,7 @@ const iconMap = {
   camera: Camera,
 };
 
-const services = [
+export const services = [
   {
     slug: "mobilier-evenimente",
     title: "Mobilier Evenimente",

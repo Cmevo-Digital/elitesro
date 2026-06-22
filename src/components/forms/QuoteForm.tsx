@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { BRAND, WHATSAPP_URL } from "@/lib/constants";
 import { CheckCircle, Send } from "lucide-react";
+import { services } from "@/components/home/ServicesGrid";
 
 type FormData = {
   eventType: string;
@@ -17,16 +18,6 @@ type FormData = {
   message: string;
   honeypot?: string;
 };
-
-const serviceOptions = [
-  "Mobilier Evenimente",
-  "Corturi & Structuri",
-  "Mese & Scaune",
-  "Veselă & Tacâmuri",
-  "Iluminat & Atmosferă",
-  "DJ & Sisteme Audio",
-  "Logistică Completă",
-];
 
 export default function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -191,18 +182,18 @@ export default function QuoteForm() {
           02 — Servicii dorite
         </p>
         <div className="flex flex-wrap gap-2">
-          {serviceOptions.map((s) => (
+          {services.map(({ title }) => (
             <button
-              key={s}
+              key={title}
               type="button"
-              onClick={() => toggleService(s)}
+              onClick={() => toggleService(title)}
               className={`px-4 py-2 text-xs font-medium rounded-full border transition-all duration-200 ${
-                selectedServices.includes(s)
+                selectedServices.includes(title)
                   ? "bg-obsidian text-white border-obsidian"
                   : "bg-white text-charcoal/70 border-warm-dark hover:border-obsidian"
               }`}
             >
-              {s}
+              {title}
             </button>
           ))}
         </div>
