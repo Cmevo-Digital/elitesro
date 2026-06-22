@@ -90,10 +90,10 @@ const services = [
       "https://images.unsplash.com/photo-1605270012917-bf157c5a9541?q=80&w=800&auto=format&fit=crop",
   },
   {
-    slug: "photo-booth",
-    title: "Photo Booth",
+    slug: "cabina-foto",
+    title: "Cabina Foto",
     description:
-      "Photo booth interactiv cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
+      "Cabina foto interactivă cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
     icon: "camera",
     image:
       "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=800&auto=format&fit=crop",

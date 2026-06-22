@@ -148,11 +148,11 @@ export const serviceDetails: Record<
       "Demontaj și curățenie",
     ],
   },
-  "photo-booth": {
+  "cabina-foto": {
     description:
-      "Photo booth interactiv cu imprimare instantă — amintiri de neuitat pentru toți invitații.",
+      "Cabina foto interactivă cu imprimare instantă — amintiri de neuitat pentru toți invitații.",
     longDescription:
-      "Photo booth-ul nostru transformă orice eveniment într-o experiență interactivă și memorabilă. Invitații se pot fotografia cu props amuzante, iar pozele sunt imprimate instant și personalizate cu detaliile evenimentului tău. Un element de entertainment care mulțumește tuturor vârstelor.",
+      "Cabina foto transformă orice eveniment într-o experiență interactivă și memorabilă. Invitații se pot fotografia cu props amuzante, iar pozele sunt imprimate instant și personalizate cu detaliile evenimentului tău. Un element de entertainment care mulțumește tuturor vârstelor.",
     features: [
       "Cameră profesională de înaltă rezoluție",
       "Imprimare instantă (10–15 secunde)",

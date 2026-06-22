@@ -76,10 +76,10 @@ export const SERVICES = [
     icon: "cocktail",
   },
   {
-    slug: "photo-booth",
-    title: "Photo Booth",
+    slug: "cabina-foto",
+    title: "Cabina Foto",
     short:
-      "Photo booth interactiv cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
+      "Cabina foto interactivă cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
     icon: "camera",
   },
 ];
