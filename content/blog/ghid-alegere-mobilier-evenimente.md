@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Ghid complet: Cum să alegi mobilierul pentru evenimentul tău — 2026"
-description: ""
-slug: "ghid-alegere-mobilier-evenimente-2026"
+description: "Optimizează spațiul și asigură confortul invitaților cu acest ghid de alegere a mobilierului pentru evenimente. Evită erorile logistice pentru un eveniment de succes."
+slug: "ghid-alegere-mobilier-evenimente"
 date: "2024-05-22"
 author: "Elites Events"
 ---
