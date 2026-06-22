@@ -11,6 +11,7 @@ const CITY_LINKS = [
   { slug: "ilfov", name: "Ilfov" },
   { slug: "pitesti", name: "Pitești" },
   { slug: "ploiesti", name: "Ploiești" },
+  { slug: "dambovita", name: "Dâmbovița" },
 ];
 
 interface PageProps {

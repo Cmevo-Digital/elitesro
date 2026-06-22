@@ -7,8 +7,8 @@ export const BRAND = {
   phoneRaw: "+40725868615",
   whatsapp: "40725868615",
   email: "contact@elites.ro",
-  locations: ["București", "Ilfov", "Pitești", "Ploiești"],
-  locationsShort: "București · Ilfov · Pitești · Ploiești",
+  locations: ["București", "Ilfov", "Pitești", "Ploiești", "Dâmbovița"],
+  locationsShort: "București · Ilfov · Pitești · Ploiești · Dâmbovița",
   social: {
     instagram: "https://www.instagram.com/elitesro.events",
     facebook: "https://www.facebook.com/elitesro.events",
@@ -163,7 +163,7 @@ export const FAQS = [
   },
   {
     q: "Operați și în afara Bucureștiului?",
-    a: "Da. Operăm activ în București, Ilfov, Pitești și Ploiești. Contactează-ne pentru alte locații și evaluăm împreună.",
+    a: "Da. Operăm activ în București, Ilfov, Pitești, Ploiești și Dâmbovița. Contactează-ne pentru alte locații și evaluăm împreună.",
   },
   {
     q: "Există un număr minim de invitați pentru a colabora cu voi?",

@@ -170,6 +170,7 @@ export default function QuoteForm() {
               <option value="ilfov">Ilfov</option>
               <option value="pitesti">Pitești</option>
               <option value="ploiesti">Ploiești</option>
+              <option value="dambovita">Dâmbovița</option>
               <option value="alta">Altă locație</option>
             </select>
           </div>

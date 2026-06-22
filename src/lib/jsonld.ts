@@ -8,6 +8,7 @@ const AREA_SERVED = [
   { "@type": "AdministrativeArea", name: "Ilfov" },
   { "@type": "City", name: "Pitești" },
   { "@type": "City", name: "Ploiești" },
+  { "@type": "AdministrativeArea", name: "Dâmbovița" },
 ];
 
 export function safeStringify(obj: unknown): string {
@@ -30,7 +31,7 @@ export function organizationAndLocalBusinessSchema() {
     },
     image: `${BASE_URL}/opengraph-image.png`,
     description:
-      "Partenerul tău premium pentru evenimente de 50–150 invitați. Mobilier, corturi, veselă, iluminat, DJ și logistică completă în București, Ilfov, Pitești și Ploiești.",
+      "Partenerul tău premium pentru evenimente de 50–150 invitați. Mobilier, corturi, veselă, iluminat, DJ și logistică completă în București, Ilfov, Pitești, Ploiești și Dâmbovița.",
     telephone: BRAND.phoneRaw,
     email: BRAND.email,
     priceRange: "$$",

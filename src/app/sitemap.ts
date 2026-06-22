@@ -6,7 +6,7 @@ export const dynamic = "force-static";
 
 const BASE = "https://elites.ro";
 
-const CITY_SLUGS = ["bucuresti", "ilfov", "pitesti", "ploiesti"];
+const CITY_SLUGS = ["bucuresti", "ilfov", "pitesti", "ploiesti", "dambovita"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogSlugs = getAllPostSlugs();

@@ -107,6 +107,36 @@ const CITY_DATA: Record<
       },
     ],
   },
+  dambovita: {
+    name: "Dâmbovița",
+    intro:
+      "Dâmbovița are o cerere tot mai mare pentru evenimente private și corporate, iar noi suntem prezenți în tot județul cu servicii complete de logistică — mobilier, corturi, veselă, iluminat, audio și cocktail bar. Fie că organizezi o nuntă în Târgoviște sau o petrecere în aer liber în zona de deal, livrăm și montăm totul la standardele noastre obișnuite.",
+    extendedIntro:
+      "Am deservit nunți, botezuri și evenimente corporate în cele mai cunoscute locații din Dâmbovița — de la săli de evenimente și hoteluri din Târgoviște și Moreni până la cabane și grădini private în zona Peștera și Runcu. Oferim pachete complete care includ mobilier premium, corturi rezistente, veselă elegantă, sisteme audio profesionale și iluminat ambiental. Pentru evenimentele outdoor venim cu soluții complete — grup electrogen, corturi încălzite sau ventilate, și montaj pe teren denivelat. Totul livrat, montat și demontat de echipa noastră, ca să te poți ocupa de restul organizării.",
+    zones:
+      "Acoperim tot județul Dâmbovița — Târgoviște, Moreni, Pucioasa, Găești, Fieni, Răcari, Titu, inclusiv zona montană Peștera, Runcu, Moroeni și toate comunele limitrofe.",
+    localBenefits: [
+      "Livrare și montaj în tot județul Dâmbovița, fără costuri ascunse de transport",
+      "Cunoaștem venue-urile din Târgoviște și județ — săli, cabane, grădini private",
+      "Echipă dedicată pentru montaj rapid în orice tip de locație",
+      "Soluții complete pentru evenimente outdoor — corturi, grup electrogen, iluminat",
+      "Aceleași echipamente și standarde de calitate ca în București",
+    ],
+    faqs: [
+      {
+        q: "Livrați mobilier și corturi în tot județul Dâmbovița?",
+        a: "Da, acoperim întreg județul — Târgoviște, Moreni, Pucioasa, Găești și toate localitățile, inclusiv zona de munte. Livrăm, montăm și demontăm totul, fără costuri suplimentare de transport.",
+      },
+      {
+        q: "Aveți experiență cu nunți sau evenimente corporate în Dâmbovița?",
+        a: "Da, am deservit evenimente în săli de evenimente și hoteluri din Târgoviște și Moreni, dar și în locații outdoor și cabane în zona Peștera și Runcu. Cunoaștem specificul fiecărui venue și ne adaptăm rapid — de la configurația sălii la sursa de energie sau accesul pentru montaj.",
+      },
+      {
+        q: "Pot vedea configurația înainte de eveniment în Dâmbovița?",
+        a: "Da, pentru evenimente mai mari facem o vizită tehnică în locație înainte de montaj. Evaluăm terenul, punctele de acces, sursa de energie și stabilim împreună configurația optimă. Vizita este gratuită și nu implică nicio obligație.",
+      },
+    ],
+  },
   ploiesti: {
     name: "Ploiești",
     intro:
@@ -144,6 +174,7 @@ const ALL_CITIES = [
   { slug: "ilfov", name: "Ilfov" },
   { slug: "pitesti", name: "Pitești" },
   { slug: "ploiesti", name: "Ploiești" },
+  { slug: "dambovita", name: "Dâmbovița" },
 ];
 
 interface PageProps {
