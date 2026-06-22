@@ -11,74 +11,131 @@ const CITY_DATA: Record<
   {
     name: string;
     intro: string;
+    extendedIntro: string;
     zones: string;
     localBenefits: string[];
-    faq: { q: string; a: string };
+    faqs: { q: string; a: string }[];
   }
 > = {
   bucuresti: {
     name: "București",
     intro:
       "Capitala concentrează cele mai multe evenimente premium din România. Fie că organizezi un eveniment corporate în centrul Bucureștiului sau o nuntă în zona de nord, suntem prezenți cu toată logistica necesară — la timp și fără compromisuri.",
+    extendedIntro:
+      "Bucureștiul oferă o diversitate unică de venue-uri — de la săli moderne de conferință în zonele de business la grădini elegante și restaurante de top. Am deservit sute de evenimente în cele mai cunoscute locații ale Capitalei, de la Palatul Bragadiru și JW Marriott la spații neconvenționale din zona istorică. Indiferent de sector sau tip de locație, echipa noastră cunoaște specificul fiecărui venue și se adaptează rapid.",
     zones:
       "Acoperim toate cele 6 sectoare ale Bucureștiului, inclusiv zonele limitrofe — de la Pipera și Băneasa la Militari și Berceni.",
     localBenefits: [
       "Livrare în orice sector al Capitalei, fără costuri suplimentare de transport",
       "Experiență cu sute de evenimente în cele mai importante venue-uri din București",
       "Echipă locală disponibilă pentru vizite tehnice și consultanță prealabilă",
+      "Logistică flexibilă — livrare și montaj în aceeași zi la cerere",
+      "Asistență tehnică pe toată durata evenimentului",
     ],
-    faq: {
-      q: "Livrați și montați în toate sectoarele din București?",
-      a: "Da, acoperim toate cele 6 sectoare ale Bucureștiului. Indiferent de locație — de la Băneasa la Berceni, de la Militari la Pipera — livrăm și montăm fără costuri suplimentare de transport.",
-    },
+    faqs: [
+      {
+        q: "Livrați și montați în toate sectoarele din București?",
+        a: "Da, acoperim toate cele 6 sectoare ale Bucureștiului. Indiferent de locație — de la Băneasa la Berceni, de la Militari la Pipera — livrăm și montăm fără costuri suplimentare de transport.",
+      },
+      {
+        q: "Livrați cu cât timp înainte de eveniment în București?",
+        a: "De regulă livrăm cu o zi înainte, mai ales pentru configurații complexe. Pentru comenzi simple, putem livra și în dimineața evenimentului. Stabilim programul exact la confirmare.",
+      },
+      {
+        q: "Puteți face o vizită tehnică la locație înainte de eveniment?",
+        a: "Da, pentru evenimente corporate și nunți, recomandăm o vizită tehnică prealabilă în locație. Un coleg din echipa noastră vine să evalueze spațiul, să discute cu responsabilii venue-ului și să stabilească punctele de acces și montaj.",
+      },
+    ],
   },
   ilfov: {
     name: "Ilfov",
     intro:
       "Județul Ilfov găzduiește unele dintre cele mai apreciate venue-uri pentru evenimente din zona metropolitană București. Cu ani de activitate în județ, cunoaștem specificul fiecărei locații și ne adaptăm rapid la cerințele organizatorilor.",
+    extendedIntro:
+      "De la domenii elegante în Snagov la grădini generoase în Voluntari și Otopeni, Ilfov este destinația preferată pentru evenimentele outdoor și nunțile în corturi. Proximitatea față de Capitală face logistica eficientă, iar varietatea spațiilor oferă libertate creativă maximă. Colaborăm frecvent cu cele mai cunoscute venue-uri din județ, unde am instalat de la corturi mari și mobilier premium până la sisteme audio complexe.",
     zones:
       "Operăm în toate localitățile județului Ilfov — Voluntari, Otopeni, Buftea, Popești-Leordeni, Pantelimon, Bragadiru și celelalte comune limitrofe Capitalei.",
     localBenefits: [
       "Familiarizați cu cele mai apreciate venue-uri și săli de evenimente din Ilfov",
       "Logistică rapidă datorită proximității față de București și depozitelor noastre",
       "Adaptare la spații exterioare și proprietăți private din zona suburbană",
+      "Experiență vastă cu evenimente outdoor — corturi, iluminat, grup electrogen",
+      "Echipă dedicată pentru montaj în grădini și spații neconvenționale",
     ],
-    faq: {
-      q: "Livrați și în localitățile mai mici din județul Ilfov?",
-      a: "Da, acoperim întreg județul Ilfov, inclusiv localitățile mai mici. Dacă nu ești sigur că locația ta este în zona noastră de operare, contactează-ne și verificăm împreună fără nicio obligație.",
-    },
+    faqs: [
+      {
+        q: "Livrați și în localitățile mai mici din județul Ilfov?",
+        a: "Da, acoperim întreg județul Ilfov, inclusiv localitățile mai mici. Dacă nu ești sigur că locația ta este în zona noastră de operare, contactează-ne și verificăm împreună fără nicio obligație.",
+      },
+      {
+        q: "Aveți experiență cu evenimente în grădini private în Ilfov?",
+        a: "Da, majoritatea evenimentelor din Ilfov sunt în grădini și proprietăți private. Avem soluții pentru alimentare cu energie, corturi pe teren neregulat și montaj în spații cu acces limitat. Facem o evaluare tehnică înainte pentru a ne asigura că totul este în regulă.",
+      },
+      {
+        q: "Pot vizita locația înainte pentru a stabili configurația?",
+        a: "Da, pentru evenimente în Ilfov recomandăm o vizită prealabilă. Echipa noastră se deplasează la locație pentru a evalua terenul, punctele de acces și sursa de energie. Vizita este gratuită și nu implică nicio obligație.",
+      },
+    ],
   },
   pitesti: {
     name: "Pitești",
     intro:
       "Pitești și zona Argeș au o cultură puternică a evenimentelor private și corporate. Suntem parteneri de logistică pentru organizatori din municipiu și din împrejurimi, aducând aceleași standarde de calitate ca în Capitală.",
+    extendedIntro:
+      "Piteștiul este un hub regional pentru evenimente corporate și private, cu o cerere tot mai mare pentru servicii de logistică premium. Am deservit evenimente în cele mai importante venue-uri din oraș și din județul Argeș, de la săli moderne de conferință la spații outdoor pitorești în zona de deal. Echipa noastră locală cunoaște specificul fiecărei locații și asigură un montaj eficient, indiferent de complexitatea evenimentului.",
     zones:
       "Livrăm în municipiul Pitești și localitățile din proximitate — Mioveni, Costești, Câmpulung Muscel și alte localități din județul Argeș.",
     localBenefits: [
       "Livrare rapidă în tot municipiul Pitești și în localitățile limitrofe",
       "Prețuri transparente — costul de transport este inclus în ofertă de la început",
       "Cunoaștem specificul venue-urilor și sălilor de evenimente din județul Argeș",
+      "Echipă locală pentru montaj și asistență în timpul evenimentului",
+      "Aceleași standarde de calitate și echipamente ca în București",
     ],
-    faq: {
-      q: "Oferiți servicii și în localitățile din jurul Piteștiului?",
-      a: "Da, acoperim municipiul Pitești și o rază de aproximativ 30 km — incluzând Mioveni, Costești și alte localități din județul Argeș. Contactează-ne pentru locații mai îndepărtate și evaluăm împreună.",
-    },
+    faqs: [
+      {
+        q: "Oferiți servicii și în localitățile din jurul Piteștiului?",
+        a: "Da, acoperim municipiul Pitești și o rază de aproximativ 30 km — incluzând Mioveni, Costești și alte localități din județul Argeș. Contactează-ne pentru locații mai îndepărtate și evaluăm împreună.",
+      },
+      {
+        q: "Transportul este inclus în preț pentru Pitești?",
+        a: "Da, costul de transport este inclus în ofertă de la început, fără surprize. Pentru localitățile din afara municipiului Pitești, putem ajusta oferta în funcție de distanță, dar îți comunicăm totul transparent dinainte.",
+      },
+      {
+        q: "Aveți același stoc de echipamente disponibil ca în București?",
+        a: "Da, operăm cu același stoc și aceleași standarde de calitate în toate orașele. Echipamentele sunt verificate și întreținute conform acelorași proceduri, indiferent de destinație.",
+      },
+    ],
   },
   ploiesti: {
     name: "Ploiești",
     intro:
       "Ploiești și județul Prahova oferă un peisaj variat de venue-uri — de la săli clasice în centrul orașului la proprietăți cu spații exterioare în zona suburbană. Suntem prezenți cu același nivel de servicii ca în Capitală, fără niciun compromis.",
+    extendedIntro:
+      "Prahova este una dintre cele mai active zone pentru evenimente din România, datorită apropierii de București și a diversității de locații — de la hoteluri moderne din Ploiești la domenii și cabane în zona montană Sinaia-Bușteni. Am deservit evenimente corporate, nunți și petreceri private în cele mai cunoscute venue-uri din județ. Indiferent de anotimp, venim cu soluția potrivită — corturi încălzite pentru sezonul rece sau structuri deschise pentru vara.",
     zones:
       "Acoperim municipiul Ploiești și localitățile din județul Prahova — Câmpina, Sinaia, Breaza, Băicoi și alte localități din apropierea orașului.",
     localBenefits: [
       "Operăm în Ploiești și în principalele localități din județul Prahova",
       "Echipă cu experiență în specificul evenimentelor și locațiilor din regiune",
       "Montaj rapid cu respectarea strictă a programului agreat",
+      "Soluții pentru orice anotimp — corturi încălzite iarna, ventilate vara",
+      "Asistență tehnică pe tot parcursul evenimentului",
     ],
-    faq: {
-      q: "Livrați și montați și în localitățile din jurul Ploieștiului?",
-      a: "Da, acoperim Ploiești și o rază extinsă în județul Prahova — Câmpina, Sinaia, Breaza și altele. Discutăm detaliile la confirmarea comenzii, în funcție de locația exactă.",
-    },
+    faqs: [
+      {
+        q: "Livrați și montați și în localitățile din jurul Ploieștiului?",
+        a: "Da, acoperim Ploiești și o rază extinsă în județul Prahova — Câmpina, Sinaia, Breaza și altele. Discutăm detaliile la confirmarea comenzii, în funcție de locația exactă.",
+      },
+      {
+        q: "Puteți livra în zona montană Sinaia-Bușteni?",
+        a: "Da, avem experiență cu livrări în zona montană a Prahovei. Pentru locațiile montane, evaluăm accesul și condițiile specifice în prealabil și ajustăm configurația în consecință (de exemplu, corturi cu ancorare specială pentru teren denivelat).",
+      },
+      {
+        q: "Ce se întâmplă dacă evenimentul meu este în sezonul rece?",
+        a: "Avem soluții pentru orice anotimp — corturi cu pereți completi și sisteme de încălzire, iluminat ambiental cald, și materiale rezistente la intemperii. Am deservit evenimente corporate și nunți decembrie-martie fără probleme.",
+      },
+    ],
   },
 };
 
@@ -142,7 +199,7 @@ export default async function CityServicePage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: safeStringify(faqPageSchema([cityData.faq])),
+          __html: safeStringify(faqPageSchema(cityData.faqs)),
         }}
       />
       <div className="min-h-screen bg-ivory">
@@ -197,8 +254,14 @@ export default async function CityServicePage({ params }: PageProps) {
           <div className="container-brand">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div className="space-y-6">
+                <h2 className="font-display text-2xl text-obsidian">
+                  {service.title} în {cityData.name}
+                </h2>
                 <p className="text-charcoal/60 text-base leading-relaxed font-light">
                   {cityData.intro}
+                </p>
+                <p className="text-charcoal/60 text-base leading-relaxed font-light">
+                  {cityData.extendedIntro}
                 </p>
 
                 <div>
@@ -263,22 +326,66 @@ export default async function CityServicePage({ params }: PageProps) {
 
                 <div className="bg-obsidian rounded-sm p-7">
                   <p className="font-display text-lg text-white mb-2">
-                    Întrebare frecventă
+                    Pachete disponibile
                   </p>
-                  <p className="text-sm text-gold/80 font-medium mb-2">
-                    {cityData.faq.q}
+                  <p className="text-sm text-white/50 font-light mb-4">
+                    Oferim opțiuni pentru orice buget. Vezi pachetele noastre.
                   </p>
-                  <p className="text-sm text-white/50 font-light">
-                    {cityData.faq.a}
-                  </p>
+                  <Link
+                    href={`/servicii/${slug}`}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-gold-dark transition"
+                  >
+                    Vezi Pachete
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="section-padding bg-warm">
+          <div className="container-brand max-w-3xl">
+            <p className="overline-text text-gold mb-3">
+              Întrebări frecvente — {cityData.name}
+            </p>
+            <h2 className="font-display text-2xl md:text-3xl text-obsidian mb-8">
+              {service.title} în {cityData.name}
+            </h2>
+            <div className="divide-y divide-warm-dark">
+              {cityData.faqs.map((faq, i) => (
+                <details key={i} className="group py-5">
+                  <summary className="flex items-start justify-between gap-4 cursor-pointer list-none">
+                    <span className="font-medium text-sm text-obsidian group-open:text-gold transition-colors">
+                      {faq.q}
+                    </span>
+                    <span className="shrink-0 w-6 h-6 rounded-full border border-warm-dark flex items-center justify-center mt-0.5 group-open:border-gold transition-colors">
+                      <svg
+                        className="w-3 h-3 text-charcoal/60 group-open:text-gold group-open:rotate-45 transition-transform"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 4v16m8-8H4"
+                        />
+                      </svg>
+                    </span>
+                  </summary>
+                  <p className="pt-3 text-sm text-charcoal/60 leading-relaxed font-light">
+                    {faq.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Zone coverage */}
-        <section className="py-10 bg-warm border-t border-charcoal/10">
+        <section className="py-10 bg-ivory border-t border-charcoal/10">
           <div className="container-brand">
             <p className="overline-text text-gold mb-3">Zona de acoperire</p>
             <p className="text-charcoal/70 text-sm font-light max-w-2xl">

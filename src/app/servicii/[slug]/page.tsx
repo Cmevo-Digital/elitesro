@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { SERVICES } from "@/lib/constants";
-import { serviceSchema, safeStringify } from "@/lib/jsonld";
+import { serviceSchema, faqPageSchema, safeStringify } from "@/lib/jsonld";
 import { serviceDetails } from "@/lib/services";
 
 const CITY_LINKS = [
@@ -41,6 +41,8 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
   if (!service || !detail) notFound();
 
+  const paragraphs = detail.longDescription.split("\n\n");
+
   return (
     <>
       <script
@@ -49,6 +51,12 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           __html: safeStringify(
             serviceSchema({ name: service.title, description: detail.description, slug })
           ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeStringify(faqPageSchema(detail.faqs)),
         }}
       />
       <div className="min-h-screen bg-ivory">
@@ -76,31 +84,22 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* Content */}
+      {/* Description */}
       <section className="section-padding bg-ivory">
         <div className="container-brand">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="space-y-6">
-              <p className="text-charcoal/60 text-base leading-relaxed font-light">
-                {detail.longDescription}
-              </p>
-
-              <div>
-                <p className="overline-text text-gold text-[10px] mb-4">
-                  Disponibil
+              <h2 className="font-display text-2xl md:text-3xl text-obsidian">
+                Despre {service.title.toLowerCase()}
+              </h2>
+              {paragraphs.map((p, i) => (
+                <p
+                  key={i}
+                  className="text-charcoal/60 text-base leading-relaxed font-light"
+                >
+                  {p}
                 </p>
-                <ul className="space-y-2.5">
-                  {detail.features.map((f) => (
-                    <li
-                      key={f}
-                      className="flex items-center gap-2 text-sm text-charcoal/70"
-                    >
-                      <span className="text-gold">✓</span>
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              ))}
 
               <Link
                 href="/cerere-oferta"
@@ -146,6 +145,123 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* Client types */}
+      <section className="section-padding bg-ivory">
+        <div className="container-brand">
+          <p className="overline-text text-gold mb-3">Pentru cine</p>
+          <h2 className="font-display text-2xl md:text-3xl text-obsidian mb-8">
+            Cui se adresează acest serviciu
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {detail.clientTypes.map((ct) => (
+              <div
+                key={ct}
+                className="flex items-start gap-3 p-5 bg-white rounded-sm border border-warm-dark"
+              >
+                <span className="w-6 h-6 rounded-full bg-gold/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="text-gold text-xs">✓</span>
+                </span>
+                <p className="text-sm text-charcoal/70 font-light">{ct}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Use cases */}
+      {detail.useCases.length > 0 && (
+        <section className="section-padding bg-warm">
+          <div className="container-brand">
+            <p className="overline-text text-gold mb-3">Exemple concrete</p>
+            <h2 className="font-display text-2xl md:text-3xl text-obsidian mb-8">
+              Evenimente realizate recent
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {detail.useCases.map((uc, i) => (
+                <div
+                  key={i}
+                  className="bg-white p-6 rounded-sm border border-warm-dark"
+                >
+                  <p className="text-xs text-gold font-semibold tracking-widest uppercase mb-2">
+                    Caz {i + 1}
+                  </p>
+                  <p className="text-sm text-charcoal/70 font-light leading-relaxed">
+                    {uc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Trust stats */}
+      {detail.trustStats.length > 0 && (
+        <section className="section-padding bg-obsidian">
+          <div className="container-brand">
+            <p className="overline-text text-gold mb-3 text-center">De ce să ne alegi</p>
+            <h2 className="font-display text-3xl text-white text-center mb-10">
+              Numerele care contează
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+              {detail.trustStats.map((stat) => (
+                <div key={stat.label} className="text-center">
+                  <p className="font-display text-3xl md:text-4xl text-gold mb-1">
+                    {stat.value}
+                  </p>
+                  <p className="text-xs text-white/50 uppercase tracking-widest">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* FAQ */}
+      {detail.faqs.length > 0 && (
+        <section className="section-padding bg-ivory">
+          <div className="container-brand max-w-3xl">
+            <p className="overline-text text-gold mb-3">
+              Întrebări frecvente
+            </p>
+            <h2 className="font-display text-2xl md:text-3xl text-obsidian mb-8">
+              {service.title} — FAQ
+            </h2>
+            <div className="divide-y divide-warm-dark">
+              {detail.faqs.map((faq, i) => (
+                <details key={i} className="group py-5">
+                  <summary className="flex items-start justify-between gap-4 cursor-pointer list-none">
+                    <span className="font-medium text-sm text-obsidian group-open:text-gold transition-colors">
+                      {faq.q}
+                    </span>
+                    <span className="shrink-0 w-6 h-6 rounded-full border border-warm-dark flex items-center justify-center mt-0.5 group-open:border-gold transition-colors">
+                      <svg
+                        className="w-3 h-3 text-charcoal/60 group-open:text-gold group-open:rotate-45 transition-transform"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 4v16m8-8H4"
+                        />
+                      </svg>
+                    </span>
+                  </summary>
+                  <p className="pt-3 text-sm text-charcoal/60 leading-relaxed font-light">
+                    {faq.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Other services */}
       <section className="section-padding bg-warm">
