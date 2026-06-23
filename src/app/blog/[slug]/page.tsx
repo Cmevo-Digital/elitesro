@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getPostBySlug(slug);
   if (!post) return { title: "Articol negăsit" };
   return {
-    title: `${post.title} | Elites Events`,
+    title: post.title,
     description: post.description,
     alternates: { canonical: `/blog/${slug}/` },
     openGraph: {

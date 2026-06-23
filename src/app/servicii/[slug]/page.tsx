@@ -25,7 +25,7 @@ export async function generateMetadata({
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) return { title: "Serviciu negăsit" };
   return {
-    title: `${service.title} — Elites Events`,
+    title: `Închiriere ${service.title} Evenimente București Ilfov Pitești`,
     description: service.short,
     alternates: { canonical: `/servicii/${slug}/` },
   };

@@ -189,7 +189,7 @@ export async function generateMetadata({
   const cityData = CITY_DATA[city];
   if (!service || !cityData) return { title: "Pagină negăsită" };
   return {
-    title: `${service.title} în ${cityData.name} — Elites Events`,
+    title: `Închiriere ${service.title} în ${cityData.name}`,
     description: `Închiriere ${service.title.toLowerCase()} în ${cityData.name}. ${cityData.zones} Livrare, montaj și demontaj inclus. Solicită ofertă gratuită.`,
     alternates: { canonical: `/servicii/${slug}/${city}/` },
   };
