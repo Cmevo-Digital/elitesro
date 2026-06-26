@@ -39,12 +39,12 @@ Pentru a reduce stresul organizatorului, delegarea închirierii veselăriei căt
 
 Pentru a nu omite niciun detaliu critic, iată o listă de verificare practică pentru orice organizator din București și împrejurimi:
 
-*   **Lista de invitați și confirmările:** Stabilirea numărului exact de persoane pentru a calcula necesarul de scaune, mese și veselărie.
-*   **Planul de amplasare:** Schițarea zonelor de dining, bar, DJ și accesibilitatea pentru livrări.
-*   **Inventarul de mobilier:** Verificarea stării scaunelor, meselor și a prezenței elementelor de lounge.
-*   **Testul tehnic:** Verificarea sistemului audio, a microfoanelor și a surselor de alimentare electrică pentru DJ și iluminat.
-*   **Logistica veselăriei:** Asigurarea unui număr suficient de pahare (calculând aproximativ 2-3 per persoană) și seturi de tacâmuri complete.
-*   **Planul de montaj/demontaj:** Stabilirea orarioarelor cu furnizorii pentru a nu interfera cu sosirea invitaților.
+- **Lista de invitați și confirmările:** Stabilirea numărului exact de persoane pentru a calcula necesarul de scaune, mese și veselărie.
+- **Planul de amplasare:** Schițarea zonelor de dining, bar, DJ și accesibilitatea pentru livrări.
+- **Inventarul de mobilier:** Verificarea stării scaunelor, meselor și a prezenței elementelor de lounge.
+- **Testul tehnic:** Verificarea sistemului audio, a microfoanelor și a surselor de alimentare electrică pentru DJ și iluminat.
+- **Logistica veselăriei:** Asigurarea unui număr suficient de pahare (calculând aproximativ 2-3 per persoană) și seturi de tacâmuri complete.
+- **Planul de montaj/demontaj:** Stabilirea orarioarelor cu furnizorii pentru a nu interfera cu sosirea invitaților.
 
 ## Concluzii și implementarea logistică
 

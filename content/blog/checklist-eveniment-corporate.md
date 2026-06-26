@@ -1,7 +1,7 @@
 ---
 title: "Checklist complet pentru organizarea unui eveniment corporate"
 slug: "checklist-eveniment-corporate"
-date: "2025-07-10"
+date: "2026-06-10"
 description: "Tot ce trebuie să bifezi înainte de conferința, gala sau lansarea de produs a companiei tale. Un checklist practic în 8 categorii."
 coverImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1200&auto=format&fit=crop"
 category: "Corporate"

@@ -1,7 +1,7 @@
 ---
 title: "Ghid de iluminat pentru nuntă: cum creezi atmosfera perfectă"
 slug: "ghid-iluminat-nunta"
-date: "2025-08-20"
+date: "2026-06-20"
 description: "Iluminatul este elementul cel mai subestimat în planificarea unei nunți. Descoperă cum să creezi o atmosferă memorabilă cu soluțiile potrivite."
 coverImage: "https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?q=80&w=1200&auto=format&fit=crop"
 category: "Inspirație"

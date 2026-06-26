@@ -1,11 +1,18 @@
 ---
 title: "Cum să alegi cortul perfect pentru evenimentul tău outdoor"
 slug: "cum-sa-alegi-cortul-perfect"
-date: "2025-09-15"
+date: "2026-05-15"
 description: "Ghid complet despre tipurile de corturi pentru evenimente, cum calculezi suprafața necesară, ce dotări să ceri și cât costă închirierea unui cort profesional."
 coverImage: "https://images.unsplash.com/photo-1692166927778-056466153552?q=80&w=1200&auto=format&fit=crop"
 category: "Ghiduri"
-tags: ["corturi", "outdoor", "planificare", "ghid corturi evenimente", "inchiriere cort eveniment"]
+tags:
+  [
+    "corturi",
+    "outdoor",
+    "planificare",
+    "ghid corturi evenimente",
+    "inchiriere cort eveniment",
+  ]
 author: "Elites Events"
 readTime: 8
 ---
@@ -21,6 +28,7 @@ Piața de închirieri corturi pentru evenimente a evoluat mult în ultimii ani. 
 Cortul pagodă este alegerea clasică pentru evenimentele outdoor din România. Structura metalică modulară — de obicei din aluminiu tratat — permite combinarea mai multor unități pentru a acoperi suprafețe mari, de la 30 mp până la câteva mii de mp. Aspectul curat, cu vârfuri ușor înălțate la colțuri, se potrivește atât nunților elegante cât și evenimentelor corporate sau festivalurilor.
 
 **Avantaje:**
+
 - Estetic și elegant, compatibil cu orice temă de decor
 - Modular — se extinde la orice dimensiune
 - Stabil în condiții meteo moderate (vânt până la 70–80 km/h în funcție de model)
@@ -33,6 +41,7 @@ Cortul pagodă este alegerea clasică pentru evenimentele outdoor din România. 
 Cortul stretch (sau cort textil) are o formă organică, sculptată, obținută prin tensionarea unui material impermeabil din PVC sau poliester de înaltă densitate peste o structură de catarge și cabluri de oțel. Rezultatul este o siluetă modernă, asimetrică, ideală pentru concepte nonconvenționale sau branduri cu identitate vizuală puternică.
 
 **Avantaje:**
+
 - Design contemporan, spectaculos — excelent pentru fotografii și materiale de promovare
 - Adaptabil la orice formă de teren, inclusiv suprafețe înclinate sau neregulate
 - Impermeabil și rezistent la UV
@@ -45,6 +54,7 @@ Cortul stretch (sau cort textil) are o formă organică, sculptată, obținută 
 Cortul alu-hall, numit și cort industrial sau cort depozit, este o structură cu acoperiș boltit, fără stâlpi interiori, construită din profile de aluminiu extrudat. Permite acoperirea unor suprafețe foarte mari — de la 200 la câteva mii de mp — fără nicio coloană care să obstrucționeze vizibilitatea sau circulația.
 
 **Avantaje:**
+
 - Capacitate maximă fără stâlpi interiori
 - Cel mai potrivit pentru săli de concert, conferințe mari, expoziții sau târguri
 - Poate fi izolat termic și dotat cu HVAC pentru confort pe tot parcursul anului
@@ -57,6 +67,7 @@ Cortul alu-hall, numit și cort industrial sau cort depozit, este o structură c
 Cortul dome are o formă sferică sau semi-sferică, construită din tuburi metalice interconectate acoperite cu o membrană transparentă sau opacă. Este mai rar întâlnit, dar extrem de eficient pentru experiențe imersive.
 
 **Avantaje:**
+
 - Vizibilitate panoramică 360° dacă membrana este transparentă
 - Excelent pentru evenimente de iarnă — forma sferică distribuie uniform sarcina zăpezii
 - Creează o atmosferă intimă și distinctivă
@@ -69,6 +80,7 @@ Cortul dome are o formă sferică sau semi-sferică, construită din tuburi meta
 Cortul pliabil, cunoscut și sub denumirea de cort pop-up sau gazebo profesional, este cea mai ușoară și mai rapidă soluție de instalat. Structura telescopică se desfășoară în minute și poate fi ancorată cu greutăți sau țăruși.
 
 **Avantaje:**
+
 - Instalare și demontare rapidă, fără echipă specializată
 - Portabil și ușor de transportat
 - Cost de închiriere redus
@@ -81,14 +93,15 @@ Cortul pliabil, cunoscut și sub denumirea de cort pop-up sau gazebo profesional
 
 Suprafața necesară depinde de configurația evenimentului. Iată regulile de bază:
 
-| Tip configurație | Spațiu recomandat / persoană |
-|---|---|
-| Banchet (mese rotunde cu scaune) | 2,0 mp |
-| Cocktail / standing | 1,0 mp |
-| Conferință (rânduri de scaune) | 1,2 mp |
-| Cabaret (mese dreptunghiulare) | 1,5 mp |
+| Tip configurație                 | Spațiu recomandat / persoană |
+| -------------------------------- | ---------------------------- |
+| Banchet (mese rotunde cu scaune) | 2,0 mp                       |
+| Cocktail / standing              | 1,0 mp                       |
+| Conferință (rânduri de scaune)   | 1,2 mp                       |
+| Cabaret (mese dreptunghiulare)   | 1,5 mp                       |
 
 La aceste suprafețe adaugă obligatoriu:
+
 - **Scenă sau podium:** 15–30 mp, în funcție de numărul artiștilor
 - **Ring de dans:** 1 mp pentru fiecare 4 invitați (la o nuntă de 200 persoane = ~50 mp)
 - **Bar și zona de servicire:** minimum 15–20 mp
