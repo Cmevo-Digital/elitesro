@@ -4,6 +4,7 @@ slug: "ghid-inchiriere-cabina-foto"
 date: "2026-06-22"
 description: "Descoperă totul despre procesul de închiriere cabină foto. Ghid practic pentru organizarea logistică a fotografiilor la nunți și evenimente corporate."
 author: "Elites Events"
+category: "Ghiduri"
 ---
 
 # Ghid inchiriere cabina foto
