@@ -5,7 +5,7 @@ slug: "cum-sa-organizezi-petrecere-privata-bucuresti"
 date: "2026-06-22"
 author: "Elites Events"
 category: "Organizare"
-coverImage: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80"
+coverImage: "https://images.unsplash.com/photo-1545150665-c72a8f0cf311?w=800&q=80"
 readTime: 5
 ---
 

@@ -5,7 +5,7 @@ date: "2026-06-22"
 description: "Descoperă totul despre procesul de închiriere cabină foto. Ghid practic pentru organizarea logistică a fotografiilor la nunți și evenimente corporate."
 author: "Elites Events"
 category: "Ghiduri"
-coverImage: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80"
+coverImage: "https://images.unsplash.com/photo-1744189578759-5103cc188897?w=800&q=80"
 readTime: 5
 ---
 
