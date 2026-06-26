@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "Cum să organizezi o petrecere privată în București — Ghid complet 2024"
 description: "Organizează evenimente reușite în București! Asigurăm logistica, cateringul și suportul tehnic pentru aniversări, reuniuni de familie sau evenimente corporate."
 slug: "cum-sa-organizezi-petrecere-privata-bucuresti"
 date: "2026-06-22"
 author: "Elites Events"
+category: "Organizare"
+coverImage: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80"
+readTime: 5
 ---
 
 # Cum să organizezi o petrecere privată în București — Ghid complet 2024
