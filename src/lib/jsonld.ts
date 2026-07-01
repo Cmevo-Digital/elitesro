@@ -1,4 +1,4 @@
-import { BRAND } from "./constants";
+import { BRAND, SERVICES } from "./constants";
 
 const BASE_URL = "https://elites.ro";
 const ORG_ID = `${BASE_URL}/#organization`;
@@ -77,6 +77,45 @@ export function serviceSchema(params: {
   };
 }
 
+export function servicesCatalogSchema(
+  services: Array<{ name: string; description: string; slug: string }>
+) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${BASE_URL}/servicii/#webpage`,
+        url: `${BASE_URL}/servicii/`,
+        name: "Servicii Elites Events",
+        description:
+          "Catalogul serviciilor Elites Events pentru evenimente: mobilier, corturi, veselă, iluminat, DJ, cocktail bar, cabină foto și logistică completă.",
+        inLanguage: "ro",
+        isPartOf: { "@id": ORG_ID },
+        mainEntity: { "@id": `${BASE_URL}/servicii/#services` },
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${BASE_URL}/servicii/#services`,
+        name: "Servicii pentru evenimente",
+        itemListElement: services.map((service, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "Service",
+            "@id": `${BASE_URL}/servicii/${service.slug}/#service`,
+            name: service.name,
+            description: service.description,
+            url: `${BASE_URL}/servicii/${service.slug}/`,
+            provider: { "@id": ORG_ID },
+            areaServed: AREA_SERVED,
+          },
+        })),
+      },
+    ],
+  };
+}
+
 export function eventServiceSchema(params: {
   name: string;
   description: string;
@@ -90,6 +129,57 @@ export function eventServiceSchema(params: {
     url: `${BASE_URL}/evenimente/${params.slug}/`,
     provider: { "@id": ORG_ID },
     areaServed: AREA_SERVED,
+  };
+}
+
+export function quoteRequestServiceSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${BASE_URL}/cerere-oferta/#service`,
+    name: "Ofertă personalizată pentru închirieri și logistică evenimente",
+    serviceType: "Închirieri și logistică evenimente",
+    description:
+      "Cerere de ofertă gratuită pentru mobilier, corturi, veselă, DJ, cabina foto, cocktail bar și logistică de evenimente în București, Ilfov, Pitești, Ploiești și Dâmbovița.",
+    url: `${BASE_URL}/cerere-oferta/`,
+    provider: { "@id": ORG_ID },
+    areaServed: AREA_SERVED,
+    audience: {
+      "@type": "Audience",
+      audienceType:
+        "Organizatori de nunți, evenimente corporate și petreceri private",
+    },
+    offers: {
+      "@type": "Offer",
+      name: "Consultație și ofertă personalizată gratuită",
+      url: `${BASE_URL}/cerere-oferta/`,
+      price: "0",
+      priceCurrency: "RON",
+      availability: "https://schema.org/InStock",
+      eligibleRegion: AREA_SERVED,
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        price: "0",
+        priceCurrency: "RON",
+        description:
+          "Cererea de ofertă și consultația inițială sunt gratuite; costul final se calculează în funcție de data evenimentului, locație, numărul de invitați și serviciile selectate.",
+      },
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Servicii pentru ofertă personalizată",
+      itemListElement: SERVICES.map((service) => ({
+        "@type": "Offer",
+        url: `${BASE_URL}/servicii/${service.slug}/`,
+        itemOffered: {
+          "@type": "Service",
+          name: service.title,
+          description: service.short,
+          provider: { "@id": ORG_ID },
+          areaServed: AREA_SERVED,
+        },
+      })),
+    },
   };
 }
 

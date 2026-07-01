@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { safeStringify, servicesCatalogSchema } from "@/lib/jsonld";
 import {
   Armchair,
   Tent,
@@ -146,117 +147,133 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-ivory">
-      <div className="bg-obsidian pt-28 pb-16">
-        <div className="container-brand">
-          <p className="overline-text text-gold mb-4">Servicii</p>
-          <h1 className="font-display text-3xl md:text-5xl text-white max-w-2xl leading-tight">
-            Tot ce ai nevoie pentru un eveniment impecabil
-          </h1>
-          <p className="mt-4 text-white/50 font-light max-w-xl">
-            Un singur partener pentru toate nevoile evenimentului tău. Livrăm,
-            montăm și demontăm — tu te bucuri.
-          </p>
-        </div>
-      </div>
-
-      {/* Logistics highlight */}
-      <div className="bg-gold/10 border-b border-gold/20">
-        <div className="container-brand py-5">
-          <div className="flex items-center gap-3">
-            <Truck size={18} className="text-gold shrink-0" />
-            <p className="text-sm text-charcoal">
-              <strong>Livrare, montaj și demontaj incluse</strong> în toate
-              pachetele noastre. Operăm în București, Ilfov, Pitești și
-              Ploiești.
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: safeStringify(
+            servicesCatalogSchema(
+              services.map((service) => ({
+                name: service.title,
+                description: service.description,
+                slug: service.slug,
+              }))
+            )
+          ),
+        }}
+      />
+      <div className="min-h-screen bg-ivory">
+        <div className="bg-obsidian pt-28 pb-16">
+          <div className="container-brand">
+            <p className="overline-text text-gold mb-4">Servicii</p>
+            <h1 className="font-display text-3xl md:text-5xl text-white max-w-2xl leading-tight">
+              Tot ce ai nevoie pentru un eveniment impecabil
+            </h1>
+            <p className="mt-4 text-white/50 font-light max-w-xl">
+              Un singur partener pentru toate nevoile evenimentului tău. Livrăm,
+              montăm și demontăm — tu te bucuri.
             </p>
           </div>
         </div>
-      </div>
 
-      {/* Services list */}
-      <div className="container-brand section-padding">
-        <div className="space-y-5">
-          {services.map((service, i) => {
-            const Icon = service.icon;
-            return (
-              <div
-                key={service.slug}
-                className="bg-white rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-[280px_1fr] hover:shadow-hover transition-shadow duration-300"
-              >
-                {/* Image column */}
-                <div className="relative h-52 md:h-auto min-h-[180px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 280px"
-                  />
-                  <div className="absolute inset-0 bg-obsidian/25" />
-                  <div className="absolute bottom-4 left-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center">
-                    <Icon size={18} className="text-gold" strokeWidth={1.5} />
-                  </div>
-                </div>
-
-                {/* Content column */}
-                <div className="p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                  <div>
-                    <span className="overline-text text-gold text-[10px] block mb-3">
-                      0{i + 1}
-                    </span>
-                    <h2 className="font-display text-2xl text-obsidian mb-3">
-                      {service.title}
-                    </h2>
-                    <p className="text-sm text-charcoal/60 leading-relaxed font-light mb-5">
-                      {service.description}
-                    </p>
-                    <Link
-                      href={`/servicii/${service.slug}`}
-                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-gold hover:text-gold-dark transition-colors group"
-                    >
-                      Detalii complete
-                      <ArrowRight
-                        size={13}
-                        className="transition-transform group-hover:translate-x-1"
-                      />
-                    </Link>
-                  </div>
-                  <div>
-                    <p className="overline-text text-[10px] text-charcoal/40 mb-3">
-                      Include
-                    </p>
-                    <ul className="space-y-2">
-                      {service.features.map((f) => (
-                        <li
-                          key={f}
-                          className="flex items-center gap-2 text-sm text-charcoal/70"
-                        >
-                          <span className="text-gold">✓</span>
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+        {/* Logistics highlight */}
+        <div className="bg-gold/10 border-b border-gold/20">
+          <div className="container-brand py-5">
+            <div className="flex items-center gap-3">
+              <Truck size={18} className="text-gold shrink-0" />
+              <p className="text-sm text-charcoal">
+                <strong>Livrare, montaj și demontaj incluse</strong> în toate
+                pachetele noastre. Operăm în București, Ilfov, Pitești și
+                Ploiești.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-charcoal/50 text-sm mb-5">
-            Ai nevoie de mai mult? Avem și parteneri pentru foto/video, cocktail
-            bar și planning complet.
-          </p>
-          <Link
-            href="/cerere-oferta"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
-          >
-            Solicită Ofertă Personalizată
-          </Link>
+        {/* Services list */}
+        <div className="container-brand section-padding">
+          <div className="space-y-5">
+            {services.map((service, i) => {
+              const Icon = service.icon;
+              return (
+                <div
+                  key={service.slug}
+                  className="bg-white rounded-sm overflow-hidden grid grid-cols-1 md:grid-cols-[280px_1fr] hover:shadow-hover transition-shadow duration-300"
+                >
+                  {/* Image column */}
+                  <div className="relative h-52 md:h-auto min-h-[180px]">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 280px"
+                    />
+                    <div className="absolute inset-0 bg-obsidian/25" />
+                    <div className="absolute bottom-4 left-4 w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center">
+                      <Icon size={18} className="text-gold" strokeWidth={1.5} />
+                    </div>
+                  </div>
+
+                  {/* Content column */}
+                  <div className="p-8 md:p-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                    <div>
+                      <span className="overline-text text-gold text-[10px] block mb-3">
+                        0{i + 1}
+                      </span>
+                      <h2 className="font-display text-2xl text-obsidian mb-3">
+                        {service.title}
+                      </h2>
+                      <p className="text-sm text-charcoal/60 leading-relaxed font-light mb-5">
+                        {service.description}
+                      </p>
+                      <Link
+                        href={`/servicii/${service.slug}`}
+                        className="inline-flex items-center gap-1.5 text-sm font-semibold text-gold hover:text-gold-dark transition-colors group"
+                      >
+                        Detalii complete
+                        <ArrowRight
+                          size={13}
+                          className="transition-transform group-hover:translate-x-1"
+                        />
+                      </Link>
+                    </div>
+                    <div>
+                      <p className="overline-text text-[10px] text-charcoal/40 mb-3">
+                        Include
+                      </p>
+                      <ul className="space-y-2">
+                        {service.features.map((f) => (
+                          <li
+                            key={f}
+                            className="flex items-center gap-2 text-sm text-charcoal/70"
+                          >
+                            <span className="text-gold">✓</span>
+                            {f}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-charcoal/50 text-sm mb-5">
+              Ai nevoie de mai mult? Avem și parteneri pentru foto/video,
+              cocktail bar și planning complet.
+            </p>
+            <Link
+              href="/cerere-oferta"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
+            >
+              Solicită Ofertă Personalizată
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
