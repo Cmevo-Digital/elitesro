@@ -40,6 +40,16 @@ export default function Footer() {
                 {/* Facebook */}
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
               </a>
+              <a
+                href={BRAND.social.googleReviews}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full border border-white/15 flex items-center justify-center text-white/50 hover:text-white hover:border-gold transition-colors duration-200"
+                aria-label="Recenzii Google"
+              >
+                {/* Google */}
+                <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M23.766 12.276c0-.818-.074-1.606-.212-2.364H12.24v4.474h6.482a5.54 5.54 0 01-2.402 3.633v3.02h3.887c2.275-2.095 3.559-5.176 3.559-8.763z"/><path d="M12.24 24c3.24 0 5.956-1.075 7.941-2.906l-3.887-3.02c-1.076.72-2.454 1.147-4.054 1.147-3.118 0-5.756-2.106-6.698-4.934H1.53v3.105A11.997 11.997 0 0012.24 24z"/><path d="M5.542 14.287a7.196 7.196 0 010-4.573V6.609H1.53a11.998 11.998 0 000 10.783l4.012-3.105z"/><path d="M12.24 4.78c1.762 0 3.344.606 4.588 1.796l3.442-3.442C18.19 1.19 15.475 0 12.24 0 7.556 0 3.51 2.68 1.53 6.609l4.012 3.105c.942-2.828 3.58-4.934 6.698-4.934z"/></svg>
+              </a>
             </div>
           </div>
 
@@ -113,6 +123,16 @@ export default function Footer() {
               <li className="flex items-start gap-2.5 text-sm text-white/60">
                 <MapPin size={14} className="mt-0.5 shrink-0 text-gold" />
                 <span>{BRAND.locationsShort}</span>
+              </li>
+              <li>
+                <a
+                  href={BRAND.social.googleReviews}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-white/60 hover:text-gold transition-colors duration-200"
+                >
+                  Recenziile noastre pe Google
+                </a>
               </li>
               <li className="pt-2">
                 <a

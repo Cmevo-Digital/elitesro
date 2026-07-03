@@ -12,6 +12,7 @@ export const BRAND = {
   social: {
     instagram: "https://www.instagram.com/elitesro.events",
     facebook: "https://www.facebook.com/elitesro.events",
+    googleReviews: "https://share.google/Za3cMusKXl1BFLUJY",
   },
 };
 
