@@ -27,49 +27,14 @@ const iconMap = {
 
 export const services = [
   {
-    slug: "mobilier-evenimente",
-    title: "Mobilier Evenimente",
+    slug: "cabina-foto",
+    title: "Cabina Foto",
     description:
-      "Mese, scaune, lounge seturi și cocktail tables — alese pentru estetică și confort.",
-    icon: "armchair",
+      "Cabina foto interactivă cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
+    icon: "camera",
     image:
-      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop",
-  },
-  {
-    slug: "corturi-evenimente",
-    title: "Corturi & Structuri",
-    description:
-      "Corturi premium pentru nunți, corporate și evenimente private în aer liber.",
-    icon: "tent",
-    image:
-      "https://images.unsplash.com/photo-1692166927778-056466153552?q=80&w=2340&auto=format&fit=crop",
-  },
-  {
-    slug: "mese-scaune",
-    title: "Mese, Scaune & Cocktail",
-    description:
-      "Gama completă de mobilier pentru orice configurație de eveniment.",
-    icon: "utensils",
-    image:
-      "https://plus.unsplash.com/premium_photo-1711305771490-2d39ba080f4b?q=80&w=1287&auto=format&fit=crop",
-  },
-  {
-    slug: "vesela-tacamuri",
-    title: "Veselă, Pahare & Tacâmuri",
-    description:
-      "Seturi complete pentru mese elegante. Fiecare piesă curată, verificată, impecabilă.",
-    icon: "glass-water",
-    image:
-      "https://images.unsplash.com/photo-1769230361493-f1f365a99878?q=80&w=2338&auto=format&fit=crop",
-  },
-  {
-    slug: "iluminat",
-    title: "Iluminat & Atmosferă",
-    description:
-      "Lumini de ambient, fairy lights, spot-uri direcționale — atmosfera care face diferența.",
-    icon: "lightbulb",
-    image:
-      "https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?q=80&w=2340&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=800&auto=format&fit=crop",
+    active: true,
   },
   {
     slug: "dj-sunet",
@@ -79,6 +44,7 @@ export const services = [
     icon: "music",
     image:
       "https://images.unsplash.com/photo-1665221965525-87fe35deabdd?q=80&w=1356&auto=format&fit=crop",
+    active: true,
   },
   {
     slug: "cocktail-bar",
@@ -88,17 +54,61 @@ export const services = [
     icon: "cocktail",
     image:
       "https://images.unsplash.com/photo-1605270012917-bf157c5a9541?q=80&w=800&auto=format&fit=crop",
+    active: true,
   },
   {
-    slug: "cabina-foto",
-    title: "Cabina Foto",
+    slug: "mobilier-evenimente",
+    title: "Mobilier Evenimente",
     description:
-      "Cabina foto interactivă cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
-    icon: "camera",
+      "Mese, scaune, lounge seturi și cocktail tables — alese pentru estetică și confort.",
+    icon: "armchair",
     image:
-      "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop",
+    active: false,
+  },
+  {
+    slug: "corturi-evenimente",
+    title: "Corturi & Structuri",
+    description:
+      "Corturi premium pentru nunți, corporate și evenimente private în aer liber.",
+    icon: "tent",
+    image:
+      "https://images.unsplash.com/photo-1692166927778-056466153552?q=80&w=2340&auto=format&fit=crop",
+    active: false,
+  },
+  {
+    slug: "mese-scaune",
+    title: "Mese, Scaune & Cocktail",
+    description:
+      "Gama completă de mobilier pentru orice configurație de eveniment.",
+    icon: "utensils",
+    image:
+      "https://plus.unsplash.com/premium_photo-1711305771490-2d39ba080f4b?q=80&w=1287&auto=format&fit=crop",
+    active: false,
+  },
+  {
+    slug: "vesela-tacamuri",
+    title: "Veselă, Pahare & Tacâmuri",
+    description:
+      "Seturi complete pentru mese elegante. Fiecare piesă curată, verificată, impecabilă.",
+    icon: "glass-water",
+    image:
+      "https://images.unsplash.com/photo-1769230361493-f1f365a99878?q=80&w=2338&auto=format&fit=crop",
+    active: false,
+  },
+  {
+    slug: "iluminat",
+    title: "Iluminat & Atmosferă",
+    description:
+      "Lumini de ambient, fairy lights, spot-uri direcționale — atmosfera care face diferența.",
+    icon: "lightbulb",
+    image:
+      "https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?q=80&w=2340&auto=format&fit=crop",
+    active: false,
   },
 ];
+
+export const activeServices = services.filter((s) => s.active);
 
 export default function ServicesGrid() {
   return (
@@ -108,14 +118,14 @@ export default function ServicesGrid() {
           <SectionHeader
             overline="Serviciile noastre"
             title="Totul pentru evenimentul tău"
-            subtitle="Închiria, livrăm, montăm — și demontăm. Un singur partener pentru toate nevoile evenimentului tău."
+            subtitle="Închiriem, livrăm, montăm și demontăm. Un singur partener pentru toate nevoile evenimentului tău."
             center
             className="max-w-2xl mx-auto text-center mb-14"
           />
         </AnimatedSection>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.map((service, i) => {
+          {activeServices.map((service, i) => {
             const Icon = iconMap[service.icon as keyof typeof iconMap];
             return (
               <AnimatedSection key={service.slug} delay={i * 60}>

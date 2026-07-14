@@ -272,7 +272,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             Completează cu
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {SERVICES.filter((s) => s.slug !== slug)
+            {SERVICES.filter((s) => s.active && s.slug !== slug)
               .slice(0, 3)
               .map((s) => (
                 <Link

@@ -31,7 +31,7 @@ export function organizationAndLocalBusinessSchema() {
     },
     image: `${BASE_URL}/opengraph-image.png`,
     description:
-      "Partenerul tău premium pentru evenimente de 50–150 invitați. Mobilier, corturi, veselă, iluminat, DJ și logistică completă în București, Ilfov, Pitești, Ploiești și Dâmbovița.",
+      "Partenerul tău premium pentru evenimente de 50–150 invitați. Cabină foto, DJ & sisteme audio și cocktail bar în București, Ilfov, Pitești, Ploiești și Dâmbovița.",
     telephone: BRAND.phoneRaw,
     email: BRAND.email,
     priceRange: "$$",
@@ -168,7 +168,7 @@ export function quoteRequestServiceSchema() {
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Servicii pentru ofertă personalizată",
-      itemListElement: SERVICES.map((service) => ({
+      itemListElement: SERVICES.filter((service) => service.active).map((service) => ({
         "@type": "Offer",
         url: `${BASE_URL}/servicii/${service.slug}/`,
         itemOffered: {

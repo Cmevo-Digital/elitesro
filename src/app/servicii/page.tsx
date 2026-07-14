@@ -24,79 +24,20 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    slug: "mobilier-evenimente",
-    title: "Mobilier Evenimente",
+    slug: "cabina-foto",
+    title: "Cabina Foto",
     description:
-      "Mese elegante, scaune premium, lounge seturi și cocktail tables — fiecare piesă aleasă pentru estetică și confort. Disponibile în diverse stiluri pentru a se potrivi viziunii tale.",
-    icon: Armchair,
+      "Cabina foto interactivă transformă orice eveniment într-o experiență de neuitat. Imprimare instantă, props incluse și template personalizat cu detaliile evenimentului.",
+    icon: Camera,
     image:
-      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=900&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=900&auto=format&fit=crop",
     features: [
-      "Mese rotunde și dreptunghiulare",
-      "Scaune Chiavari, Napoleon, tip banchet",
-      "Lounge seturi premium",
-      "Cocktail tables",
+      "Cameră profesională de înaltă rezoluție",
+      "Imprimare instantă (10–15 secunde)",
+      "Props și accesorii incluse",
+      "Template personalizat cu logo eveniment",
     ],
-  },
-  {
-    slug: "corturi-evenimente",
-    title: "Corturi & Structuri",
-    description:
-      "Corturi premium pentru nunți și corporate în aer liber. Montaj profesional, structuri stabile, posibilitate de climatizare și acces la electricitate.",
-    icon: Tent,
-    image:
-      "https://images.unsplash.com/photo-1692166927778-056466153552?q=80&w=2340&auto=format&fit=crop",
-    features: [
-      "Corturi pagodă și stretch",
-      "Corturi cu pereți laterali",
-      "Climatizare disponibilă",
-      "Iluminat interior integrat",
-    ],
-  },
-  {
-    slug: "mese-scaune",
-    title: "Mese, Scaune & Cocktail",
-    description:
-      "Gama completă de mobilier pentru orice configurație — de la cine formale la cocktail parties în picioare.",
-    icon: UtensilsCrossed,
-    image:
-      "https://plus.unsplash.com/premium_photo-1711305771490-2d39ba080f4b?q=80&w=1287&auto=format&fit=crop",
-    features: [
-      "Mese pentru 8–12 persoane",
-      "Scaune în multiple stiluri",
-      "Fețe de masă și huse",
-      "Decoruri de masă",
-    ],
-  },
-  {
-    slug: "vesela-tacamuri",
-    title: "Veselă, Pahare & Tacâmuri",
-    description:
-      "Seturi complete pentru mese elegante. Farfurii, pahare de vin, apă și șampanie, tacâmuri inox — fiecare piesă curată, verificată și ambalată corespunzător.",
-    icon: Wine,
-    image:
-      "https://images.unsplash.com/photo-1769230361493-f1f365a99878?q=80&w=2338&auto=format&fit=crop",
-    features: [
-      "Farfurii pentru toate cursurile",
-      "Pahare pentru vin, apă, șampanie",
-      "Tacâmuri inox premium",
-      "Serviete și suporturi",
-    ],
-  },
-  {
-    slug: "iluminat",
-    title: "Iluminat & Atmosferă",
-    description:
-      "Iluminatul face diferența dintre un eveniment obișnuit și unul memorabil. Oferim soluții complete de iluminat ambiental și tehnic.",
-    icon: Lightbulb,
-    image:
-      "https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?q=80&w=2340&auto=format&fit=crop",
-    features: [
-      "Fairy lights și lumini decorative",
-      "Spot-uri direcționale",
-      "Lumini colorate și LED",
-      "Instalații personalizate",
-    ],
+    active: true,
   },
   {
     slug: "dj-sunet",
@@ -112,6 +53,7 @@ const services = [
       "Microfoane wireless",
       "Instalare și operare completă",
     ],
+    active: true,
   },
   {
     slug: "cocktail-bar",
@@ -127,23 +69,91 @@ const services = [
       "Cocktailuri clasice și signature",
       "Soft drinks și sucuri incluse",
     ],
+    active: true,
   },
   {
-    slug: "cabina-foto",
-    title: "Cabina Foto",
+    slug: "mobilier-evenimente",
+    title: "Mobilier Evenimente",
     description:
-      "Cabina foto interactivă transformă orice eveniment într-o experiență de neuitat. Imprimare instantă, props incluse și template personalizat cu detaliile evenimentului.",
-    icon: Camera,
+      "Mese elegante, scaune premium, lounge seturi și cocktail tables — fiecare piesă aleasă pentru estetică și confort. Disponibile în diverse stiluri pentru a se potrivi viziunii tale.",
+    icon: Armchair,
     image:
-      "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=900&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=900&auto=format&fit=crop",
     features: [
-      "Cameră profesională de înaltă rezoluție",
-      "Imprimare instantă (10–15 secunde)",
-      "Props și accesorii incluse",
-      "Template personalizat cu logo eveniment",
+      "Mese rotunde și dreptunghiulare",
+      "Scaune Chiavari, Napoleon, tip banchet",
+      "Lounge seturi premium",
+      "Cocktail tables",
     ],
+    active: false,
+  },
+  {
+    slug: "corturi-evenimente",
+    title: "Corturi & Structuri",
+    description:
+      "Corturi premium pentru nunți și corporate în aer liber. Montaj profesional, structuri stabile, posibilitate de climatizare și acces la electricitate.",
+    icon: Tent,
+    image:
+      "https://images.unsplash.com/photo-1692166927778-056466153552?q=80&w=2340&auto=format&fit=crop",
+    features: [
+      "Corturi pagodă și stretch",
+      "Corturi cu pereți laterali",
+      "Climatizare disponibilă",
+      "Iluminat interior integrat",
+    ],
+    active: false,
+  },
+  {
+    slug: "mese-scaune",
+    title: "Mese, Scaune & Cocktail",
+    description:
+      "Gama completă de mobilier pentru orice configurație — de la cine formale la cocktail parties în picioare.",
+    icon: UtensilsCrossed,
+    image:
+      "https://plus.unsplash.com/premium_photo-1711305771490-2d39ba080f4b?q=80&w=1287&auto=format&fit=crop",
+    features: [
+      "Mese pentru 8–12 persoane",
+      "Scaune în multiple stiluri",
+      "Fețe de masă și huse",
+      "Decoruri de masă",
+    ],
+    active: false,
+  },
+  {
+    slug: "vesela-tacamuri",
+    title: "Veselă, Pahare & Tacâmuri",
+    description:
+      "Seturi complete pentru mese elegante. Farfurii, pahare de vin, apă și șampanie, tacâmuri inox — fiecare piesă curată, verificată și ambalată corespunzător.",
+    icon: Wine,
+    image:
+      "https://images.unsplash.com/photo-1769230361493-f1f365a99878?q=80&w=2338&auto=format&fit=crop",
+    features: [
+      "Farfurii pentru toate cursurile",
+      "Pahare pentru vin, apă, șampanie",
+      "Tacâmuri inox premium",
+      "Serviete și suporturi",
+    ],
+    active: false,
+  },
+  {
+    slug: "iluminat",
+    title: "Iluminat & Atmosferă",
+    description:
+      "Iluminatul face diferența dintre un eveniment obișnuit și unul memorabil. Oferim soluții complete de iluminat ambiental și tehnic.",
+    icon: Lightbulb,
+    image:
+      "https://images.unsplash.com/photo-1653821355736-0c2598d0a63e?q=80&w=2340&auto=format&fit=crop",
+    features: [
+      "Fairy lights și lumini decorative",
+      "Spot-uri direcționale",
+      "Lumini colorate și LED",
+      "Instalații personalizate",
+    ],
+    active: false,
   },
 ];
+
+const activeServices = services.filter((s) => s.active);
 
 export default function ServicesPage() {
   return (
@@ -153,7 +163,7 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{
           __html: safeStringify(
             servicesCatalogSchema(
-              services.map((service) => ({
+              activeServices.map((service) => ({
                 name: service.title,
                 description: service.description,
                 slug: service.slug,
@@ -193,7 +203,7 @@ export default function ServicesPage() {
         {/* Services list */}
         <div className="container-brand section-padding">
           <div className="space-y-5">
-            {services.map((service, i) => {
+            {activeServices.map((service, i) => {
               const Icon = service.icon;
               return (
                 <div

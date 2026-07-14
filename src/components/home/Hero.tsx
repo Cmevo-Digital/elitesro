@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { BRAND, WHATSAPP_URL } from "@/lib/constants";
+import { BRAND } from "@/lib/constants";
 import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
@@ -68,9 +68,9 @@ export default function Hero() {
             transition: "opacity 0.9s ease 0.45s, transform 0.9s ease 0.45s",
           }}
         >
-          De la mobilier premium și corturi elegante, până la logistică completă
-          și sisteme audio profesionale — suntem partenerul tău pentru
-          evenimente la care fiecare detaliu contează.
+          De la cabină foto, DJ și sisteme audio profesionale, până la
+          cocktail bar — suntem partenerul tău pentru evenimente la care
+          fiecare detaliu contează.
         </p>
 
         {/* CTAs */}

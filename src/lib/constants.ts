@@ -29,38 +29,12 @@ export const NAV_LINKS = [
 
 export const SERVICES = [
   {
-    slug: "mobilier-evenimente",
-    title: "Mobilier Evenimente",
+    slug: "cabina-foto",
+    title: "Cabina Foto",
     short:
-      "Mese, scaune, lounge seturi și cocktail tables — alese pentru estetică și confort.",
-    icon: "armchair",
-  },
-  {
-    slug: "corturi-evenimente",
-    title: "Corturi & Structuri",
-    short:
-      "Corturi premium pentru nunți, corporate și evenimente private în aer liber.",
-    icon: "tent",
-  },
-  {
-    slug: "mese-scaune",
-    title: "Mese, Scaune & Cocktail",
-    short: "Gama completă de mobilier pentru orice configurație de eveniment.",
-    icon: "utensils",
-  },
-  {
-    slug: "vesela-tacamuri",
-    title: "Veselă, Pahare & Tacâmuri",
-    short:
-      "Seturi complete pentru mese elegante. Fiecare piesă curată, verificată, impecabilă.",
-    icon: "glass-water",
-  },
-  {
-    slug: "iluminat",
-    title: "Iluminat & Atmosferă",
-    short:
-      "Lumini de ambient, fairy lights, spot-uri direcționale — atmosfera care face diferența.",
-    icon: "lightbulb",
+      "Cabina foto interactivă cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
+    icon: "camera",
+    active: true,
   },
   {
     slug: "dj-sunet",
@@ -68,6 +42,7 @@ export const SERVICES = [
     short:
       "Echipament profesional și DJ cu experiență — sunet clar, energie potrivită.",
     icon: "music",
+    active: true,
   },
   {
     slug: "cocktail-bar",
@@ -75,13 +50,46 @@ export const SERVICES = [
     short:
       "Cocktail bar profesional pentru evenimente — cocktailuri signature, barman cu experiență, setup elegant.",
     icon: "cocktail",
+    active: true,
   },
   {
-    slug: "cabina-foto",
-    title: "Cabina Foto",
+    slug: "mobilier-evenimente",
+    title: "Mobilier Evenimente",
     short:
-      "Cabina foto interactivă cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
-    icon: "camera",
+      "Mese, scaune, lounge seturi și cocktail tables — alese pentru estetică și confort.",
+    icon: "armchair",
+    active: false,
+  },
+  {
+    slug: "corturi-evenimente",
+    title: "Corturi & Structuri",
+    short:
+      "Corturi premium pentru nunți, corporate și evenimente private în aer liber.",
+    icon: "tent",
+    active: false,
+  },
+  {
+    slug: "mese-scaune",
+    title: "Mese, Scaune & Cocktail",
+    short: "Gama completă de mobilier pentru orice configurație de eveniment.",
+    icon: "utensils",
+    active: false,
+  },
+  {
+    slug: "vesela-tacamuri",
+    title: "Veselă, Pahare & Tacâmuri",
+    short:
+      "Seturi complete pentru mese elegante. Fiecare piesă curată, verificată, impecabilă.",
+    icon: "glass-water",
+    active: false,
+  },
+  {
+    slug: "iluminat",
+    title: "Iluminat & Atmosferă",
+    short:
+      "Lumini de ambient, fairy lights, spot-uri direcționale — atmosfera care face diferența.",
+    icon: "lightbulb",
+    active: false,
   },
 ];
 
@@ -176,7 +184,7 @@ export const FAQS = [
   },
   {
     q: "Puteți gestiona toate serviciile evenimentului meu?",
-    a: "Avem parteneri de încredere pentru servicii complete — foto/video, cocktail bar și planning. Putem coordona totul sub același standard de calitate.",
+    a: "Oferim direct cabină foto, DJ & sisteme audio și cocktail bar. Pentru alte nevoi ale evenimentului avem și parteneri de încredere, astfel încât să coordonăm totul sub același standard de calitate.",
   },
   {
     q: "Cum se face plata?",

@@ -41,10 +41,10 @@ export default function Manifesto() {
                 </p>
                 <p>
                   Lucrăm cu clienți privați, companii și cupluri care vor un
-                  partener de încredere, nu un simplu furnizor de scaune. Aducem
-                  mobilier ales cu grijă, structuri impecabile și echipamente
-                  verificate profesional — la timp, montate corect, gata când ai
-                  nevoie de ele.
+                  partener de încredere, nu un simplu furnizor de echipamente.
+                  Aducem o cabină foto verificată tehnic, sisteme audio
+                  profesionale și un cocktail bar impecabil — la timp, montate
+                  corect, gata când ai nevoie de ele.
                 </p>
                 <p>
                   Operăm în{" "}

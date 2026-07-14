@@ -82,7 +82,7 @@ export default function Footer() {
           <div>
             <p className="overline-text text-[10px] text-white/40 mb-5">Servicii</p>
             <ul className="space-y-3">
-              {SERVICES.map((s) => (
+              {SERVICES.filter((s) => s.active).map((s) => (
                 <li key={s.slug}>
                   <Link
                     href={`/servicii/${s.slug}`}

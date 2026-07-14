@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { BRAND, WHATSAPP_URL } from "@/lib/constants";
 import { CheckCircle, Send } from "lucide-react";
-import { services } from "@/components/home/ServicesGrid";
+import { activeServices } from "@/components/home/ServicesGrid";
 
 type FormData = {
   eventType: string;
@@ -183,7 +183,7 @@ export default function QuoteForm() {
           02 — Servicii dorite
         </p>
         <div className="flex flex-wrap gap-2">
-          {services.map(({ title }) => (
+          {activeServices.map(({ title }) => (
             <button
               key={title}
               type="button"

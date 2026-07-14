@@ -19,13 +19,13 @@ const pillars = [
     icon: Sparkles,
     title: "Estetică Îngrijită",
     description:
-      "Fiecare piesă de mobilier, fiecare element vizual este selectat pentru a crea un ambient premium, nu doar funcțional.",
+      "Fiecare detaliu — de la decorul cabinei foto la setup-ul barului — este ales pentru a crea un ambient premium, nu doar funcțional.",
   },
   {
     icon: Handshake,
     title: "Un Singur Partener",
     description:
-      "Mobilier, logistică, sunet, iluminat — gestionat unitar, fără bătăi de cap între furnizori diferiți.",
+      "Cabină foto, DJ & sunet, cocktail bar — gestionate unitar, fără bătăi de cap între furnizori diferiți.",
   },
 ];
 
