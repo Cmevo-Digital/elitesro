@@ -70,6 +70,8 @@ export default function Footer() {
               <li>
                 <Link
                   href="/cerere-oferta"
+                  data-gtm-id="footer_solicita_oferta"
+                  data-gtm-location="footer"
                   className="text-sm text-gold hover:text-gold-light transition-colors duration-200"
                 >
                   Solicită Ofertă
@@ -102,6 +104,8 @@ export default function Footer() {
               <li>
                 <a
                   href={`tel:${BRAND.phoneRaw}`}
+                  data-gtm-id="footer_call"
+                  data-gtm-location="footer"
                   className="flex items-start gap-2.5 text-sm text-white/60 hover:text-white transition-colors duration-200 group"
                 >
                   <Phone
@@ -114,6 +118,8 @@ export default function Footer() {
               <li>
                 <a
                   href={`mailto:${BRAND.email}`}
+                  data-gtm-id="footer_email"
+                  data-gtm-location="footer"
                   className="flex items-start gap-2.5 text-sm text-white/60 hover:text-white transition-colors duration-200 group"
                 >
                   <Mail size={14} className="mt-0.5 shrink-0 text-gold" />
@@ -139,6 +145,8 @@ export default function Footer() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-gtm-id="footer_whatsapp"
+                  data-gtm-location="footer"
                   className="inline-flex items-center gap-2 px-4 py-2.5 bg-whatsapp text-white text-xs font-semibold rounded-full hover:opacity-90 transition-opacity duration-200"
                 >
                   <svg
@@ -163,7 +171,12 @@ export default function Footer() {
             <Link href="/contact" className="text-xs text-white/30 hover:text-white/60 transition-colors">
               Contact
             </Link>
-            <Link href="/cerere-oferta" className="text-xs text-white/30 hover:text-white/60 transition-colors">
+            <Link
+              href="/cerere-oferta"
+              data-gtm-id="footer_bottom_oferta"
+              data-gtm-location="footer"
+              className="text-xs text-white/30 hover:text-white/60 transition-colors"
+            >
               Cerere Ofertă
             </Link>
           </div>

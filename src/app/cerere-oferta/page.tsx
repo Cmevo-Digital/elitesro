@@ -51,6 +51,8 @@ export default function QuotePage() {
                 <div className="space-y-4">
                   <a
                     href={`tel:${BRAND.phoneRaw}`}
+                    data-gtm-id="page_call"
+                    data-gtm-location="quote_page"
                     className="flex items-center gap-3 text-sm text-charcoal hover:text-gold transition-colors group"
                   >
                     <Phone size={15} className="text-gold shrink-0" />
@@ -58,6 +60,8 @@ export default function QuotePage() {
                   </a>
                   <a
                     href={`mailto:${BRAND.email}`}
+                    data-gtm-id="page_email"
+                    data-gtm-location="quote_page"
                     className="flex items-center gap-3 text-sm text-charcoal hover:text-gold transition-colors"
                   >
                     <Mail size={15} className="text-gold shrink-0" />
@@ -67,6 +71,8 @@ export default function QuotePage() {
                     href={WHATSAPP_URL}
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-gtm-id="page_whatsapp"
+                    data-gtm-location="quote_page"
                     className="flex items-center gap-2 mt-2 px-5 py-3 bg-whatsapp text-white text-[11px] font-semibold tracking-widest uppercase rounded-full hover:opacity-90 transition w-full justify-center"
                   >
                     Scrie-ne pe WhatsApp

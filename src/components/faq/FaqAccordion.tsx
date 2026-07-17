@@ -81,6 +81,8 @@ export default function FaqAccordion({ faqs, whatsappUrl }: Props) {
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                data-gtm-id="page_whatsapp"
+                data-gtm-location="faq_page"
                 className="px-6 py-3 bg-whatsapp text-white text-[11px] font-semibold tracking-widest uppercase rounded-full hover:opacity-90 transition"
               >
                 WhatsApp

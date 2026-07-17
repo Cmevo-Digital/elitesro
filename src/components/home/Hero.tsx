@@ -84,12 +84,16 @@ export default function Hero() {
         >
           <Link
             href="/cerere-oferta"
+            data-gtm-id="hero_solicita_oferta"
+            data-gtm-location="hero"
             className="px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
           >
             Solicită Ofertă Gratuită
           </Link>
           <Link
             href="/servicii"
+            data-gtm-id="hero_descopera_servicii"
+            data-gtm-location="hero"
             className="px-8 py-4 border border-white/30 text-white text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:border-white hover:bg-white/10 transition-all duration-300"
           >
             Descoperă Serviciile

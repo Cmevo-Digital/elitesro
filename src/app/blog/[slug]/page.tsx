@@ -110,6 +110,8 @@ export default async function BlogPostPage({ params }: PageProps) {
               <div className="mt-12 pt-8 border-t border-charcoal/10">
                 <Link
                   href="/cerere-oferta"
+                  data-gtm-id="page_cta_oferta"
+                  data-gtm-location="blog_post"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
                 >
                   Solicită Ofertă Gratuită

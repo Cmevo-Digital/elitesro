@@ -67,6 +67,8 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-4">
             <Link
               href="/cerere-oferta"
+              data-gtm-id="menu_solicita_oferta"
+              data-gtm-location="navbar_desktop"
               className={cn(
                 "px-5 py-2.5 text-[11px] font-semibold tracking-widest uppercase transition-all duration-300 rounded-full",
                 scrolled
@@ -122,6 +124,8 @@ export default function Navbar() {
             <Link
               href="/cerere-oferta"
               onClick={() => setMenuOpen(false)}
+              data-gtm-id="menu_solicita_oferta"
+              data-gtm-location="navbar_mobile"
               className="w-full text-center px-6 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full"
             >
               Solicită Ofertă Gratuită
@@ -129,6 +133,8 @@ export default function Navbar() {
             <Link
               href={`tel:${BRAND.phoneRaw}`}
               onClick={() => setMenuOpen(false)}
+              data-gtm-id="menu_call"
+              data-gtm-location="navbar_mobile"
               className="w-full text-center px-6 py-4 border border-white/20 text-white text-[11px] font-semibold tracking-widest uppercase rounded-full"
             >
               {BRAND.phone}

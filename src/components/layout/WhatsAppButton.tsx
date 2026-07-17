@@ -10,6 +10,8 @@ export default function WhatsAppButton() {
         href={WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
+        data-gtm-id="whatsapp_float"
+        data-gtm-location="floating_button"
         className="fixed bottom-6 right-6 z-50 hidden md:flex items-center gap-2.5 bg-whatsapp text-white pl-4 pr-5 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group"
         aria-label="Contactează-ne pe WhatsApp"
       >
@@ -31,6 +33,8 @@ export default function WhatsAppButton() {
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-obsidian border-t border-white/10 flex">
         <a
           href={`tel:${BRAND.phoneRaw}`}
+          data-gtm-id="sticky_call"
+          data-gtm-location="sticky_bar"
           className="flex-1 flex flex-col items-center justify-center py-3 gap-0.5 text-white/70 hover:text-white transition-colors"
         >
           <svg
@@ -52,6 +56,8 @@ export default function WhatsAppButton() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
+          data-gtm-id="sticky_whatsapp"
+          data-gtm-location="sticky_bar"
           className="flex-1 flex flex-col items-center justify-center py-3 gap-0.5 bg-whatsapp text-white"
         >
           <svg
@@ -65,6 +71,8 @@ export default function WhatsAppButton() {
         </a>
         <a
           href="/cerere-oferta"
+          data-gtm-id="sticky_oferta"
+          data-gtm-location="sticky_bar"
           className="flex-1 flex flex-col items-center justify-center py-3 gap-0.5 bg-gold text-obsidian"
         >
           <svg

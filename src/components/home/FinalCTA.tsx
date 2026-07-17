@@ -34,6 +34,8 @@ export default function FinalCTA() {
           <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/cerere-oferta"
+              data-gtm-id="final_cta_oferta"
+              data-gtm-location="final_cta"
               className="px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
             >
               Solicită Ofertă Gratuită
@@ -42,6 +44,8 @@ export default function FinalCTA() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
+              data-gtm-id="final_cta_whatsapp"
+              data-gtm-location="final_cta"
               className="px-8 py-4 bg-whatsapp text-white text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2"
             >
               <svg
@@ -55,6 +59,8 @@ export default function FinalCTA() {
             </a>
             <Link
               href="/contact"
+              data-gtm-id="final_cta_email"
+              data-gtm-location="final_cta"
               className="px-8 py-4 border border-white/40 text-white text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:border-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"
             >
               <Mail size={14} />

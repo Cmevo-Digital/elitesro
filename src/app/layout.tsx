@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import CtaTracker from "@/components/analytics/CtaTracker";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -73,6 +74,7 @@ export default function RootLayout({
     <html lang="ro" className={`${inter.variable} ${playfair.variable}`}>
       <body className="bg-ivory text-obsidian antialiased">
         <Header />
+        <CtaTracker />
         <Navbar />
         <main>{children}</main>
         <Footer />

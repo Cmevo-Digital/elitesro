@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { BRAND, WHATSAPP_URL } from "@/lib/constants";
 import { CheckCircle, Send } from "lucide-react";
 import { activeServices } from "@/components/home/ServicesGrid";
+import { trackEvent } from "@/lib/gtag";
 
 type FormData = {
   eventType: string;
@@ -56,6 +57,7 @@ export default function QuoteForm() {
       const result = await res.json();
       if (!res.ok || result.error) throw new Error(result.error);
       setSubmitted(true);
+      trackEvent("generate_lead", { form_name: "quote_form" });
     } catch {
       alert("A apărut o eroare. Te rugăm să ne contactezi direct pe WhatsApp.");
     } finally {

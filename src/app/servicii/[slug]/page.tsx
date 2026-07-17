@@ -104,6 +104,8 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
               <Link
                 href="/cerere-oferta"
+                data-gtm-id="page_cta_oferta"
+                data-gtm-location="service_detail_page"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
               >
                 Solicită Ofertă pentru Acest Serviciu
@@ -137,6 +139,8 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 </p>
                 <Link
                   href="/cerere-oferta"
+                  data-gtm-id="page_cta_oferta_package"
+                  data-gtm-location="service_detail_page"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-gold-dark transition"
                 >
                   Pachet Personalizat

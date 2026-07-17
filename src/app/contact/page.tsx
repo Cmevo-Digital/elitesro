@@ -41,6 +41,8 @@ export default function ContactPage() {
                     </p>
                     <a
                       href={`tel:${BRAND.phoneRaw}`}
+                      data-gtm-id="page_call"
+                      data-gtm-location="contact_page"
                       className="text-sm font-medium text-obsidian hover:text-gold transition-colors"
                     >
                       {BRAND.phone}
@@ -56,6 +58,8 @@ export default function ContactPage() {
                     <p className="text-xs text-charcoal/50 mb-0.5">Email</p>
                     <a
                       href={`mailto:${BRAND.email}`}
+                      data-gtm-id="page_email"
+                      data-gtm-location="contact_page"
                       className="text-sm font-medium text-obsidian hover:text-gold transition-colors"
                     >
                       {BRAND.email}
@@ -95,6 +99,8 @@ export default function ContactPage() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
+              data-gtm-id="page_whatsapp"
+              data-gtm-location="contact_page"
               className="inline-flex items-center gap-2 px-6 py-3.5 bg-whatsapp text-white text-[11px] font-semibold tracking-widest uppercase rounded-full hover:opacity-90 transition"
             >
               <svg className="w-4 h-4 fill-white" viewBox="0 0 24 24">

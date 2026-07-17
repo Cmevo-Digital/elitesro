@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { CheckCircle, Send } from "lucide-react";
+import { trackEvent } from "@/lib/gtag";
 
 type FormData = {
   name: string;
@@ -34,6 +35,7 @@ export default function ContactForm() {
       const result = await res.json();
       if (!res.ok || result.error) throw new Error(result.error);
       setSubmitted(true);
+      trackEvent("generate_lead", { form_name: "contact_form" });
     } catch {
       alert("A apărut o eroare. Te rugăm să ne contactezi direct pe WhatsApp.");
     } finally {
