@@ -1,7 +1,7 @@
 const stats = [
   { value: "200+", label: "Evenimente finalizate" },
   { value: "5★", label: "Rating Google" },
-  { value: "3", label: "Zone de operare" },
+  { value: "5", label: "Zone de operare" },
   { value: "24h", label: "Timp răspuns ofertă" },
 ];
 

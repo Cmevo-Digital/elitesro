@@ -167,8 +167,8 @@ export default function ServicesPage() {
                 name: service.title,
                 description: service.description,
                 slug: service.slug,
-              }))
-            )
+              })),
+            ),
           ),
         }}
       />
@@ -193,8 +193,8 @@ export default function ServicesPage() {
               <Truck size={18} className="text-gold shrink-0" />
               <p className="text-sm text-charcoal">
                 <strong>Livrare, montaj și demontaj incluse</strong> în toate
-                pachetele noastre. Operăm în București, Ilfov, Pitești și
-                Ploiești.
+                pachetele noastre. Operăm în București, Ilfov, Pitești,
+                Dâmbovița și Ploiești.
               </p>
             </div>
           </div>
