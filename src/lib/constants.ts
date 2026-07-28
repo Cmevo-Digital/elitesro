@@ -248,4 +248,9 @@ export const GALLERY_IMAGES = [
     alt: "Decor nuntă — amenajare elegantă",
     category: "nunti",
   },
+  {
+    src: "/images/portfolio/van-1.png",
+    alt: "Transport logistică, echipamente și mobilier",
+    category: "private",
+  },
 ];
