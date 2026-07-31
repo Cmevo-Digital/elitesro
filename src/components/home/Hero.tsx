@@ -54,9 +54,9 @@ export default function Hero() {
             transition: "opacity 0.9s ease 0.25s, transform 0.9s ease 0.25s",
           }}
         >
-          Evenimentele Tale.
+          Elites. Events
           <br />
-          <em className="text-gold not-italic">Executate Impecabil.</em>
+          <em className="text-gold not-italic">Soluții Premium pentru Închirieri &amp; Logistică Evenimente</em>
         </h1>
 
         {/* Subheadline */}
