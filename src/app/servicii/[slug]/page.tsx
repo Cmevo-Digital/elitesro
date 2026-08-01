@@ -180,7 +180,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                       {plan.alcoholic.map((drink) => (
                         <li
                           key={drink}
-                          className="px-2.5 py-1 bg-warm rounded-full text-xs text-charcoal/70 font-light"
+                          className="px-2.5 py-1 bg-warm border border-warm-dark rounded-full text-xs text-charcoal"
                         >
                           {drink}
                         </li>
@@ -196,7 +196,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                       {plan.nonAlcoholic.map((drink) => (
                         <li
                           key={drink}
-                          className="px-2.5 py-1 bg-warm rounded-full text-xs text-charcoal/70 font-light"
+                          className="px-2.5 py-1 bg-warm border border-warm-dark rounded-full text-xs text-charcoal"
                         >
                           {drink}
                         </li>
