@@ -151,6 +151,89 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* Plans */}
+      {detail.plans && detail.plans.length > 0 && (
+        <section className="section-padding bg-warm">
+          <div className="container-brand">
+            <p className="overline-text text-gold mb-3">Pachete disponibile</p>
+            <h2 className="font-display text-2xl md:text-3xl text-obsidian mb-8">
+              Alege meniul potrivit evenimentului tău
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
+              {detail.plans.map((plan) => (
+                <div
+                  key={plan.name}
+                  className="bg-white rounded-sm border border-warm-dark p-7 h-full"
+                >
+                  <h3 className="font-display text-2xl text-obsidian">
+                    {plan.name}
+                  </h3>
+                  <p className="mt-1.5 text-sm text-charcoal/60 font-light">
+                    {plan.tagline}
+                  </p>
+
+                  <div className="mt-6 pt-6 border-t border-warm-dark">
+                    <p className="overline-text text-gold text-[10px] mb-3">
+                      Cocktail-uri alcoolice · {plan.alcoholic.length}
+                    </p>
+                    <ul className="flex flex-wrap gap-1.5">
+                      {plan.alcoholic.map((drink) => (
+                        <li
+                          key={drink}
+                          className="px-2.5 py-1 bg-warm rounded-full text-xs text-charcoal/70 font-light"
+                        >
+                          {drink}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="mt-6 pt-6 border-t border-warm-dark">
+                    <p className="overline-text text-gold text-[10px] mb-3">
+                      Cocktail-uri non-alcoolice · {plan.nonAlcoholic.length}
+                    </p>
+                    <ul className="flex flex-wrap gap-1.5">
+                      {plan.nonAlcoholic.map((drink) => (
+                        <li
+                          key={drink}
+                          className="px-2.5 py-1 bg-warm rounded-full text-xs text-charcoal/70 font-light"
+                        >
+                          {drink}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {detail.plansNote && (
+              <div className="mt-6 bg-obsidian rounded-sm p-7 flex flex-col md:flex-row md:items-center gap-6">
+                <div className="md:flex-1">
+                  <p className="overline-text text-gold text-[10px] mb-2">
+                    Tarif închiriere
+                  </p>
+                  <p className="font-display text-2xl text-white mb-2">
+                    5 – 15 € / persoană
+                  </p>
+                  <p className="text-sm text-white/50 font-light leading-relaxed">
+                    {detail.plansNote}
+                  </p>
+                </div>
+                <Link
+                  href="/cerere-oferta"
+                  data-gtm-id="page_cta_oferta_plans"
+                  data-gtm-location="service_detail_page"
+                  className="shrink-0 self-start md:self-auto inline-flex items-center gap-2 px-6 py-3 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-gold-dark transition"
+                >
+                  Cere Ofertă Personalizată
+                </Link>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* Client types */}
       <section className="section-padding bg-ivory">
         <div className="container-brand">

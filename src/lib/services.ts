@@ -10,6 +10,13 @@ export const serviceDetails: Record<
     clientTypes: string[];
     useCases: string[];
     trustStats: { label: string; value: string }[];
+    plans?: {
+      name: string;
+      tagline: string;
+      alcoholic: string[];
+      nonAlcoholic: string[];
+    }[];
+    plansNote?: string;
   }
 > = {
   "mobilier-evenimente": {
@@ -380,6 +387,14 @@ export const serviceDetails: Record<
         q: "Cum alegem cocktailurile signature pentru eveniment?",
         a: "În consultarea prealabilă, discutăm despre tema și culorile evenimentului, preferințele tale și profilul invitaților. Pe baza acestor informații, barmanul nostru creează 2-3 rețete originale, pe care le testăm înainte de eveniment.",
       },
+      {
+        q: "Cât costă închirierea cocktail barului?",
+        a: "Prețul este între 5 și 15 € de persoană, în funcție de locația evenimentului. Tariful acoperă doar închirierea cocktail barului — bar, echipament, barman și consultanța de meniu. Băuturile se calculează și se facturează separat, indiferent de pachetul ales (Silver, Gold sau Platinum).",
+      },
+      {
+        q: "Care este diferența dintre pachetele Silver, Gold și Platinum?",
+        a: "Silver cuprinde clasicele cerute la orice eveniment (Mojito, Margarita, Espresso Martini și altele), Gold adaugă rețete de bar de autor precum Paper Plane, Negroni sau Mai Tai, iar Platinum include meniul complet, cu preparate care cer tehnici și ingrediente premium — Smoked Old Fashioned, Ramos Gin Fizz sau Pălincă reinterpretată. Fiecare pachet vine cu propria listă de cocktailuri non-alcoolice.",
+      },
     ],
     clientTypes: [
       "Cupluri care doresc un cocktail bar elegant la nunta lor",
@@ -398,6 +413,107 @@ export const serviceDetails: Record<
       { label: "Evenimente deservite", value: "150+" },
       { label: "Rețete signature create", value: "40+" },
     ],
+    plans: [
+      {
+        name: "Silver",
+        tagline: "Clasicele pe care le cere toată lumea",
+        alcoholic: [
+          "Pornstar Martini",
+          "Margarita",
+          "Espresso Martini",
+          "Whiskey Sour",
+          "Mojito",
+          "Gin Basil Smash",
+          "Cosmopolitan",
+          "Sex on the Beach",
+          "Hugo",
+          "Aperol",
+          "Gin Tonic",
+          "Cuba Libre",
+          "Daiquiri",
+          "Limoncello Spritz",
+        ],
+        nonAlcoholic: [
+          "Virgin Mojito",
+          "Passion Fruit Lemonade",
+          "Strawberry Basil Lemonade",
+          "Peach Iced Tea",
+          "Cucumber Cooler",
+          "Hugo",
+          "Gin Tonic N/A",
+        ],
+      },
+      {
+        name: "Gold",
+        tagline: "Selecție extinsă, cu rețete de bar de autor",
+        alcoholic: [
+          "Paper Plane",
+          "French 75",
+          "Paloma",
+          "Bramble",
+          "Espresso Martini Salted Caramel",
+          "Moscow Mule",
+          "Blueberry Mule",
+          "Gin Pear",
+          "Negroni",
+          "White Lady",
+          "Army and Navy",
+          "Mai Tai",
+          "Flamingo",
+          "Pina Colada",
+          "Old Fashioned",
+          "Devil's Margarita",
+          "Spicy Paloma",
+          "Strawberry Margarita",
+        ],
+        nonAlcoholic: [
+          "Berry Basil Smash",
+          "Mango Passion Spritz",
+          "Pineapple Ginger Fizz",
+          "Raspberry Lemon Collins",
+          "Elderflower Apple Cooler",
+          "Watermelon Mint Refresher",
+        ],
+      },
+      {
+        name: "Platinum",
+        tagline: "Meniul complet, cu tehnici și ingrediente premium",
+        alcoholic: [
+          "Smoked Old Fashioned",
+          "Clover Club",
+          "Jungle Bird",
+          "Lychee Martini",
+          "Watermelon Sour Patch",
+          "Dragon Colada",
+          "Strawberry Negroni Sour",
+          "Olivia",
+          "Dragon Lady",
+          "White Linen",
+          "French 75 Cherry Blossom",
+          "Blueberry Gin Sour",
+          "Boulevardier",
+          "New York Sour",
+          "Blueberry Margarita",
+          "El Diablo",
+          "Clementine",
+          "Pălincă reinterpretată",
+          "Japanese Slipper",
+          "Ramos Gin Fizz",
+        ],
+        nonAlcoholic: [
+          "Yuzu Elderflower Fizz",
+          "Blackberry Sage Cooler",
+          "Lychee Rose Spritz",
+          "Pear & Thyme Collins",
+          "Grapefruit Rosemary Cooler",
+          "Cucumber Matcha Fizz",
+          "Pineapple Coconut Cooler",
+          "Blueberry Lavender Lemonade",
+        ],
+      },
+    ],
+    plansNote:
+      "Prețul pornește de la 5 € și ajunge la 15 € de persoană, în funcție de locația evenimentului. Tariful acoperă exclusiv închirierea cocktail barului (bar, echipament, barman și consultanță de meniu) — băuturile se achiziționează separat.",
   },
   "cabina-foto": {
     description:
