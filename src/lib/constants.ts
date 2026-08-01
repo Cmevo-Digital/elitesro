@@ -53,6 +53,14 @@ export const SERVICES = [
     active: true,
   },
   {
+    slug: "coffee-corner",
+    title: "Coffee Corner",
+    short:
+      "Colț de cafea cu barista și espressor profesional — specialty coffee servit la standard de cafenea.",
+    icon: "coffee",
+    active: true,
+  },
+  {
     slug: "mobilier-evenimente",
     title: "Mobilier Evenimente",
     short:
@@ -184,7 +192,7 @@ export const FAQS = [
   },
   {
     q: "Puteți gestiona toate serviciile evenimentului meu?",
-    a: "Oferim direct cabină foto, DJ & sisteme audio și cocktail bar. Pentru alte nevoi ale evenimentului avem și parteneri de încredere, astfel încât să coordonăm totul sub același standard de calitate.",
+    a: "Oferim direct cabină foto, DJ & sisteme audio, cocktail bar și coffee corner. Pentru alte nevoi ale evenimentului avem și parteneri de încredere, astfel încât să coordonăm totul sub același standard de calitate.",
   },
   {
     q: "Cum se face plata?",

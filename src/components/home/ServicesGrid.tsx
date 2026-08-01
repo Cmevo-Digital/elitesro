@@ -9,6 +9,7 @@ import {
   Music,
   GlassWater,
   Camera,
+  Coffee,
   ArrowRight,
 } from "lucide-react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
@@ -23,6 +24,7 @@ const iconMap = {
   music: Music,
   cocktail: GlassWater,
   camera: Camera,
+  coffee: Coffee,
 };
 
 export const services = [
@@ -54,6 +56,16 @@ export const services = [
     icon: "cocktail",
     image:
       "https://images.unsplash.com/photo-1605270012917-bf157c5a9541?q=80&w=800&auto=format&fit=crop",
+    active: true,
+  },
+  {
+    slug: "coffee-corner",
+    title: "Coffee Corner",
+    description:
+      "Colț de cafea cu barista și espressor profesional — specialty coffee servit la standard de cafenea.",
+    icon: "coffee",
+    image:
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop",
     active: true,
   },
   {

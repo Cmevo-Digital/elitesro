@@ -31,7 +31,7 @@ export function organizationAndLocalBusinessSchema() {
     },
     image: `${BASE_URL}/opengraph-image.png`,
     description:
-      "Partenerul tău premium pentru evenimente de 50–150 invitați. Cabină foto, DJ & sisteme audio și cocktail bar în București, Ilfov, Pitești, Ploiești și Dâmbovița.",
+      "Partenerul tău premium pentru evenimente de 50–150 invitați. Cabină foto, DJ & sisteme audio, cocktail bar și coffee corner în București, Ilfov, Pitești, Ploiești și Dâmbovița.",
     telephone: BRAND.phoneRaw,
     email: BRAND.email,
     priceRange: "$$",
@@ -89,7 +89,7 @@ export function servicesCatalogSchema(
         url: `${BASE_URL}/servicii/`,
         name: "Servicii Elites Events",
         description:
-          "Catalogul serviciilor Elites Events pentru evenimente: mobilier, corturi, veselă, iluminat, DJ, cocktail bar, cabină foto și logistică completă.",
+          "Catalogul serviciilor Elites Events pentru evenimente: mobilier, corturi, veselă, iluminat, DJ, cocktail bar, coffee corner, cabină foto și logistică completă.",
         inLanguage: "ro",
         isPartOf: { "@id": ORG_ID },
         mainEntity: { "@id": `${BASE_URL}/servicii/#services` },
@@ -140,7 +140,7 @@ export function quoteRequestServiceSchema() {
     name: "Ofertă personalizată pentru închirieri și logistică evenimente",
     serviceType: "Închirieri și logistică evenimente",
     description:
-      "Cerere de ofertă gratuită pentru mobilier, corturi, veselă, DJ, cabina foto, cocktail bar și logistică de evenimente în București, Ilfov, Pitești, Ploiești și Dâmbovița.",
+      "Cerere de ofertă gratuită pentru mobilier, corturi, veselă, DJ, cabina foto, cocktail bar, coffee corner și logistică de evenimente în București, Ilfov, Pitești, Ploiești și Dâmbovița.",
     url: `${BASE_URL}/cerere-oferta/`,
     provider: { "@id": ORG_ID },
     areaServed: AREA_SERVED,

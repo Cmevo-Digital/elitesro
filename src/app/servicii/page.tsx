@@ -11,6 +11,7 @@ import {
   Music,
   GlassWater,
   Camera,
+  Coffee,
   ArrowRight,
   Truck,
 } from "lucide-react";
@@ -68,6 +69,22 @@ const services = [
       "Barman profesionist cu experiență",
       "Cocktailuri clasice și signature",
       "Soft drinks și sucuri incluse",
+    ],
+    active: true,
+  },
+  {
+    slug: "coffee-corner",
+    title: "Coffee Corner",
+    description:
+      "Un colț de cafea care ține invitații treji și conversațiile pornite. Barista dedicat, espressor profesional și cafea specialty măcinată pe loc — de la espresso la flat white.",
+    icon: Coffee,
+    image:
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=900&auto=format&fit=crop",
+    features: [
+      "Espressor profesional și barista dedicat",
+      "Cafea specialty proaspăt măcinată",
+      "Espresso, cappuccino, latte, flat white",
+      "Lapte vegetal și băuturi cu gheață",
     ],
     active: true,
   },

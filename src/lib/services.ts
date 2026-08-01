@@ -515,6 +515,57 @@ export const serviceDetails: Record<
     plansNote:
       "Prețul pornește de la 5 € și ajunge la 15 € de persoană, în funcție de locația evenimentului. Tariful acoperă exclusiv închirierea cocktail barului (bar, echipament, barman și consultanță de meniu) — băuturile se achiziționează separat.",
   },
+  "coffee-corner": {
+    description:
+      "Coffee corner cu barista și espressor profesional — cafea specialty servită la standard de cafenea.",
+    longDescription:
+      "Un coffee corner ține invitații treji și conversațiile pornite. Barista nostru prepară la comandă, în fața invitaților, cu espressor profesional și cafea specialty măcinată pe loc — nu termosuri și nu cafea la filtru lăsată să se răcească.\n\nMeniul acoperă tot ce se cere la un eveniment: espresso, americano, cappuccino, latte, flat white și cortado, plus variante cu gheață pentru evenimentele de vară. Avem lapte vegetal (ovăz, migdale, soia) pentru invitații cu intoleranțe, siropuri aromate, o selecție de ceaiuri și ciocolată caldă.\n\nStandul se pliază pe programul evenimentului — coffee break între sesiunile unei conferințe, colț de cafea după masa de prânz la o nuntă sau serviciu continuu la un open house. Setup-ul este compact, curat și se integrează în decor, iar la final lăsăm zona exact cum am găsit-o.",
+    features: [
+      "Espressor profesional cu două grupuri",
+      "Barista cu experiență în specialty coffee",
+      "Cafea proaspăt prăjită, măcinată pe loc",
+      "Espresso, americano, cappuccino, latte, flat white, cortado",
+      "Băuturi cu gheață — iced latte și cold brew",
+      "Lapte vegetal — ovăz, migdale, soia",
+      "Selecție de ceaiuri și ciocolată caldă",
+      "Siropuri aromate — vanilie, caramel, alune",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1356&auto=format&fit=crop",
+    included: [
+      "Transport, montaj și demontaj",
+      "Barista dedicat pe toată durata serviciului",
+      "Consumabile — cafea, lapte, pahare, siropuri",
+      "Consultanță pentru meniu și amplasarea standului",
+      "Curățenia zonei după eveniment",
+    ],
+    faqs: [
+      {
+        q: "De ce aveți nevoie la locație pentru coffee corner?",
+        a: "O priză de 220V pe un circuit care suportă espressorul, un spațiu de aproximativ 2×1 metri și acces la apă în apropiere. Dacă locația nu are apă la îndemână, venim cu rezervor propriu — spune-ne din timp ca să pregătim setup-ul potrivit.",
+      },
+      {
+        q: "Aveți opțiuni pentru lapte vegetal?",
+        a: "Da, avem lapte de ovăz, de migdale și de soia, incluse în serviciu fără cost suplimentar. Ovăzul este cel mai cerut, pentru că se comportă cel mai bine la spumare și merge perfect în cappuccino sau latte.",
+      },
+      {
+        q: "Cât timp poate funcționa standul la un eveniment?",
+        a: "Standard lucrăm în intervale de 3 până la 6 ore, dar ne adaptăm la programul evenimentului. Pentru conferințe configurăm serviciul pe pauzele de cafea, iar pentru nunți și petreceri private stabilim împreună intervalul în care are sens să fie deschis.",
+      },
+      {
+        q: "Cât costă un coffee corner la eveniment?",
+        a: "Prețul depinde de numărul de invitați, de durata serviciului și de locația evenimentului. Trimite-ne detaliile evenimentului și primești o ofertă personalizată în maximum 24 de ore lucrătoare, fără nicio obligație.",
+      },
+    ],
+    clientTypes: [
+      "Companii care organizează conferințe și au nevoie de coffee break-uri servite profesionist",
+      "Cupluri care vor un colț de cafea pentru invitați, după masă sau spre finalul nunții",
+      "Organizatori de petreceri private și brunch-uri care caută o alternativă la bar",
+      "Echipe care organizează lansări de produs, open house-uri sau training-uri de o zi",
+    ],
+    useCases: [],
+    trustStats: [],
+  },
   "cabina-foto": {
     description:
       "Cabina foto interactivă cu imprimare instantă — amintiri de neuitat pentru toți invitații.",

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Elites Events — Închirieri & Logistică Evenimente București, Ilfov, Pitești, Ploiești",
   description:
-    "Partenerul tău premium pentru evenimente de 50–150 invitați. Cabină foto, DJ & sisteme audio și cocktail bar în București, Ilfov, Pitești și Ploiești.",
+    "Partenerul tău premium pentru evenimente de 50–150 invitați. Cabină foto, DJ & sisteme audio, cocktail bar și coffee corner în București, Ilfov, Pitești și Ploiești.",
   alternates: { canonical: "/" },
 };
 
