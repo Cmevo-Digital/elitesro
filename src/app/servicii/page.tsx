@@ -31,7 +31,7 @@ const services = [
       "Cabina foto interactivă transformă orice eveniment într-o experiență de neuitat. Imprimare instantă, props incluse și template personalizat cu detaliile evenimentului.",
     icon: Camera,
     image:
-      "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=900&auto=format&fit=crop",
+      "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-1.png",
     features: [
       "Cameră profesională de înaltă rezoluție",
       "Imprimare instantă (10–15 secunde)",

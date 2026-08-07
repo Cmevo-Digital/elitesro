@@ -17,6 +17,20 @@ export const serviceDetails: Record<
       nonAlcoholic: string[];
     }[];
     plansNote?: string;
+    models?: {
+      name: string;
+      tagline: string;
+      description: string;
+      images: string[];
+      specs: string[];
+    }[];
+    packages?: {
+      name: string;
+      tagline: string;
+      duration: string;
+      features: string[];
+    }[];
+    packagesNote?: string;
   }
 > = {
   "mobilier-evenimente": {
@@ -568,52 +582,64 @@ export const serviceDetails: Record<
   },
   "cabina-foto": {
     description:
-      "Cabina foto interactivă cu imprimare instantă — amintiri de neuitat pentru toți invitații.",
+      "Cabină foto interactivă cu imprimare instantă, disponibilă în trei variante — de la compactă la premium — pentru amintiri de neuitat la orice eveniment.",
     longDescription:
-      "Cabina foto transformă orice eveniment într-o experiență interactivă și memorabilă. Invitații se pot fotografia cu props amuzante, iar pozele sunt imprimate instant și personalizate cu detaliile evenimentului tău. Un element de entertainment care mulțumește tuturor vârstelor.\n\nFolosim camere profesionale de înaltă rezoluție, iluminat studio integrat și imprimante foto profesionale cu timp de printare de 10-15 secunde. Template-ul este personalizat cu logo-ul, numele și data evenimentului — fiecare invitat pleacă acasă cu o amintire fizică.\n\nOferim și varianta digitală — pozele sunt încărcate automat într-o galerie online pe care o poți accesa și descărca după eveniment. Props-urile includ accesorii vesele și personalizate, de la pălării și mustăți la accesorii specifice temei evenimentului.",
+      "Cabina foto rămâne unul dintre cele mai îndrăgite momente ale oricărui eveniment — invitații se distrează, se fotografiază cu props și pleacă acasă cu o amintire fizică. În portofoliul nostru ai de ales din trei variante — Led Booth, Luxury Mirror Booth Pro și Wood Booth — fiecare cu propriul stil, astfel încât cabina se potrivește temei evenimentului, nu invers.\n\nToate variantele includ aparat foto DSLR profesional, imprimantă foto de calitate studio cu timp de printare de câteva secunde, operator dedicat pe toată durata evenimentului și un design foto personalizat cu numele, data sau logo-ul tău. Calitatea printului este aceeași, indiferent de cabina aleasă.\n\nMontajul se face rapid, iar echipa noastră se ocupă de tot — de la transport și instalare, la ajustarea fundalului și testarea imprimantei înainte de sosirea invitaților. Tu alegi cabina care se potrivește cel mai bine locației și stilului evenimentului tău, iar noi ne ocupăm de restul.",
     features: [
-      "Cameră profesională de înaltă rezoluție",
-      "Imprimare instantă — 10–15 secunde",
-      "Template personalizat cu logo și data evenimentului",
-      "Props și accesorii — pălării, mustăți, rame vesele",
-      "Galerie online — poze încărcate automat",
-      "Iluminat studio integrat — mereu perfect",
-      "Fundal neutru sau personalizat",
-      "Fotografii nelimitate pe toată durata",
+      "Trei variante — Led Booth, Luxury Mirror Booth Pro, Wood Booth",
+      "Aparat foto DSLR profesional — Nikon D3500 sau Canon 2000D",
+      "Imprimare instant pe hârtie foto premium 10×15 cm",
+      "Operator dedicat pe toată durata evenimentului",
+      "Design foto personalizat — logo, nume, dată eveniment",
+      "Fundal printat HD sau greenscreen, la alegere",
+      "Props și accesorii incluse",
+      "Montaj și transport incluse",
     ],
     image:
-      "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=1356&auto=format&fit=crop",
+      "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-1.png",
     included: [
       "Transport și instalare la locație",
-      "Operator dedicat pe toată durata",
-      "Consumabile — hârtie foto, cerneală",
-      "Customizare template cu detaliile evenimentului",
-      "Galerie online post-eveniment",
+      "Operator specializat pe toată durata rezervată",
+      "Consumabile incluse — hârtie foto și cerneală",
+      "Design foto personalizat cu detaliile evenimentului",
+      "Benzi magnetice pentru poze",
     ],
     faqs: [
       {
+        q: "Care este diferența dintre Led Booth, Luxury Mirror Booth Pro și Wood Booth?",
+        a: "Led Booth este cea mai compactă și accesibilă variantă, ideală când spațiul sau bugetul sunt limitate. Luxury Mirror Booth Pro este cabina noastră premium — o oglindă interactivă XXL cu leduri RGB și display 4K, potrivită pentru nunți și evenimente corporate de anvergură. Wood Booth are un aspect lucrat manual din lemn, potrivit pentru locații rustice, grădini sau evenimente cu tematică boho și vintage. Calitatea printurilor și a operatorului este aceeași la toate trei.",
+      },
+      {
+        q: "Care este diferența dintre pachetele Noble, Aristocrat și Monarch?",
+        a: "Diferența principală este durata de utilizare a cabinei la eveniment — Noble acoperă 4 ore, Aristocrat 8 ore, iar Monarch rămâne disponibil pe parcursul întregului eveniment. Restul serviciilor — printuri nelimitate, fundal HD/greenscreen, design foto custom, benzi magnetice și operator specializat — sunt identice în toate cele trei pachete.",
+      },
+      {
         q: "Câte poze se pot face într-o oră?",
-        a: "În medie, 30-40 de sesiuni foto pe oră. Depinde de cât de mult se implică invitații. Pentru un eveniment de 4 ore cu 100 invitați, estimează 150-200 poze imprimate.",
+        a: "În medie, 30–40 de sesiuni foto pe oră, în funcție de cât de mult se implică invitații. Pentru un eveniment de 4 ore cu 100 invitați, estimează 150–200 de poze imprimate.",
       },
       {
-        q: "Pot personaliza template-ul cu culorile evenimentului?",
-        a: "Da, template-ul este complet personalizabil — logo, nume, dată, culori, fonturi. Trimitem o schiță înainte de eveniment pentru aprobare. Poți face oricâte modificări până ești mulțumit.",
+        q: "Pot personaliza designul foto cu culorile evenimentului?",
+        a: "Da, designul este complet personalizabil — logo, nume, dată, culori, fonturi. Trimitem o schiță înainte de eveniment pentru aprobare și poți cere oricâte modificări până ești mulțumit.",
       },
       {
-        q: "Ce se întâmplă dacă se termină hârtia foto?",
-        a: "Includem consumabile suficiente pentru evenimentul tău, calculând în funcție de numărul de invitați și durată. În cazul unui eveniment mai mare decât estimăm, avem rezervă de hârtie și cerneală pentru situații neprevăzute.",
+        q: "Există o limită la numărul de poze printate?",
+        a: "Nu, toate pachetele includ printuri nelimitate pe durata rezervată. Estimăm consumabile suficiente indiferent de cât de activi sunt invitații, iar echipa are întotdeauna rezervă de hârtie și cerneală.",
+      },
+      {
+        q: "Cât costă închirierea unei cabine foto?",
+        a: "Prețul depinde de cabina aleasă (Led Booth, Luxury Mirror Booth Pro sau Wood Booth), de pachetul de ore (Noble, Aristocrat sau Monarch) și de locația evenimentului. Trimite-ne detaliile evenimentului tău și primești o ofertă personalizată, fără nicio obligație.",
       },
     ],
     clientTypes: [
-      "Cupluri care doresc o activitate interactivă pentru invitați la nuntă",
-      "Companii care organizează evenimente corporate și vor un element de branding",
-      "Organizatori de petreceri private care caută divertisment pentru toate vârstele",
-      "Persoane care aniversează evenimente și vor amintiri fizice pentru invitați",
+      "Cupluri care doresc o cabină premium, cu aspect elegant, pentru nunta lor",
+      "Companii care organizează evenimente corporate și vor un element de entertainment accesibil",
+      "Organizatori de nunți în aer liber, hambare sau grădini, care caută o cabină cu aspect rustic",
+      "Persoane care aniversează evenimente și vor amintiri fizice pentru toți invitații",
     ],
     useCases: [
-      "Nuntă cu 120 invitați — cabina foto premium, 5 ore, template cu numele mirilor, guest book",
-      "Eveniment corporate — cabina foto cu logo companie, fundal branduit, galerie online",
-      "Petrecere aniversară — cabina foto basic, 3 ore, props vesele, poze printate instant",
+      "Nuntă cu 120 invitați — Luxury Mirror Booth Pro, pachet Aristocrat (8 ore), design foto cu numele mirilor",
+      "Eveniment corporate — Led Booth, pachet Noble (4 ore), fundal branduit cu logo companie",
+      "Nuntă în grădină, tematică boho — Wood Booth, pachet Monarch, props vesele, benzi magnetice",
     ],
     trustStats: [
       { label: "Poze imprimate", value: "25.000+" },
@@ -621,5 +647,110 @@ export const serviceDetails: Record<
       { label: "Satisfacție clienți", value: "96%" },
       { label: "Ani de experiență", value: "5+" },
     ],
+    models: [
+      {
+        name: "Led Booth",
+        tagline:
+          "Compactă, accesibilă și pregătită de drum într-o singură geantă",
+        description:
+          "Cea mai portabilă cabină din portofoliul nostru — imprimanta este încorporată direct în carcasă, așa că nu mai e nevoie de accesorii suplimentare. Se montează rapid, încape în orice mașină și poate fi personalizată prin colantare, adaptându-se oricărui branding sau temă de eveniment.",
+        images: ["/images/servicii/cabina-foto/cabina-foto-led-booth-1.png"],
+        specs: [
+          "Imprimantă foto profesională încorporată în carcasă",
+          "Aparat foto DSLR Nikon D3500 sau Canon 2000D + obiectiv 18-55mm",
+          "Blitz profesional de studio VL200-Plus",
+          "Laptop 2 în 1 Full HD Touch, 8GB RAM, 256GB SSD",
+          "Stativ profesional inclus",
+          "Genți de transport profesionale, impermeabile și antistatice",
+          "Montaj și transport de o singură persoană",
+        ],
+      },
+      {
+        name: "Luxury Mirror Booth Pro",
+        tagline:
+          "Oglinda interactivă care devine punctul central al petrecerii",
+        description:
+          "Cabina noastră premium — o oglindă XXL cu display UHD 4K și leduri RGB integrate, ale căror culori se schimbă din aplicație. Carcasa din aluminiu, în nuanțe de negru și alb, are un aspect modern și elegant, potrivit pentru nunți mari și evenimente corporate de anvergură.",
+        images: [
+          "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-1.png",
+          "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-2.jpg",
+          "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-3.jpg",
+          "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-4.jpg",
+        ],
+        specs: [
+          "Dimensiuni cabină: 150 × 91 × 23 cm",
+          "Cutie de transport profesională din Tego: 157 × 97,5 × 32,5 cm",
+          "Oglindă New Pilkington MirrorView 65″ — claritate 100%",
+          "Display UHD 4K de 108 cm",
+          "Carcasă din aluminiu premium, negru & alb, cu picior rabatabil",
+          "Leduri RGB Bluetooth integrate, controlate din aplicație",
+          "Beauty dish pentru o lumină uniformă și flatantă",
+          "Aparat foto DSLR Nikon D3500 sau Canon 2000D + obiectiv 18-55mm",
+          "Imprimantă foto profesională DNP RX1-HS",
+          "Consumabile incluse pentru 1.400 printuri 10×15 cm",
+          "Blitz studio profesional Elinchrom 200W sau VL200-Plus",
+        ],
+      },
+      {
+        name: "Wood Booth",
+        tagline: "Aspect natural și cald, lucrat manual din lemn",
+        description:
+          "Combină funcționalitatea unei cabine moderne cu estetica unei piese lucrate manual din lemn. Este la fel de compactă și ușor de transportat ca Led Booth, dar aspectul ei cald se integrează natural în locații rustice, hambare, grădini sau evenimente cu tematică boho, vintage ori country-chic.",
+        images: ["/images/servicii/cabina-foto/cabina-foto-wood-booth.jpg"],
+        specs: [
+          "Carcasă lucrată manual din lemn",
+          "Imprimantă foto profesională încorporată în carcasă",
+          "Aparat foto DSLR Nikon D3500 sau Canon 2000D + obiectiv 18-55mm",
+          "Blitz profesional de studio VL200-Plus",
+          "Laptop 2 în 1 Full HD Touch, 8GB RAM, 256GB SSD",
+          "Genți de transport profesionale, impermeabile și antistatice",
+          "Montaj și transport de o singură persoană",
+        ],
+      },
+    ],
+    packages: [
+      {
+        name: "Noble",
+        tagline: "Potrivit pentru recepții și evenimente de câteva ore",
+        duration: "4 ore din eveniment",
+        features: [
+          "Printuri nelimitate",
+          "Fundal printat HD / Greenscreen",
+          "Design foto custom — logo sau text personalizat",
+          "Print 10×15 cm sau 5×15 cm",
+          "Benzi magnetice pentru poze",
+          "Operator specializat",
+        ],
+      },
+      {
+        name: "Aristocrat",
+        tagline:
+          "Alegerea potrivită pentru nunți și petreceri de o zi întreagă",
+        duration: "8 ore din eveniment",
+        features: [
+          "Printuri nelimitate",
+          "Fundal printat HD / Greenscreen",
+          "Design foto custom — logo sau text personalizat",
+          "Print 10×15 cm sau 5×15 cm",
+          "Benzi magnetice pentru poze",
+          "Operator specializat",
+        ],
+      },
+      {
+        name: "Monarch",
+        tagline: "Cabina foto rămâne deschisă pe tot parcursul evenimentului",
+        duration: "Pe parcursul întregului eveniment",
+        features: [
+          "Printuri nelimitate",
+          "Fundal printat HD / Greenscreen",
+          "Design foto custom — logo sau text personalizat",
+          "Print 10×15 cm sau 5×15 cm",
+          "Benzi magnetice pentru poze",
+          "Operator specializat",
+        ],
+      },
+    ],
+    packagesNote:
+      "Fiecare pachet este disponibil pentru oricare dintre cele trei cabine — Led Booth, Luxury Mirror Booth Pro sau Wood Booth. Prețul final depinde de cabina aleasă, durata serviciului și locația evenimentului.",
   },
 };

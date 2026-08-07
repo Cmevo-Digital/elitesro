@@ -35,7 +35,7 @@ export const services = [
       "Cabina foto interactivă cu imprimare instantă — distracție garantată și amintiri pentru toți invitații.",
     icon: "camera",
     image:
-      "https://images.unsplash.com/photo-1590446011295-f52a6ad8ad1b?q=80&w=800&auto=format&fit=crop",
+      "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-1.png",
     active: true,
   },
   {

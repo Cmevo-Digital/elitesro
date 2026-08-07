@@ -151,6 +151,130 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* Models */}
+      {detail.models && detail.models.length > 0 && (
+        <section className="section-padding bg-ivory">
+          <div className="container-brand">
+            <p className="overline-text text-gold mb-3">Cabine disponibile</p>
+            <h2 className="font-display text-2xl md:text-3xl text-obsidian mb-8">
+              Alege cabina potrivită evenimentului tău
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {detail.models.map((model) => (
+                <div
+                  key={model.name}
+                  className="bg-white rounded-sm border border-warm-dark overflow-hidden flex flex-col"
+                >
+                  <div className="relative aspect-[4/5] bg-warm">
+                    <Image
+                      src={model.images[0]}
+                      alt={model.name}
+                      fill
+                      className="object-contain p-6"
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                    />
+                  </div>
+                  {model.images.length > 1 && (
+                    <div className="grid grid-cols-3 gap-0.5 p-0.5 bg-warm-dark">
+                      {model.images.slice(1, 4).map((img, i) => (
+                        <div key={img} className="relative aspect-square">
+                          <Image
+                            src={img}
+                            alt={`${model.name} — imagine ${i + 2}`}
+                            fill
+                            className="object-cover"
+                            sizes="200px"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  <div className="p-7 flex-1 flex flex-col">
+                    <h3 className="font-display text-xl text-obsidian">
+                      {model.name}
+                    </h3>
+                    <p className="mt-1.5 text-sm text-gold font-medium">
+                      {model.tagline}
+                    </p>
+                    <p className="mt-3 text-sm text-charcoal/60 font-light leading-relaxed">
+                      {model.description}
+                    </p>
+                    <ul className="mt-5 space-y-2 pt-5 border-t border-warm-dark">
+                      {model.specs.map((spec) => (
+                        <li
+                          key={spec}
+                          className="flex items-start gap-2 text-xs text-charcoal/70 leading-relaxed"
+                        >
+                          <span className="text-gold shrink-0 mt-0.5">✓</span>
+                          <span>{spec}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Packages */}
+      {detail.packages && detail.packages.length > 0 && (
+        <section className="section-padding bg-warm">
+          <div className="container-brand">
+            <p className="overline-text text-gold mb-3">Pachete disponibile</p>
+            <h2 className="font-display text-2xl md:text-3xl text-obsidian mb-8">
+              Alege pachetul potrivit evenimentului tău
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
+              {detail.packages.map((pkg) => (
+                <div
+                  key={pkg.name}
+                  className="bg-white rounded-sm border border-warm-dark p-7 h-full flex flex-col"
+                >
+                  <h3 className="font-display text-2xl text-obsidian">
+                    {pkg.name}
+                  </h3>
+                  <p className="mt-1.5 text-sm text-charcoal/60 font-light">
+                    {pkg.tagline}
+                  </p>
+                  <p className="mt-4 overline-text text-gold text-[10px]">
+                    {pkg.duration}
+                  </p>
+                  <ul className="mt-5 space-y-2.5 pt-5 border-t border-warm-dark flex-1">
+                    {pkg.features.map((feature) => (
+                      <li
+                        key={feature}
+                        className="flex items-start gap-2 text-sm text-charcoal/70"
+                      >
+                        <span className="text-gold shrink-0 mt-0.5">✓</span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            {detail.packagesNote && (
+              <div className="mt-6 bg-obsidian rounded-sm p-7 flex flex-col md:flex-row md:items-center gap-6">
+                <p className="text-sm text-white/50 font-light leading-relaxed md:flex-1">
+                  {detail.packagesNote}
+                </p>
+                <Link
+                  href="/cerere-oferta"
+                  data-gtm-id="page_cta_oferta_packages"
+                  data-gtm-location="service_detail_page"
+                  className="shrink-0 self-start md:self-auto inline-flex items-center gap-2 px-6 py-3 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-gold-dark transition"
+                >
+                  Solicită Ofertă Personalizată
+                </Link>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* Plans */}
       {detail.plans && detail.plans.length > 0 && (
         <section className="section-padding bg-warm">
