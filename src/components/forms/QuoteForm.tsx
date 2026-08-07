@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { BRAND, WHATSAPP_URL } from "@/lib/constants";
 import { CheckCircle, Send } from "lucide-react";
 import { activeServices } from "@/components/home/ServicesGrid";
+import { serviceDetails } from "@/lib/services";
 import { trackEvent } from "@/lib/gtag";
 
 type FormData = {
@@ -13,12 +14,22 @@ type FormData = {
   guestCount: string;
   location: string;
   services: string[];
+  pricingPlans: Record<string, string>;
   name: string;
   phone: string;
   email: string;
   message: string;
   honeypot?: string;
 };
+
+function getPlanOptions(slug: string): string[] {
+  const detail = serviceDetails[slug];
+  return (
+    detail?.packages?.map((p) => p.name) ??
+    detail?.plans?.map((p) => p.name) ??
+    []
+  );
+}
 
 export default function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -30,7 +41,9 @@ export default function QuoteForm() {
     watch,
     setValue,
     formState: { errors },
-  } = useForm<FormData>({ defaultValues: { services: [] } });
+  } = useForm<FormData>({
+    defaultValues: { services: [], pricingPlans: {} },
+  });
 
   const selectedServices = watch("services") || [];
 
@@ -200,6 +213,32 @@ export default function QuoteForm() {
             </button>
           ))}
         </div>
+
+        {selectedServices.map((title) => {
+          const service = activeServices.find((s) => s.title === title);
+          if (!service) return null;
+          const planOptions = getPlanOptions(service.slug);
+          if (planOptions.length === 0) return null;
+          return (
+            <div key={service.slug} className="mt-4">
+              <label className="block text-xs font-medium text-charcoal/70 mb-1.5">
+                Pachet dorit pentru {title}{" "}
+                <span className="text-charcoal/40">(opțional)</span>
+              </label>
+              <select
+                {...register(`pricingPlans.${title}`)}
+                className="w-full sm:w-72 px-4 py-3 bg-warm border border-warm-dark rounded-sm text-sm text-obsidian focus:outline-none focus:border-gold transition-colors duration-200"
+              >
+                <option value="">Nu știu încă / recomandați-mi</option>
+                {planOptions.map((name) => (
+                  <option key={name} value={name}>
+                    {name}
+                  </option>
+                ))}
+              </select>
+            </div>
+          );
+        })}
       </div>
 
       {/* Step 3: Contact */}

@@ -109,8 +109,20 @@ if ($type === 'quote') {
         ? implode(', ', array_map('s', $input['services']))
         : '';
 
+    $planLines = [];
+    if (is_array($input['pricingPlans'] ?? null)) {
+        foreach ($input['pricingPlans'] as $serviceTitle => $planName) {
+            $planName = s($planName);
+            if ($planName === '') continue;
+            $planLines[] = '  - ' . s($serviceTitle) . ': ' . $planName;
+        }
+    }
+    $plansSection = $planLines
+        ? implode("\n", array_merge(["Pachete alese:"], $planLines))
+        : '';
+
     $subject = "Cerere Oferta Noua — {$name}";
-    $body    = implode("\n", [
+    $bodyLines = [
         "CERERE OFERTA NOUA",
         "==================",
         "",
@@ -123,10 +135,15 @@ if ($type === 'quote') {
         "Numar invitati:     {$guestCount}",
         "Locatie:            {$location}",
         "Servicii dorite:    {$services}",
-        "",
-        "Detalii suplimentare:",
-        $message,
-    ]);
+    ];
+    if ($plansSection !== '') {
+        $bodyLines[] = '';
+        $bodyLines[] = $plansSection;
+    }
+    $bodyLines[] = '';
+    $bodyLines[] = 'Detalii suplimentare:';
+    $bodyLines[] = $message;
+    $body = implode("\n", $bodyLines);
 } else {
     $subjectInput = s($input['subject'] ?? '');
     $subject = $subjectInput ?: "Mesaj nou de pe elites.ro — {$name}";
