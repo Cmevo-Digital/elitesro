@@ -49,6 +49,23 @@ const GUEST_COUNT_OPTIONS: { value: string; label: string }[] = [
   { value: "150+", label: "Peste 150 invitați" },
 ];
 
+const EVENT_TYPE_LABELS: Record<string, string> = {
+  nunta: "Nuntă",
+  corporate: "Eveniment Corporate",
+  privat: "Eveniment Privat",
+  aniversare: "Aniversare",
+  altul: "Alt tip",
+};
+
+const LOCATION_LABELS: Record<string, string> = {
+  bucuresti: "București",
+  ilfov: "Ilfov",
+  pitesti: "Pitești",
+  ploiesti: "Ploiești",
+  dambovita: "Dâmbovița",
+  alta: "Altă locație",
+};
+
 function parseGuestRange(
   guestCount: string,
 ): { min: number; max: number } | null {
@@ -334,6 +351,9 @@ export default function QuoteForm() {
         body: JSON.stringify({
           ...data,
           type: "quote",
+          eventType: EVENT_TYPE_LABELS[data.eventType] ?? data.eventType,
+          location: LOCATION_LABELS[data.location] ?? data.location,
+          guestCount: guestCountLabel ?? data.guestCount,
           estimatedPrice: estimateLabel,
           pricingDetails: estimate?.details ?? [],
         }),

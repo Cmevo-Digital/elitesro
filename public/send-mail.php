@@ -105,7 +105,7 @@ if ($type === 'quote') {
     $eventDate  = s($input['eventDate'] ?? '');
     $guestCount = s($input['guestCount'] ?? '');
     $location   = s($input['location'] ?? '');
-    $services   = is_array($input['services'])
+    $services   = is_array($input['services'] ?? null)
         ? implode(', ', array_map('s', $input['services']))
         : '';
 
