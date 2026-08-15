@@ -159,47 +159,84 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             <h2 className="font-display text-2xl md:text-3xl text-obsidian mb-8">
               Alege cabina potrivită evenimentului tău
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {detail.models.map((model) => (
+            <div className="space-y-16 md:space-y-20">
+              {detail.models.map((model, i) => (
                 <div
                   key={model.name}
-                  className="bg-white rounded-sm border border-warm-dark overflow-hidden flex flex-col"
+                  className={`flex flex-col md:flex-row gap-8 md:gap-12 items-start ${
+                    i % 2 === 1 ? "md:flex-row-reverse" : ""
+                  }`}
                 >
-                  <div className="relative aspect-[4/5] bg-warm">
-                    <Image
-                      src={model.images[0]}
-                      alt={model.name}
-                      fill
-                      className="object-contain p-6"
-                      sizes="(max-width: 1024px) 100vw, 33vw"
-                    />
-                  </div>
-                  {model.images.length > 1 && (
-                    <div className="grid grid-cols-3 gap-0.5 p-0.5 bg-warm-dark">
-                      {model.images.slice(1, 4).map((img, i) => (
-                        <div key={img} className="relative aspect-square">
-                          <Image
-                            src={img}
-                            alt={`${model.name} — imagine ${i + 2}`}
-                            fill
-                            className="object-cover"
-                            sizes="200px"
-                          />
-                        </div>
-                      ))}
+                  <div className="w-full md:w-1/2 shrink-0">
+                    <div className="relative aspect-[4/5] bg-warm rounded-sm overflow-hidden border border-warm-dark">
+                      <Image
+                        src={model.images[0]}
+                        alt={model.name}
+                        fill
+                        className="object-contain p-6"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
                     </div>
-                  )}
-                  <div className="p-7 flex-1 flex flex-col">
-                    <h3 className="font-display text-xl text-obsidian">
+                    {model.images.length > 1 && (
+                      <div className="grid grid-cols-3 gap-2 mt-2">
+                        {model.images.slice(1, 4).map((img, j) => (
+                          <div
+                            key={img}
+                            className="relative aspect-square rounded-sm overflow-hidden border border-warm-dark"
+                          >
+                            <Image
+                              src={img}
+                              alt={`${model.name} — imagine ${j + 2}`}
+                              fill
+                              className="object-cover"
+                              sizes="200px"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="w-full md:w-1/2 pt-1">
+                    <h3 className="font-display text-2xl md:text-3xl text-obsidian">
                       {model.name}
                     </h3>
                     <p className="mt-1.5 text-sm text-gold font-medium">
                       {model.tagline}
                     </p>
-                    <p className="mt-3 text-sm text-charcoal/60 font-light leading-relaxed">
+                    {model.bestFor && (
+                      <p className="mt-2 text-xs text-charcoal/50 font-light">
+                        {model.bestFor}
+                      </p>
+                    )}
+                    <p className="mt-4 text-sm text-charcoal/60 font-light leading-relaxed">
                       {model.description}
                     </p>
-                    <ul className="mt-5 space-y-2 pt-5 border-t border-warm-dark">
+                    {model.prices && model.prices.length > 0 && (
+                      <div className="mt-6 pt-6 border-t border-warm-dark">
+                        <div className="grid grid-cols-3 gap-2 max-w-sm">
+                          {model.prices.map((p) => (
+                            <div
+                              key={p.duration}
+                              className="text-center bg-white border border-warm-dark rounded-sm py-2.5 px-1"
+                            >
+                              <p className="text-[10px] uppercase tracking-wide text-charcoal/50">
+                                {p.duration}
+                              </p>
+                              <p className="mt-1 text-sm font-semibold text-obsidian">
+                                {p.price}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                        {model.priceInclude && (
+                          <p className="mt-3 text-xs text-charcoal/50 font-light leading-relaxed">
+                            {model.priceInclude}
+                          </p>
+                        )}
+                      </div>
+                    )}
+                    <ul className="mt-6 space-y-2 pt-6 border-t border-warm-dark grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
                       {model.specs.map((spec) => (
                         <li
                           key={spec}
@@ -236,25 +273,72 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                     {pkg.name}
                   </h3>
                   <p className="mt-1.5 text-sm text-charcoal/60 font-light">
-                    {pkg.tagline}
+                    {pkg.content}
                   </p>
-                  <p className="mt-4 overline-text text-gold text-[10px]">
-                    {pkg.duration}
-                  </p>
-                  <ul className="mt-5 space-y-2.5 pt-5 border-t border-warm-dark flex-1">
-                    {pkg.features.map((feature) => (
-                      <li
-                        key={feature}
-                        className="flex items-start gap-2 text-sm text-charcoal/70"
+                  <div className="mt-5 grid grid-cols-2 gap-2 pt-5 border-t border-warm-dark">
+                    {pkg.prices.map((p) => (
+                      <div
+                        key={p.duration}
+                        className="text-center bg-warm rounded-sm py-3 px-1"
                       >
-                        <span className="text-gold shrink-0 mt-0.5">✓</span>
-                        {feature}
-                      </li>
+                        <p className="text-[10px] uppercase tracking-wide text-charcoal/50">
+                          {p.duration}
+                        </p>
+                        <p className="mt-1 text-base font-semibold text-obsidian">
+                          {p.price}
+                        </p>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               ))}
             </div>
+
+            {detail.packagesSummary && detail.packagesSummary.length > 0 && (
+              <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {detail.packagesSummary.map((s) => (
+                  <div
+                    key={s.name}
+                    className="bg-white rounded-sm border border-warm-dark px-5 py-4 flex items-center justify-between gap-3"
+                  >
+                    <div>
+                      <p className="text-xs font-semibold tracking-wide text-obsidian">
+                        {s.name}
+                      </p>
+                      <p className="text-xs text-charcoal/50 font-light">
+                        {s.content}
+                      </p>
+                    </div>
+                    <p className="text-sm font-medium text-gold text-right shrink-0">
+                      {s.range}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {detail.extras && detail.extras.length > 0 && (
+              <div className="mt-10">
+                <p className="overline-text text-gold text-[10px] mb-4">
+                  Opțiuni suplimentare
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {detail.extras.map((extra) => (
+                    <div
+                      key={extra.name}
+                      className="bg-white rounded-sm border border-warm-dark p-5 flex flex-col gap-1.5"
+                    >
+                      <p className="text-sm font-medium text-obsidian leading-snug">
+                        {extra.name}
+                      </p>
+                      <p className="text-sm text-gold font-semibold">
+                        {extra.range}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {detail.packagesNote && (
               <div className="mt-6 bg-obsidian rounded-sm p-7 flex flex-col md:flex-row md:items-center gap-6">
@@ -354,6 +438,41 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 </Link>
               </div>
             )}
+          </div>
+        </section>
+      )}
+
+      {/* Pricing minimum */}
+      {detail.pricingMinimum && (
+        <section className="section-padding bg-warm">
+          <div className="container-brand">
+            <p className="overline-text text-gold mb-3">Tarif</p>
+            <h2 className="font-display text-2xl md:text-3xl text-obsidian mb-8">
+              Cât costă {service.title.toLowerCase()}
+            </h2>
+            <div className="bg-obsidian rounded-sm p-7 flex flex-col md:flex-row md:items-center gap-6">
+              <div className="md:flex-1">
+                <p className="overline-text text-gold text-[10px] mb-2">
+                  Tarif serviciu
+                </p>
+                <p className="font-display text-2xl text-white mb-2">
+                  {detail.pricingMinimum.perGuestLei} lei / persoană
+                </p>
+                <p className="text-sm text-white/50 font-light leading-relaxed">
+                  Preț minim{" "}
+                  {detail.pricingMinimum.minPriceLei.toLocaleString("ro-RO")}{" "}
+                  lei, până la {detail.pricingMinimum.minGuests} de invitați.
+                </p>
+              </div>
+              <Link
+                href="/cerere-oferta"
+                data-gtm-id="page_cta_oferta_pricing_minimum"
+                data-gtm-location="service_detail_page"
+                className="shrink-0 self-start md:self-auto inline-flex items-center gap-2 px-6 py-3 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-gold-dark transition"
+              >
+                Cere Ofertă Personalizată
+              </Link>
+            </div>
           </div>
         </section>
       )}

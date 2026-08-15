@@ -109,16 +109,47 @@ if ($type === 'quote') {
         ? implode(', ', array_map('s', $input['services']))
         : '';
 
+    $durations = is_array($input['durations'] ?? null) ? $input['durations'] : [];
+
     $planLines = [];
     if (is_array($input['pricingPlans'] ?? null)) {
         foreach ($input['pricingPlans'] as $serviceTitle => $planName) {
             $planName = s($planName);
             if ($planName === '') continue;
-            $planLines[] = '  - ' . s($serviceTitle) . ': ' . $planName;
+            $duration = s($durations[$serviceTitle] ?? '');
+            $planLines[] = '  - ' . s($serviceTitle) . ': ' . $planName
+                . ($duration !== '' ? " ({$duration})" : '');
         }
     }
     $plansSection = $planLines
         ? implode("\n", array_merge(["Pachete alese:"], $planLines))
+        : '';
+
+    $extraLines = [];
+    if (is_array($input['extras'] ?? null)) {
+        foreach ($input['extras'] as $serviceTitle => $extraNames) {
+            if (!is_array($extraNames)) continue;
+            $extraNames = array_filter(array_map('s', $extraNames), fn($v) => $v !== '');
+            if (empty($extraNames)) continue;
+            $extraLines[] = '  - ' . s($serviceTitle) . ': ' . implode(', ', $extraNames);
+        }
+    }
+    $extrasSection = $extraLines
+        ? implode("\n", array_merge(["Optiuni suplimentare:"], $extraLines))
+        : '';
+
+    $estimatedPrice = s($input['estimatedPrice'] ?? '');
+
+    $detailLines = [];
+    if (is_array($input['pricingDetails'] ?? null)) {
+        foreach ($input['pricingDetails'] as $line) {
+            $line = s($line);
+            if ($line === '') continue;
+            $detailLines[] = '  - ' . $line;
+        }
+    }
+    $detailsSection = $detailLines
+        ? implode("\n", array_merge(["Detalii calcul pret:"], $detailLines))
         : '';
 
     $subject = "Cerere Oferta Noua — {$name}";
@@ -139,6 +170,18 @@ if ($type === 'quote') {
     if ($plansSection !== '') {
         $bodyLines[] = '';
         $bodyLines[] = $plansSection;
+    }
+    if ($extrasSection !== '') {
+        $bodyLines[] = '';
+        $bodyLines[] = $extrasSection;
+    }
+    if ($detailsSection !== '') {
+        $bodyLines[] = '';
+        $bodyLines[] = $detailsSection;
+    }
+    if ($estimatedPrice !== '') {
+        $bodyLines[] = '';
+        $bodyLines[] = "Estimare pret: {$estimatedPrice}";
     }
     $bodyLines[] = '';
     $bodyLines[] = 'Detalii suplimentare:';

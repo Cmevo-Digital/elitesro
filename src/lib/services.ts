@@ -20,17 +20,26 @@ export const serviceDetails: Record<
     models?: {
       name: string;
       tagline: string;
+      bestFor?: string;
       description: string;
       images: string[];
       specs: string[];
+      prices?: { duration: string; price: string }[];
+      priceInclude?: string;
     }[];
     packages?: {
       name: string;
-      tagline: string;
-      duration: string;
-      features: string[];
+      content: string;
+      prices: { duration: string; price: string }[];
     }[];
     packagesNote?: string;
+    packagesSummary?: { name: string; content: string; range: string }[];
+    extras?: { name: string; range: string }[];
+    pricingMinimum?: {
+      perGuestLei: number;
+      minGuests: number;
+      minPriceLei: number;
+    };
   }
 > = {
   "mobilier-evenimente": {
@@ -579,14 +588,15 @@ export const serviceDetails: Record<
     ],
     useCases: [],
     trustStats: [],
+    pricingMinimum: { perGuestLei: 37, minGuests: 100, minPriceLei: 3700 },
   },
   "cabina-foto": {
     description:
       "Cabină foto interactivă cu imprimare instantă, disponibilă în trei variante — de la compactă la premium — pentru amintiri de neuitat la orice eveniment.",
     longDescription:
-      "Cabina foto rămâne unul dintre cele mai îndrăgite momente ale oricărui eveniment — invitații se distrează, se fotografiază cu props și pleacă acasă cu o amintire fizică. În portofoliul nostru ai de ales din trei variante — Led Booth, Luxury Mirror Booth Pro și Wood Booth — fiecare cu propriul stil, astfel încât cabina se potrivește temei evenimentului, nu invers.\n\nToate variantele includ aparat foto DSLR profesional, imprimantă foto de calitate studio cu timp de printare de câteva secunde, operator dedicat pe toată durata evenimentului și un design foto personalizat cu numele, data sau logo-ul tău. Calitatea printului este aceeași, indiferent de cabina aleasă.\n\nMontajul se face rapid, iar echipa noastră se ocupă de tot — de la transport și instalare, la ajustarea fundalului și testarea imprimantei înainte de sosirea invitaților. Tu alegi cabina care se potrivește cel mai bine locației și stilului evenimentului tău, iar noi ne ocupăm de restul.",
+      "Cabina foto rămâne unul dintre cele mai îndrăgite momente ale oricărui eveniment — invitații se distrează, se fotografiază cu props și pleacă acasă cu o amintire fizică. În portofoliul nostru ai de ales din trei variante — LED Booth, Magic Mirror și WOOD Booth — fiecare cu propriul stil, astfel încât cabina se potrivește temei evenimentului, nu invers.\n\nToate variantele includ aparat foto DSLR profesional, imprimantă foto de calitate studio cu timp de printare de câteva secunde, operator dedicat pe toată durata evenimentului și un design foto personalizat cu numele, data sau logo-ul tău. Calitatea printului este aceeași, indiferent de cabina aleasă.\n\nMontajul se face rapid, iar echipa noastră se ocupă de tot — de la transport și instalare, la ajustarea fundalului și testarea imprimantei înainte de sosirea invitaților. Tu alegi cabina care se potrivește cel mai bine locației și stilului evenimentului tău, iar noi ne ocupăm de restul.",
     features: [
-      "Trei variante — Led Booth, Luxury Mirror Booth Pro, Wood Booth",
+      "Trei variante — LED Booth, Magic Mirror, WOOD Booth",
       "Aparat foto DSLR profesional — Nikon D3500 sau Canon 2000D",
       "Imprimare instant pe hârtie foto premium 10×15 cm",
       "Operator dedicat pe toată durata evenimentului",
@@ -600,18 +610,27 @@ export const serviceDetails: Record<
     included: [
       "Transport și instalare la locație",
       "Operator specializat pe toată durata rezervată",
+      "Printuri nelimitate pe durata rezervării",
       "Consumabile incluse — hârtie foto și cerneală",
       "Design foto personalizat cu detaliile evenimentului",
       "Benzi magnetice pentru poze",
     ],
     faqs: [
       {
-        q: "Care este diferența dintre Led Booth, Luxury Mirror Booth Pro și Wood Booth?",
-        a: "Led Booth este cea mai compactă și accesibilă variantă, ideală când spațiul sau bugetul sunt limitate. Luxury Mirror Booth Pro este cabina noastră premium — o oglindă interactivă XXL cu leduri RGB și display 4K, potrivită pentru nunți și evenimente corporate de anvergură. Wood Booth are un aspect lucrat manual din lemn, potrivit pentru locații rustice, grădini sau evenimente cu tematică boho și vintage. Calitatea printurilor și a operatorului este aceeași la toate trei.",
+        q: "Care este diferența dintre WOOD Booth, LED Booth și Magic Mirror?",
+        a: "WOOD Booth are un aspect lucrat manual din lemn, elegant și premium, potrivit pentru nunți, botezuri și evenimente corporate. LED Booth este varianta modernă, potrivită pentru party-uri, majorate și petreceri ale adolescenților. Magic Mirror este produsul nostru „WOW” — o oglindă interactivă XXL, cea mai spectaculoasă variantă din portofoliu. Calitatea printurilor și a operatorului este aceeași la toate trei.",
       },
       {
-        q: "Care este diferența dintre pachetele Noble, Aristocrat și Monarch?",
-        a: "Diferența principală este durata de utilizare a cabinei la eveniment — Noble acoperă 4 ore, Aristocrat 8 ore, iar Monarch rămâne disponibil pe parcursul întregului eveniment. Restul serviciilor — printuri nelimitate, fundal HD/greenscreen, design foto custom, benzi magnetice și operator specializat — sunt identice în toate cele trei pachete.",
+        q: "Cât costă închirierea unei cabine foto?",
+        a: "WOOD Booth pornește de la 1.100 lei (4 ore), LED Booth de la 1.200 lei (4 ore), iar Magic Mirror de la 1.300 lei (4 ore). Pentru 6 ore prețurile sunt 1.400 / 1.500 / 1.600 lei, iar pentru 8 ore 1.700 / 1.800 / 1.900 lei. Poți combina și mai multe cabine la același eveniment, cu prețuri de pachet — trimite-ne detaliile evenimentului tău pentru o ofertă exactă.",
+      },
+      {
+        q: "Ce este inclus în prețul fiecărei cabine?",
+        a: "WOOD Booth are inclus album fizic. LED Booth are incluse lumini de fundal, album audio și album fizic. Magic Mirror are incluse lumini de fundal, album audio, album fizic, editare live a pozelor și un colaj video instant la finalul evenimentului.",
+      },
+      {
+        q: "Pot închiria mai multe cabine la același eveniment?",
+        a: "Da — avem pachete DUO PARTY (2 cabine la alegere), DUO PREMIUM (WOOD Booth + Magic Mirror) și TRIO EXPERIENCE (toate 3 cabinele), cu prețuri pentru 6 sau 8 ore. Este o opțiune populară la nunți, unde invitații se bucură de stiluri diferite de fotografii pe parcursul serii.",
       },
       {
         q: "Câte poze se pot face într-o oră?",
@@ -623,11 +642,7 @@ export const serviceDetails: Record<
       },
       {
         q: "Există o limită la numărul de poze printate?",
-        a: "Nu, toate pachetele includ printuri nelimitate pe durata rezervată. Estimăm consumabile suficiente indiferent de cât de activi sunt invitații, iar echipa are întotdeauna rezervă de hârtie și cerneală.",
-      },
-      {
-        q: "Cât costă închirierea unei cabine foto?",
-        a: "Prețul depinde de cabina aleasă (Led Booth, Luxury Mirror Booth Pro sau Wood Booth), de pachetul de ore (Noble, Aristocrat sau Monarch) și de locația evenimentului. Trimite-ne detaliile evenimentului tău și primești o ofertă personalizată, fără nicio obligație.",
+        a: "Nu, toate variantele includ printuri nelimitate pe durata rezervată. Estimăm consumabile suficiente indiferent de cât de activi sunt invitații, iar echipa are întotdeauna rezervă de hârtie și cerneală.",
       },
     ],
     clientTypes: [
@@ -637,9 +652,9 @@ export const serviceDetails: Record<
       "Persoane care aniversează evenimente și vor amintiri fizice pentru toți invitații",
     ],
     useCases: [
-      "Nuntă cu 120 invitați — Luxury Mirror Booth Pro, pachet Aristocrat (8 ore), design foto cu numele mirilor",
-      "Eveniment corporate — Led Booth, pachet Noble (4 ore), fundal branduit cu logo companie",
-      "Nuntă în grădină, tematică boho — Wood Booth, pachet Monarch, props vesele, benzi magnetice",
+      "Nuntă cu 120 invitați — Magic Mirror, 8 ore, design foto cu numele mirilor",
+      "Eveniment corporate — LED Booth, 4 ore, fundal branduit cu logo companie",
+      "Nuntă în grădină, tematică boho — WOOD Booth, pachet TRIO EXPERIENCE, props vesele, benzi magnetice",
     ],
     trustStats: [
       { label: "Poze imprimate", value: "25.000+" },
@@ -649,108 +664,138 @@ export const serviceDetails: Record<
     ],
     models: [
       {
-        name: "Led Booth",
+        name: "WOOD Booth",
+        tagline: "Aspect natural și cald, lucrat manual din lemn",
+        bestFor: "Elegant, premium — nunți, botezuri, evenimente corporate",
+        description:
+          "Combină funcționalitatea unei cabine moderne cu estetica unei piese lucrate manual din lemn. Este la fel de compactă și ușor de transportat ca LED Booth, dar aspectul ei cald se integrează natural în locații rustice, hambare, grădini sau evenimente cu tematică boho, vintage ori country-chic.",
+        images: ["/images/servicii/cabina-foto/cabina-foto-wood-booth.jpg"],
+        specs: [
+          "Fotografii nelimitate",
+          "Printuri instant nelimitate",
+          "Operator dedicat",
+          "Recuzită amuzantă",
+          "Template personalizat",
+          "Galerie online",
+          "Transport inclus in București și Ilfov",
+        ],
+        prices: [
+          { duration: "4 ore", price: "1.100 lei" },
+          { duration: "6 ore", price: "1.400 lei" },
+          { duration: "8 ore", price: "1.700 lei" },
+        ],
+        priceInclude: "Are inclus album fizic.",
+      },
+      {
+        name: "LED Booth",
         tagline:
           "Compactă, accesibilă și pregătită de drum într-o singură geantă",
+        bestFor: "Modern, party — adolescenți, majorate, corporate, petreceri",
         description:
           "Cea mai portabilă cabină din portofoliul nostru — imprimanta este încorporată direct în carcasă, așa că nu mai e nevoie de accesorii suplimentare. Se montează rapid, încape în orice mașină și poate fi personalizată prin colantare, adaptându-se oricărui branding sau temă de eveniment.",
         images: ["/images/servicii/cabina-foto/cabina-foto-led-booth-1.png"],
         specs: [
-          "Imprimantă foto profesională încorporată în carcasă",
-          "Aparat foto DSLR Nikon D3500 sau Canon 2000D + obiectiv 18-55mm",
-          "Blitz profesional de studio VL200-Plus",
-          "Laptop 2 în 1 Full HD Touch, 8GB RAM, 256GB SSD",
-          "Stativ profesional inclus",
-          "Genți de transport profesionale, impermeabile și antistatice",
-          "Montaj și transport de o singură persoană",
+          "Fotografii nelimitate",
+          "Printuri instant nelimitate",
+          "Operator dedicat",
+          "Recuzită amuzantă",
+          "Template personalizat",
+          "Galerie online",
+          "GIF, Boomerang & Video",
+          "Transport inclus in București și Ilfov",
         ],
+        prices: [
+          { duration: "4 ore", price: "1.200 lei" },
+          { duration: "6 ore", price: "1.500 lei" },
+          { duration: "8 ore", price: "1.800 lei" },
+        ],
+        priceInclude:
+          "Are incluse lumini de fundal, album audio și album fizic.",
       },
       {
-        name: "Luxury Mirror Booth Pro",
+        name: "Magic Mirror",
         tagline:
           "Oglinda interactivă care devine punctul central al petrecerii",
+        bestFor: "Produsul „WOW” al portofoliului",
         description:
           "Cabina noastră premium — o oglindă XXL cu display UHD 4K și leduri RGB integrate, ale căror culori se schimbă din aplicație. Carcasa din aluminiu, în nuanțe de negru și alb, are un aspect modern și elegant, potrivit pentru nunți mari și evenimente corporate de anvergură.",
         images: [
           "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-1.png",
-          "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-2.jpg",
-          "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-3.jpg",
-          "/images/servicii/cabina-foto/cabina-foto-luxury-mirror-booth-pro-4.jpg",
         ],
         specs: [
-          "Dimensiuni cabină: 150 × 91 × 23 cm",
-          "Cutie de transport profesională din Tego: 157 × 97,5 × 32,5 cm",
-          "Oglindă New Pilkington MirrorView 65″ — claritate 100%",
-          "Display UHD 4K de 108 cm",
-          "Carcasă din aluminiu premium, negru & alb, cu picior rabatabil",
-          "Leduri RGB Bluetooth integrate, controlate din aplicație",
-          "Beauty dish pentru o lumină uniformă și flatantă",
-          "Aparat foto DSLR Nikon D3500 sau Canon 2000D + obiectiv 18-55mm",
-          "Imprimantă foto profesională DNP RX1-HS",
-          "Consumabile incluse pentru 1.400 printuri 10×15 cm",
-          "Blitz studio profesional Elinchrom 200W sau VL200-Plus",
+          "Fotografii nelimitate",
+          "Printuri instant nelimitate",
+          "Operator dedicat",
+          "Recuzită premium",
+          "Template personalizat",
+          "Galerie online",
+          "Efecte interactive pe ecran",
+          "GIF, Boomerang & Video",
+          "Transport inclus in București și Ilfov",
         ],
-      },
-      {
-        name: "Wood Booth",
-        tagline: "Aspect natural și cald, lucrat manual din lemn",
-        description:
-          "Combină funcționalitatea unei cabine moderne cu estetica unei piese lucrate manual din lemn. Este la fel de compactă și ușor de transportat ca Led Booth, dar aspectul ei cald se integrează natural în locații rustice, hambare, grădini sau evenimente cu tematică boho, vintage ori country-chic.",
-        images: ["/images/servicii/cabina-foto/cabina-foto-wood-booth.jpg"],
-        specs: [
-          "Carcasă lucrată manual din lemn",
-          "Imprimantă foto profesională încorporată în carcasă",
-          "Aparat foto DSLR Nikon D3500 sau Canon 2000D + obiectiv 18-55mm",
-          "Blitz profesional de studio VL200-Plus",
-          "Laptop 2 în 1 Full HD Touch, 8GB RAM, 256GB SSD",
-          "Genți de transport profesionale, impermeabile și antistatice",
-          "Montaj și transport de o singură persoană",
+        prices: [
+          { duration: "4 ore", price: "1.300 lei" },
+          { duration: "6 ore", price: "1.600 lei" },
+          { duration: "8 ore", price: "1.900 lei" },
         ],
+        priceInclude:
+          "Are incluse lumini de fundal, album audio, album fizic, editare live a pozelor și colaj video instant la final.",
       },
     ],
     packages: [
       {
-        name: "Noble",
-        tagline: "Potrivit pentru recepții și evenimente de câteva ore",
-        duration: "4 ore din eveniment",
-        features: [
-          "Printuri nelimitate",
-          "Fundal printat HD / Greenscreen",
-          "Design foto custom — logo sau text personalizat",
-          "Print 10×15 cm sau 5×15 cm",
-          "Benzi magnetice pentru poze",
-          "Operator specializat",
+        name: "DUO PARTY",
+        content: "2 cabine la alegere",
+        prices: [
+          { duration: "6 ore", price: "2.500 lei" },
+          { duration: "8 ore", price: "2.900 lei" },
         ],
       },
       {
-        name: "Aristocrat",
-        tagline:
-          "Alegerea potrivită pentru nunți și petreceri de o zi întreagă",
-        duration: "8 ore din eveniment",
-        features: [
-          "Printuri nelimitate",
-          "Fundal printat HD / Greenscreen",
-          "Design foto custom — logo sau text personalizat",
-          "Print 10×15 cm sau 5×15 cm",
-          "Benzi magnetice pentru poze",
-          "Operator specializat",
+        name: "DUO PREMIUM",
+        content: "WOOD Booth + Magic Mirror",
+        prices: [
+          { duration: "6 ore", price: "2.700 lei" },
+          { duration: "8 ore", price: "3.100 lei" },
         ],
       },
       {
-        name: "Monarch",
-        tagline: "Cabina foto rămâne deschisă pe tot parcursul evenimentului",
-        duration: "Pe parcursul întregului eveniment",
-        features: [
-          "Printuri nelimitate",
-          "Fundal printat HD / Greenscreen",
-          "Design foto custom — logo sau text personalizat",
-          "Print 10×15 cm sau 5×15 cm",
-          "Benzi magnetice pentru poze",
-          "Operator specializat",
+        name: "TRIO EXPERIENCE",
+        content: "Toate 3 cabinele",
+        prices: [
+          { duration: "6 ore", price: "3.700 lei" },
+          { duration: "8 ore", price: "4.200 lei" },
         ],
       },
     ],
+    packagesSummary: [
+      {
+        name: "SINGLE",
+        content: "O singură cabină",
+        range: "1.100 – 1.900 lei",
+      },
+      {
+        name: "DOUBLE",
+        content: "Două cabine",
+        range: "2.500 – 3.100 lei",
+      },
+      {
+        name: "TRIPLE",
+        content: "Toate trei",
+        range: "3.700 – 4.200 lei",
+      },
+    ],
     packagesNote:
-      "Fiecare pachet este disponibil pentru oricare dintre cele trei cabine — Led Booth, Luxury Mirror Booth Pro sau Wood Booth. Prețul final depinde de cabina aleasă, durata serviciului și locația evenimentului.",
+      "Prețurile includ transport, montaj, operator dedicat și printuri nelimitate. Pentru locații în afara Bucureștiului sau cerințe speciale de personalizare, cere-ne o ofertă exactă.",
+    extras: [
+      { name: "Oră suplimentară", range: "200 – 250 lei" },
+      { name: "Album foto", range: "200 – 300 lei" },
+      { name: "Fundal premium", range: "150 – 250 lei" },
+      { name: "Personalizare premium", range: "100 – 200 lei" },
+      { name: "Guest Book", range: "150 – 250 lei" },
+      { name: "GIF / Video / Boomerang", range: "150 – 300 lei" },
+      { name: "Transport în afara Bucureștiului", range: "2,5 – 3 lei / km" },
+      { name: "Echipament suplimentar", range: "500 – 800 lei" },
+    ],
   },
 };
