@@ -373,9 +373,14 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   key={plan.name}
                   className="bg-white rounded-sm border border-warm-dark p-7 h-full"
                 >
-                  <h3 className="font-display text-2xl text-obsidian">
-                    {plan.name}
-                  </h3>
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="font-display text-2xl text-obsidian">
+                      {plan.name}
+                    </h3>
+                    <p className="shrink-0 font-display text-lg text-gold">
+                      {plan.priceEur} € / persoană
+                    </p>
+                  </div>
                   <p className="mt-1.5 text-sm text-charcoal/60 font-light">
                     {plan.tagline}
                   </p>
@@ -422,7 +427,9 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                     Tarif închiriere
                   </p>
                   <p className="font-display text-2xl text-white mb-2">
-                    5 – 15 € / persoană
+                    {Math.min(...detail.plans.map((p) => p.priceEur))} –{" "}
+                    {Math.max(...detail.plans.map((p) => p.priceEur))} € /
+                    persoană
                   </p>
                   <p className="text-sm text-white/50 font-light leading-relaxed">
                     {detail.plansNote}

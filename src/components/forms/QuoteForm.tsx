@@ -77,15 +77,16 @@ function parseGuestRange(
   return { min: parseInt(m[1], 10), max: parseInt(m[2], 10) };
 }
 
-// Services priced per guest instead of a flat fee — €/person by plan name.
+// Services priced per guest instead of a flat fee — €/person, read from
+// serviceDetails[slug].plans[].priceEur (single source of truth).
 // Approximate BNR EUR→RON reference rate; update periodically.
 const EUR_TO_LEI = 5.05;
-const PER_GUEST_EUR_PRICE: Record<string, Record<string, number>> = {
-  "cocktail-bar": { Silver: 5, Gold: 10, Platinum: 15 },
-};
 
 function getPerGuestEurRate(slug: string, planName: string): number | null {
-  return PER_GUEST_EUR_PRICE[slug]?.[planName] ?? null;
+  return (
+    serviceDetails[slug]?.plans?.find((p) => p.name === planName)?.priceEur ??
+    null
+  );
 }
 
 // Services priced per guest with a minimum spend, no plan selector — driven by

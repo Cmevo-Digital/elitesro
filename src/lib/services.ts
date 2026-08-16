@@ -13,6 +13,7 @@ export const serviceDetails: Record<
     plans?: {
       name: string;
       tagline: string;
+      priceEur: number;
       alcoholic: string[];
       nonAlcoholic: string[];
     }[];
@@ -440,6 +441,7 @@ export const serviceDetails: Record<
       {
         name: "Silver",
         tagline: "Clasicele pe care le cere toată lumea",
+        priceEur: 5,
         alcoholic: [
           "Pornstar Martini",
           "Margarita",
@@ -469,6 +471,7 @@ export const serviceDetails: Record<
       {
         name: "Gold",
         tagline: "Selecție extinsă, cu rețete de bar de autor",
+        priceEur: 10,
         alcoholic: [
           "Paper Plane",
           "French 75",
@@ -501,6 +504,7 @@ export const serviceDetails: Record<
       {
         name: "Platinum",
         tagline: "Meniul complet, cu tehnici și ingrediente premium",
+        priceEur: 15,
         alcoholic: [
           "Smoked Old Fashioned",
           "Clover Club",
