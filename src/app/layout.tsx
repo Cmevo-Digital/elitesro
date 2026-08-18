@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://elites.ro"),
   title: {
     default:
-      "Elites Events — Închirieri & Logistică Evenimente București, Ilfov, Pitești, Ploiești",
+      "Elites Events — Închirieri & Logistică Evenimente",
     template: "%s | Elites Events",
   },
   description:
