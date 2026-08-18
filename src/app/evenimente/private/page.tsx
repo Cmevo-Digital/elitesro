@@ -6,7 +6,7 @@ import { TESTIMONIALS } from "@/lib/constants";
 import { eventServiceSchema, safeStringify } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Evenimente Private — Aniversări & Petreceri Speciale",
+  title: "Organizare Evenimente Private & Petreceri București, Ilfov | Elites Events",
   description:
     "Organizăm evenimente private de neuitat — aniversări, petreceri și reuniuni în București, Ilfov, Pitești și Ploiești. Mobilier, corturi, DJ și logistică completă.",
   alternates: { canonical: "/evenimente/private/" },
@@ -69,7 +69,7 @@ export default function PrivatePage() {
           <div className="relative container-brand pb-14 pt-28">
             <p className="overline-text text-gold mb-3">Evenimente Private</p>
             <h1 className="font-display text-4xl md:text-6xl text-white max-w-2xl leading-tight">
-              Momentele speciale merită o execuție deosebită.
+              Organizare Evenimente Private &amp; Închirieri Logistică în București și Ilfov
             </h1>
             <p className="mt-4 text-white/60 font-light max-w-lg">
               Aniversări, reuniuni de familie, petreceri tematice, tratăm
@@ -153,6 +153,83 @@ export default function PrivatePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Petreceri private de lux */}
+        <section className="section-padding bg-ivory">
+          <div className="container-brand max-w-4xl">
+            <p className="overline-text text-gold mb-3">
+              Petreceri private de lux
+            </p>
+            <h2 className="font-display text-3xl text-obsidian mb-6">
+              Petreceri private de lux în București și Ilfov
+            </h2>
+            <p className="text-charcoal/60 text-base leading-relaxed font-light mb-6">
+              Organizăm petreceri private de lux care transformsă fiecare aniver
+              sau eveniment special într-o experiență memorabilă. De la mobilier
+              elegant și corturi premium la iluminat ambiental spectaculos,
+              creăm atmosfere rafinate potrivite pentru orice ocazie.
+            </p>
+            <h3 className="font-display text-2xl text-obsidian mb-4 mt-6">
+              Ce include un pachet de petrecere privată de lux
+            </h3>
+            <ul className="space-y-3">
+              {[
+                "Mobilier premium pentru sală sau outdoor",
+                "Iluminat ambiental și decorativ personalizat",
+                "Cocktail bar cu barman dedicat",
+                "Sistem audio de calitate și DJ",
+                "Cabina foto cu imprimare instantă",
+                "Coordonare completă de la concept la execuție",
+              ].map((s) => (
+                <li
+                  key={s}
+                  className="flex items-start gap-2.5 text-sm text-charcoal/70"
+                >
+                  <span className="text-gold">✓</span>
+                  {s}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Logistică petreceri private */}
+        <section className="section-padding bg-warm">
+          <div className="container-brand max-w-4xl">
+            <p className="overline-text text-gold mb-3">
+              Logistică petreceri private
+            </p>
+            <h2 className="font-display text-3xl text-obsidian mb-6">
+              Logistică petreceri private — dintr-o singură sursă
+            </h2>
+            <p className="text-charcoal/60 text-base leading-relaxed font-light mb-6">
+              Gestăm integral logistică petreceri private: de la transportul
+              echipamentului la montaj, coordonarea echipei și demontaj. Astfel,
+              tu te concentrezi exclusiv pe moment, în timp ce noi ne ocupăm
+              de fiecare detaliu tehnic și logistic.
+            </p>
+            <h3 className="font-display text-2xl text-obsidian mb-4 mt-6">
+              Servicii de logistică incluse
+            </h3>
+            <ul className="space-y-3">
+              {[
+                "Transport echipamente în toată zona București–Ilfov",
+                "Montaj și demontaj de către echipă dedicată",
+                "Coordonare cu locația și furnizori externi",
+                "Plan de montaj și timeline detaliat",
+                "Suport tehnic pe toată durata evenimentului",
+              ].map((s) => (
+                <li
+                  key={s}
+                  className="flex items-start gap-2.5 text-sm text-charcoal/70"
+                >
+                  <span className="text-gold">✓</span>
+                  {s}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
