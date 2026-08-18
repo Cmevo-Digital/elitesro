@@ -54,9 +54,8 @@ export default function Hero() {
             transition: "opacity 0.9s ease 0.25s, transform 0.9s ease 0.25s",
           }}
         >
-          Elites. Events
-          <br />
-          <em className="text-gold not-italic">Soluții Premium pentru Închirieri &amp; Logistică Evenimente</em>
+          Elites Events{" "}
+          <em className="text-gold not-italic">— Închirieri Echipamente &amp; Logistică Premium pentru Evenimente</em>
         </h1>
 
         {/* Subheadline */}
