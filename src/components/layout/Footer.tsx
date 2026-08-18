@@ -69,7 +69,7 @@ export default function Footer() {
               ))}
               <li>
                 <Link
-                  href="/cerere-oferta"
+                  href="/cerere-oferta/"
                   data-gtm-id="footer_solicita_oferta"
                   data-gtm-location="footer"
                   className="text-sm text-gold hover:text-gold-light transition-colors duration-200"
@@ -87,7 +87,7 @@ export default function Footer() {
               {SERVICES.filter((s) => s.active).map((s) => (
                 <li key={s.slug}>
                   <Link
-                    href={`/servicii/${s.slug}`}
+                    href={`/servicii/${s.slug}/`}
                     className="text-sm text-white/60 hover:text-gold transition-colors duration-200"
                   >
                     {s.title}
@@ -168,11 +168,11 @@ export default function Footer() {
             © {new Date().getFullYear()} Elites Events. Toate drepturile rezervate.
           </p>
           <div className="flex gap-5">
-            <Link href="/contact" className="text-xs text-white/30 hover:text-white/60 transition-colors">
+            <Link href="/contact/" className="text-xs text-white/30 hover:text-white/60 transition-colors">
               Contact
             </Link>
             <Link
-              href="/cerere-oferta"
+              href="/cerere-oferta/"
               data-gtm-id="footer_bottom_oferta"
               data-gtm-location="footer"
               className="text-xs text-white/30 hover:text-white/60 transition-colors"

@@ -142,7 +142,7 @@ export default function ServicesGrid() {
             return (
               <AnimatedSection key={service.slug} delay={i * 60}>
                 <Link
-                  href={`/servicii/${service.slug}`}
+                  href={`/servicii/${service.slug}/`}
                   className="group block bg-white rounded-sm overflow-hidden hover:-translate-y-1 hover:shadow-hover transition-all duration-300 h-full"
                 >
                   {/* Image thumbnail */}
@@ -184,7 +184,7 @@ export default function ServicesGrid() {
 
         <AnimatedSection delay={400} className="mt-10 text-center">
           <Link
-            href="/servicii"
+            href="/servicii/"
             className="inline-flex items-center gap-2 text-sm font-semibold text-charcoal/70 hover:text-gold transition-colors duration-200 group"
           >
             Vezi toate serviciile

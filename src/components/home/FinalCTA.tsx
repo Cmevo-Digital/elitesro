@@ -33,7 +33,7 @@ export default function FinalCTA() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/cerere-oferta"
+              href="/cerere-oferta/"
               data-gtm-id="final_cta_oferta"
               data-gtm-location="final_cta"
               className="px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
@@ -58,7 +58,7 @@ export default function FinalCTA() {
               Scrie-ne pe WhatsApp
             </a>
             <Link
-              href="/contact"
+              href="/contact/"
               data-gtm-id="final_cta_email"
               data-gtm-location="final_cta"
               className="px-8 py-4 border border-white/40 text-white text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:border-white hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2"

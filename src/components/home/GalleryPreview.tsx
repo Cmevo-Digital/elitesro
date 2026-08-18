@@ -21,7 +21,7 @@ export default function GalleryPreview() {
           </AnimatedSection>
           <AnimatedSection delay={100}>
             <Link
-              href="/portofoliu"
+              href="/portofoliu/"
               className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold-dark transition-colors duration-200 group shrink-0"
             >
               Vezi portofoliul complet
@@ -42,7 +42,7 @@ export default function GalleryPreview() {
               className={i === 0 || i === 3 ? "row-span-2 h-full" : ""}
             >
               <Link
-                href="/portofoliu"
+                href="/portofoliu/"
                 className={`group relative block rounded-sm overflow-hidden bg-warm ${
                   i === 0 || i === 3 ? "h-full" : "aspect-square"
                 }`}

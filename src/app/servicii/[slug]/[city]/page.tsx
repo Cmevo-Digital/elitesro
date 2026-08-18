@@ -257,14 +257,14 @@ export default async function CityServicePage({ params }: PageProps) {
             <div className="container-brand py-3">
               <nav className="flex items-center gap-2 text-xs text-white/50 font-light">
                 <Link
-                  href="/servicii"
+                  href="/servicii/"
                   className="hover:text-gold transition-colors"
                 >
                   Servicii
                 </Link>
                 <span>/</span>
                 <Link
-                  href={`/servicii/${slug}`}
+                  href={`/servicii/${slug}/`}
                   className="hover:text-gold transition-colors"
                 >
                   {service.title}
@@ -335,7 +335,7 @@ export default async function CityServicePage({ params }: PageProps) {
                 </div>
 
                 <Link
-                  href="/cerere-oferta"
+                  href="/cerere-oferta/"
                   data-gtm-id="page_cta_oferta"
                   data-gtm-location="service_city_page"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
@@ -370,7 +370,7 @@ export default async function CityServicePage({ params }: PageProps) {
                     Oferim opțiuni pentru orice buget. Vezi pachetele noastre.
                   </p>
                   <Link
-                    href={`/servicii/${slug}`}
+                    href={`/servicii/${slug}/`}
                     className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-gold-dark transition"
                   >
                     Vezi Pachete
@@ -443,7 +443,7 @@ export default async function CityServicePage({ params }: PageProps) {
               {otherCities.map((c) => (
                 <Link
                   key={c.slug}
-                  href={`/servicii/${slug}/${c.slug}`}
+                  href={`/servicii/${slug}/${c.slug}/`}
                   className="bg-warm p-5 rounded-sm hover:-translate-y-0.5 hover:shadow-hover transition-all duration-300 flex items-center justify-between"
                 >
                   <span className="font-medium text-sm text-obsidian">
@@ -455,7 +455,7 @@ export default async function CityServicePage({ params }: PageProps) {
             </div>
             <div className="mt-6">
               <Link
-                href={`/servicii/${slug}`}
+                href={`/servicii/${slug}/`}
                 className="text-sm text-charcoal/50 hover:text-gold transition-colors font-light"
               >
                 ← Înapoi la {service.title}

@@ -73,7 +73,7 @@ export default function Process() {
 
         <AnimatedSection delay={360} className="mt-12 text-center">
           <Link
-            href="/cerere-oferta"
+            href="/cerere-oferta/"
             data-gtm-id="page_cta_oferta"
             data-gtm-location="home_process"
             className="inline-flex items-center gap-2 px-8 py-4 bg-obsidian text-white text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-charcoal transition-all duration-300 hover:scale-105"

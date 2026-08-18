@@ -72,7 +72,7 @@ export default function FaqAccordion({ faqs, whatsappUrl }: Props) {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
-                href="/contact"
+                href="/contact/"
                 className="px-6 py-3 bg-obsidian text-white text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-charcoal transition"
               >
                 Trimite Întrebare

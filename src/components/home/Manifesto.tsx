@@ -57,7 +57,7 @@ export default function Manifesto() {
 
               <div className="pt-4 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="/despre-noi"
+                  href="/despre-noi/"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold-dark transition-colors duration-200 group"
                 >
                   Citește povestea noastră

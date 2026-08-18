@@ -202,7 +202,7 @@ export default function CorporatePage() {
                   ))}
                 </ul>
                 <Link
-                  href="/cerere-oferta"
+                  href="/cerere-oferta/"
                   data-gtm-id="page_cta_oferta"
                   data-gtm-location="corporate_page"
                   className="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
@@ -383,7 +383,7 @@ export default function CorporatePage() {
               Solicită oferta și un specialist te contactează în 2 ore.
             </p>
             <Link
-              href="/cerere-oferta"
+              href="/cerere-oferta/"
               data-gtm-id="page_cta_oferta_final"
               data-gtm-location="corporate_page"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"

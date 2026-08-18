@@ -19,12 +19,12 @@ export const BRAND = {
 export const WHATSAPP_URL = `https://wa.me/${BRAND.whatsapp}?text=Bun%C4%83%20ziua%2C%20a%C8%99%20dori%20o%20ofert%C4%83%20pentru%20evenimentul%20meu.`;
 
 export const NAV_LINKS = [
-  { label: "Servicii", href: "/servicii" },
-  { label: "Evenimente", href: "/evenimente" },
-  { label: "Portofoliu", href: "/portofoliu" },
-  { label: "Blog", href: "/blog" },
-  { label: "Despre Noi", href: "/despre-noi" },
-  { label: "FAQ", href: "/intrebari-frecvente" },
+  { label: "Servicii", href: "/servicii/" },
+  { label: "Evenimente", href: "/evenimente/" },
+  { label: "Portofoliu", href: "/portofoliu/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Despre Noi", href: "/despre-noi/" },
+  { label: "FAQ", href: "/intrebari-frecvente/" },
 ];
 
 export const SERVICES = [
@@ -109,7 +109,7 @@ export const EVENT_TYPES = [
       "Creăm ambianța perfectă pentru ziua ta cea mai importantă. De la masa de onoare la ultimul scaun din sală.",
     image:
       "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600&auto=format&fit=crop",
-    href: "/evenimente/nunti",
+    href: "/evenimente/nunti/",
   },
   {
     slug: "corporate",
@@ -118,7 +118,7 @@ export const EVENT_TYPES = [
       "Conferințe, gale, teambuilding-uri sau lansări de produs. Executăm profesional, la orice scară.",
     image:
       "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1600&auto=format&fit=crop",
-    href: "/evenimente/corporate",
+    href: "/evenimente/corporate/",
   },
   {
     slug: "private",
@@ -127,7 +127,7 @@ export const EVENT_TYPES = [
       "Aniversări, petreceri private, reuniuni — evenimente personale tratate cu aceeași atenție la detalii.",
     image:
       "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1600&auto=format&fit=crop",
-    href: "/evenimente/private",
+    href: "/evenimente/private/",
   },
 ];
 

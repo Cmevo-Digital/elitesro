@@ -103,7 +103,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               ))}
 
               <Link
-                href="/cerere-oferta"
+                href="/cerere-oferta/"
                 data-gtm-id="page_cta_oferta"
                 data-gtm-location="service_detail_page"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
@@ -138,7 +138,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   Construiește pachetul perfect pentru evenimentul tău.
                 </p>
                 <Link
-                  href="/cerere-oferta"
+                  href="/cerere-oferta/"
                   data-gtm-id="page_cta_oferta_package"
                   data-gtm-location="service_detail_page"
                   className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-gold-dark transition"
@@ -346,7 +346,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   {detail.packagesNote}
                 </p>
                 <Link
-                  href="/cerere-oferta"
+                  href="/cerere-oferta/"
                   data-gtm-id="page_cta_oferta_packages"
                   data-gtm-location="service_detail_page"
                   className="shrink-0 self-start md:self-auto inline-flex items-center gap-2 px-6 py-3 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-gold-dark transition"
@@ -436,7 +436,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   </p>
                 </div>
                 <Link
-                  href="/cerere-oferta"
+                  href="/cerere-oferta/"
                   data-gtm-id="page_cta_oferta_plans"
                   data-gtm-location="service_detail_page"
                   className="shrink-0 self-start md:self-auto inline-flex items-center gap-2 px-6 py-3 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-gold-dark transition"
@@ -472,7 +472,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 </p>
               </div>
               <Link
-                href="/cerere-oferta"
+                href="/cerere-oferta/"
                 data-gtm-id="page_cta_oferta_pricing_minimum"
                 data-gtm-location="service_detail_page"
                 className="shrink-0 self-start md:self-auto inline-flex items-center gap-2 px-6 py-3 bg-gold text-obsidian text-[11px] font-semibold tracking-widest uppercase rounded-full hover:bg-gold-dark transition"
@@ -614,7 +614,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               .map((s) => (
                 <Link
                   key={s.slug}
-                  href={`/servicii/${s.slug}`}
+                  href={`/servicii/${s.slug}/`}
                   className="bg-white p-5 rounded-sm hover:-translate-y-0.5 hover:shadow-hover transition-all duration-300 flex items-center gap-3"
                 >
                   <div className="flex-1">
@@ -640,7 +640,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             {CITY_LINKS.map((c) => (
               <Link
                 key={c.slug}
-                href={`/servicii/${slug}/${c.slug}`}
+                href={`/servicii/${slug}/${c.slug}/`}
                 className="px-5 py-2.5 border border-charcoal/20 rounded-full text-sm text-charcoal/70 hover:border-gold hover:text-gold transition-all duration-200"
               >
                 {service.title} în {c.name}

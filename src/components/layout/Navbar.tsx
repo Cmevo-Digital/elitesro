@@ -66,7 +66,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <Link
-              href="/cerere-oferta"
+              href="/cerere-oferta/"
               data-gtm-id="menu_solicita_oferta"
               data-gtm-location="navbar_desktop"
               className={cn(
@@ -122,7 +122,7 @@ export default function Navbar() {
 
           <div className="mt-8 flex flex-col gap-3">
             <Link
-              href="/cerere-oferta"
+              href="/cerere-oferta/"
               onClick={() => setMenuOpen(false)}
               data-gtm-id="menu_solicita_oferta"
               data-gtm-location="navbar_mobile"

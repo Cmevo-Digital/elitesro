@@ -23,7 +23,7 @@ export default function FAQ() {
               />
               <div className="mt-8 flex flex-col gap-3">
                 <a
-                  href="/cerere-oferta"
+                  href="/cerere-oferta/"
                   data-gtm-id="page_cta_oferta"
                   data-gtm-location="home_faq"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-obsidian text-white text-[11px] font-semibold tracking-[0.14em] uppercase rounded-full hover:bg-charcoal transition-all duration-300 w-fit"
@@ -31,7 +31,7 @@ export default function FAQ() {
                   Solicită Ofertă Gratuită
                 </a>
                 <a
-                  href="/contact"
+                  href="/contact/"
                   className="inline-flex items-center gap-2 text-sm font-semibold text-charcoal/60 hover:text-gold transition-colors duration-200 group w-fit"
                 >
                   Ai alte întrebări? Scrie-ne

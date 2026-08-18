@@ -70,7 +70,7 @@ export default function WhatsAppButton() {
           <span className="text-[9px] font-semibold tracking-widest uppercase">WhatsApp</span>
         </a>
         <a
-          href="/cerere-oferta"
+          href="/cerere-oferta/"
           data-gtm-id="sticky_oferta"
           data-gtm-location="sticky_bar"
           className="flex-1 flex flex-col items-center justify-center py-3 gap-0.5 bg-gold text-obsidian"

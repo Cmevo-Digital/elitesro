@@ -161,7 +161,7 @@ export default function AboutPage() {
             Solicită o ofertă gratuită sau contactează-ne direct.
           </p>
           <Link
-            href="/cerere-oferta"
+            href="/cerere-oferta/"
             data-gtm-id="page_cta_oferta"
             data-gtm-location="about_page"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gold text-obsidian text-[11px] font-semibold tracking-[0.16em] uppercase rounded-full hover:bg-gold-dark transition-all duration-300 hover:scale-105"
