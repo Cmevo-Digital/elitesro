@@ -117,7 +117,7 @@ export const EVENT_TYPES = [
     description:
       "Conferințe, gale, teambuilding-uri sau lansări de produs. Executăm profesional, la orice scară.",
     image:
-      "https://images.unsplash.com/photo-1540575012917-bf157c5a9541?q=80&w=1600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=1600&auto=format&fit=crop",
     href: "/evenimente/corporate/",
   },
   {
@@ -242,7 +242,7 @@ export const GALLERY_IMAGES = [
     category: "corturi",
   },
   {
-    src: "https://images.unsplash.com/photo-1556125574-d7f72736a06?q=80&w=2340&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1556125574-d7f27ec36a06?q=80&w=2340&auto=format&fit=crop",
     alt: "Evenimente private - majorat",
     category: "private",
   },
