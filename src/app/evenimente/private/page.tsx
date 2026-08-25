@@ -6,7 +6,7 @@ import { TESTIMONIALS } from "@/lib/constants";
 import { eventServiceSchema, safeStringify } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Organizare Evenimente Private & Petreceri București, Ilfov | Elites Events",
+  title: "Organizare Evenimente Private & Petreceri",
   description:
     "Organizăm evenimente private de neuitat — aniversări, petreceri și reuniuni în București, Ilfov, Pitești și Ploiești. Mobilier, corturi, DJ și logistică completă.",
   alternates: { canonical: "/evenimente/private/" },
