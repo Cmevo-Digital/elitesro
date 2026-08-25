@@ -46,9 +46,9 @@ export const SERVICES = [
   },
   {
     slug: "cocktail-bar",
-    title: "Cocktail Bar",
+    title: "Închiriere Cocktail Bar Mobil pentru Evenimente & Nunți",
     short:
-      "Cocktail bar profesional pentru evenimente — cocktailuri signature, barman cu experiență, setup elegant.",
+      "Închiriere cocktail bar mobil pentru nunți și evenimente în București, Ilfov, Pitești și Ploiești. Barmani profesioniști, băuturi premium și setup complet.",
     icon: "cocktail",
     active: true,
   },
