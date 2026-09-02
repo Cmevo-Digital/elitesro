@@ -58,9 +58,9 @@ const services = [
   },
   {
     slug: "cocktail-bar",
-    title: "Cocktail Bar",
+    title: "Închiriere Cocktail Bar Mobil pentru Evenimente",
     description:
-      "Adaugă un element spectaculos evenimentului tău cu un cocktail bar profesional. Barman cu experiență, ingrediente premium și setup elegant, complet inclus.",
+      "Închiriază cocktail bar mobil profesional pentru nunți, evenimente corporate și petreceri private în București, Ilfov, Pitești și Ploiești. Meniuri signature și barmani profesioniști.",
     icon: GlassWater,
     image:
       "https://images.unsplash.com/photo-1605270012917-bf157c5a9541?q=80&w=900&auto=format&fit=crop",

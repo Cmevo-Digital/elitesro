@@ -13,26 +13,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const blogEntries: MetadataRoute.Sitemap = [
     {
-      url: `${BASE}/blog`,
+      url: `${BASE}/blog/`,
       changeFrequency: "weekly",
       priority: 0.7,
     },
     ...blogSlugs.map(({ slug }) => ({
-      url: `${BASE}/blog/${slug}`,
+      url: `${BASE}/blog/${slug}/`,
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
   ];
 
   const serviceEntries: MetadataRoute.Sitemap = SERVICES.map((s) => ({
-    url: `${BASE}/servicii/${s.slug}`,
+    url: `${BASE}/servicii/${s.slug}/`,
     changeFrequency: "monthly",
     priority: 0.8,
   }));
 
   const cityServiceEntries: MetadataRoute.Sitemap = SERVICES.flatMap((s) =>
     CITY_SLUGS.map((c) => ({
-      url: `${BASE}/servicii/${s.slug}/${c}`,
+      url: `${BASE}/servicii/${s.slug}/${c}/`,
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }))
@@ -40,64 +40,64 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     {
-      url: BASE,
+      url: `${BASE}/`,
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: `${BASE}/servicii`,
+      url: `${BASE}/servicii/`,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     ...serviceEntries,
     ...cityServiceEntries,
     {
-      url: `${BASE}/evenimente`,
+      url: `${BASE}/evenimente/`,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: `${BASE}/evenimente/nunti`,
+      url: `${BASE}/evenimente/nunti/`,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${BASE}/evenimente/corporate`,
+      url: `${BASE}/evenimente/corporate/`,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${BASE}/evenimente/private`,
+      url: `${BASE}/evenimente/private/`,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${BASE}/portofoliu`,
+      url: `${BASE}/portofoliu/`,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${BASE}/testimoniale`,
+      url: `${BASE}/testimoniale/`,
       changeFrequency: "monthly",
       priority: 0.6,
     },
     {
-      url: `${BASE}/despre-noi`,
+      url: `${BASE}/despre-noi/`,
       changeFrequency: "yearly",
       priority: 0.7,
     },
     {
-      url: `${BASE}/intrebari-frecvente`,
+      url: `${BASE}/intrebari-frecvente/`,
       changeFrequency: "monthly",
       priority: 0.6,
     },
     {
-      url: `${BASE}/contact`,
+      url: `${BASE}/contact/`,
       changeFrequency: "yearly",
       priority: 0.7,
     },
     {
-      url: `${BASE}/cerere-oferta`,
+      url: `${BASE}/cerere-oferta/`,
       changeFrequency: "yearly",
       priority: 0.8,
     },

@@ -111,7 +111,8 @@ export default function CorporatePage() {
           <div className="relative container-brand pb-14 pt-28">
             <p className="overline-text text-gold mb-3">Corporate</p>
             <h1 className="font-display text-4xl md:text-6xl text-white max-w-2xl leading-tight">
-              Evenimente corporate executate cu precizie.
+              Organizare Evenimente Corporate & Logistică Tehnică | București &
+              Ilfov
             </h1>
             <p className="mt-4 text-white/60 font-light max-w-lg">
               Conferințe, gale, teambuilding-uri sau lansări de produs. Asigurăm
