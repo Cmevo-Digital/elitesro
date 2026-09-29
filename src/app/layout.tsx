@@ -30,16 +30,15 @@ export const metadata: Metadata = {
     template: "%s | Elites Events",
   },
   description:
-    "Partenerul tău premium pentru evenimente de 50–150 invitați. Mobilier, corturi, veselă, iluminat, DJ și logistică completă în București, Ilfov, Pitești și Ploiești.",
+    "Partenerul tău premium pentru evenimente de 50–150 invitați. Cabină foto, DJ & sisteme audio, cocktail bar, coffee corner și logistică completă în București, Ilfov, Pitești și Ploiești.",
   keywords: [
-    "inchirieri mobilier evenimente bucuresti",
-    "corturi evenimente bucuresti",
+    "cabina foto evenimente bucuresti",
+    "cocktail bar mobil nunta bucuresti",
     "logistica evenimente ilfov",
-    "inchirieri mese scaune nunta pitesti",
     "servicii dj nunta bucuresti",
     "iluminat evenimente bucuresti",
     "organizare evenimente corporate bucuresti",
-    "inchirieri vesela evenimente",
+    "coffee corner evenimente",
     "pachet complet nunta 100 persoane",
   ],
   openGraph: {

@@ -61,37 +61,6 @@ export const SERVICES = [
     active: true,
   },
   {
-    slug: "mobilier-evenimente",
-    title: "Mobilier Evenimente",
-    short:
-      "Mese, scaune, lounge seturi și cocktail tables — alese pentru estetică și confort.",
-    icon: "armchair",
-    active: false,
-  },
-  {
-    slug: "corturi-evenimente",
-    title: "Corturi & Structuri",
-    short:
-      "Corturi premium pentru nunți, corporate și evenimente private în aer liber.",
-    icon: "tent",
-    active: false,
-  },
-  {
-    slug: "mese-scaune",
-    title: "Mese, Scaune & Cocktail",
-    short: "Gama completă de mobilier pentru orice configurație de eveniment.",
-    icon: "utensils",
-    active: false,
-  },
-  {
-    slug: "vesela-tacamuri",
-    title: "Veselă, Pahare & Tacâmuri",
-    short:
-      "Seturi complete pentru mese elegante. Fiecare piesă curată, verificată, impecabilă.",
-    icon: "glass-water",
-    active: false,
-  },
-  {
     slug: "iluminat",
     title: "Iluminat & Atmosferă",
     short:
@@ -106,7 +75,7 @@ export const EVENT_TYPES = [
     slug: "nunti",
     title: "Nunți",
     description:
-      "Creăm ambianța perfectă pentru ziua ta cea mai importantă. De la masa de onoare la ultimul scaun din sală.",
+      "Creăm ambianța perfectă pentru ziua ta cea mai importantă. De la primul dans la ultima melodie a serii.",
     image:
       "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1600&auto=format&fit=crop",
     href: "/evenimente/nunti/",
@@ -134,28 +103,28 @@ export const EVENT_TYPES = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Am apelat la Elites pentru nunta noastră de 120 de persoane. Totul a fost livrat la timp, montat perfect, iar cortul arăta exact cum îmi imaginasem. M-am bucurat de ziua mea fără să mă gândesc o secundă la logistică.",
+      "Am apelat la Elites pentru nunta noastră de 120 de persoane. Totul a fost montat la timp, DJ-ul a ținut ringul plin toată seara, iar cabina foto a fost hitul serii. M-am bucurat de ziua mea fără să mă gândesc o secundă la logistică.",
     name: "Andreea & Mihai",
     event: "Nuntă",
     location: "Ilfov",
   },
   {
     quote:
-      "Am organizat gala anuală a companiei noastre cu ajutorul lor. 80 de invitați, mobilier de sală, sistem audio și iluminat — totul gestionat impecabil. Vom colabora din nou cu siguranță.",
+      "Am organizat gala anuală a companiei noastre cu ajutorul lor. 80 de invitați, sistem audio, iluminat și coffee corner — totul gestionat impecabil. Vom colabora din nou cu siguranță.",
     name: "Radu C.",
     event: "Eveniment Corporate",
     location: "București",
   },
   {
     quote:
-      "Prețul a fost corect, iar calitatea a depășit așteptările. Veselă impecabilă, corect ambalată, livrată cu o zi înainte. Exact ce ai nevoie când organizezi o petrecere de familie.",
+      "Prețul a fost corect, iar calitatea a depășit așteptările. Cocktail bar impecabil, barmani atenți și echipă punctuală. Exact ce ai nevoie când organizezi o petrecere de familie.",
     name: "Elena M.",
     event: "Eveniment Privat",
     location: "Pitești",
   },
   {
     quote:
-      "Profesioniști adevărați. Au montat tot cortul și mobilierul în câteva ore, fără niciun incident. Evenimentul nostru outdoor a arătat ca o producție de lux.",
+      "Profesioniști adevărați. Au montat sistemul audio, luminile și cocktail barul în câteva ore, fără niciun incident. Evenimentul nostru outdoor a arătat ca o producție de lux.",
     name: "Ionuț & Diana",
     event: "Nuntă Outdoor",
     location: "Ilfov",
@@ -172,7 +141,7 @@ export const TESTIMONIALS = [
 export const FAQS = [
   {
     q: "Livrați și montați echipamentele sau trebuie să le ridic eu?",
-    a: "Livrăm, montăm și demontăm tot — în locația ta, conform programului agreat. Nu trebuie să ridici niciun scaun.",
+    a: "Livrăm, montăm și demontăm tot — în locația ta, conform programului agreat. Nu trebuie să ridici niciun echipament.",
   },
   {
     q: "Cu cât timp înainte trebuie să fac rezervarea?",
@@ -211,7 +180,7 @@ export const EXTRA_FAQS = [
   },
   {
     q: "Puteți livra și monta în aceeași zi cu evenimentul?",
-    a: "De regulă livrăm cu o zi înainte. Pentru instalări complexe (corturi, sisteme audio) avem nevoie de minimum 24h. Discutăm programul exact la confirmare.",
+    a: "De regulă livrăm cu o zi înainte. Pentru instalări complexe (sisteme audio, iluminat) avem nevoie de minimum 24h. Discutăm programul exact la confirmare.",
   },
 ];
 
@@ -225,21 +194,6 @@ export const GALLERY_IMAGES = [
     src: "https://images.unsplash.com/photo-1519750157634-b6d493a0f77c?q=80&w=2148&auto=format&fit=crop",
     alt: "Eveniment corporate — setup profesional",
     category: "corporate",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1695393386569-cf141ff2c552?q=80&w=2340&auto=format&fit=crop",
-    alt: "Cort premium",
-    category: "corturi",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?q=80&w=1287&auto=format&fit=crop",
-    alt: "Masă elegantă — veselă premium",
-    category: "mobilier",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1618106494700-4b0049e83ed8?q=80&w=1287&auto=format&fit=crop",
-    alt: "Eveniment outdoor — cort și mobilier",
-    category: "corturi",
   },
   {
     src: "https://images.unsplash.com/photo-1556125574-d7f27ec36a06?q=80&w=2340&auto=format&fit=crop",
@@ -258,7 +212,7 @@ export const GALLERY_IMAGES = [
   },
   {
     src: "/images/portfolio/van-1.png",
-    alt: "Transport logistică, echipamente și mobilier",
+    alt: "Transport logistică și echipamente",
     category: "private",
   },
 ];

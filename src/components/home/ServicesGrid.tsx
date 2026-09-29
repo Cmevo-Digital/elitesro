@@ -1,10 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  Armchair,
-  Tent,
-  UtensilsCrossed,
-  Wine,
   Lightbulb,
   Music,
   GlassWater,
@@ -16,10 +12,6 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 import SectionHeader from "@/components/ui/SectionHeader";
 
 const iconMap = {
-  armchair: Armchair,
-  tent: Tent,
-  utensils: UtensilsCrossed,
-  "glass-water": Wine,
   lightbulb: Lightbulb,
   music: Music,
   cocktail: GlassWater,
@@ -67,46 +59,6 @@ export const services = [
     image:
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop",
     active: true,
-  },
-  {
-    slug: "mobilier-evenimente",
-    title: "Mobilier Evenimente",
-    description:
-      "Mese, scaune, lounge seturi și cocktail tables — alese pentru estetică și confort.",
-    icon: "armchair",
-    image:
-      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=800&auto=format&fit=crop",
-    active: false,
-  },
-  {
-    slug: "corturi-evenimente",
-    title: "Corturi & Structuri",
-    description:
-      "Corturi premium pentru nunți, corporate și evenimente private în aer liber.",
-    icon: "tent",
-    image:
-      "https://images.unsplash.com/photo-1692166927778-056466153552?q=80&w=2340&auto=format&fit=crop",
-    active: false,
-  },
-  {
-    slug: "mese-scaune",
-    title: "Mese, Scaune & Cocktail",
-    description:
-      "Gama completă de mobilier pentru orice configurație de eveniment.",
-    icon: "utensils",
-    image:
-      "https://plus.unsplash.com/premium_photo-1711305771490-2d39ba080f4b?q=80&w=1287&auto=format&fit=crop",
-    active: false,
-  },
-  {
-    slug: "vesela-tacamuri",
-    title: "Veselă, Pahare & Tacâmuri",
-    description:
-      "Seturi complete pentru mese elegante. Fiecare piesă curată, verificată, impecabilă.",
-    icon: "glass-water",
-    image:
-      "https://images.unsplash.com/photo-1769230361493-f1f365a99878?q=80&w=2338&auto=format&fit=crop",
-    active: false,
   },
   {
     slug: "iluminat",

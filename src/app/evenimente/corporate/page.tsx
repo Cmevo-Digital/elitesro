@@ -16,16 +16,16 @@ import { eventServiceSchema, safeStringify } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "Evenimente Corporate — Logistică & Echipamente Profesionale",
   description:
-    "Logistică și echipamente pentru evenimente corporate în București & Ilfov: sonorizare, ecrane LED, mobilier și corturi pentru conferințe și gale.",
+    "Logistică și echipamente pentru evenimente corporate în București & Ilfov: sonorizare, iluminat, cocktail bar, coffee corner și cabină foto pentru conferințe și gale.",
   alternates: { canonical: "/evenimente/corporate/" },
 };
 
 const corporateServices = [
   "Setup complet pentru conferințe și seminarii",
-  "Mobilier elegant pentru gale și dinner de business",
+  "Cocktail bar și coffee corner pentru gale și dinner de business",
   "Sisteme audio și video profesionale",
   "Iluminat tehnic și ambiental",
-  "Corturi și structuri pentru evenimente outdoor",
+  "Cabină foto personalizată cu branding-ul companiei",
   "Logistică completă — livrare, montaj, demontaj",
   "Coordonare multi-furnizor la cerere",
 ];
@@ -39,7 +39,7 @@ const corporateTestimonials = TESTIMONIALS.filter(
 const corporateFaqs = [
   {
     q: "Cu cât timp înainte trebuie să rezerv pentru un eveniment corporate?",
-    a: "Recomandăm minim 2-3 săptămâni pentru evenimente corporate, și 4-6 săptămâni pentru gale mari sau teambuilding-uri cu corturi. Acceptăm și comenzi cu termen mai scurt, în funcție de disponibilitatea echipamentelor și a personalului.",
+    a: "Recomandăm minim 2-3 săptămâni pentru evenimente corporate, și 4-6 săptămâni pentru gale mari sau teambuilding-uri outdoor. Acceptăm și comenzi cu termen mai scurt, în funcție de disponibilitatea echipamentelor și a personalului.",
   },
   {
     q: "Puteți asigura și servicii de catering sau foto/video?",
@@ -88,7 +88,7 @@ export default function CorporatePage() {
             eventServiceSchema({
               name: "Servicii Evenimente Corporate",
               description:
-                "Organizăm evenimente corporate profesionale în București, Ilfov, Pitești și Ploiești. Mobilier, sisteme audio, iluminat și logistică pentru conferințe, gale și teambuilding.",
+                "Organizăm evenimente corporate profesionale în București, Ilfov, Pitești și Ploiești. Sisteme audio, iluminat, cocktail bar, coffee corner și logistică pentru conferințe, gale și teambuilding.",
               slug: "corporate",
             }),
           ),

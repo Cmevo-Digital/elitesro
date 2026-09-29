@@ -7,7 +7,7 @@ import { Phone, Mail } from "lucide-react";
 export const metadata: Metadata = {
   title: "Cerere Ofertă Gratuită",
   description:
-    "Solicită o ofertă gratuită pentru evenimentul tău. Mobilier, corturi, veselă, DJ și logistică în București, Ilfov, Pitești și Ploiești.",
+    "Solicită o ofertă gratuită pentru evenimentul tău. Cabină foto, DJ, cocktail bar, coffee corner și logistică în București, Ilfov, Pitești și Ploiești.",
   alternates: { canonical: "/cerere-oferta/" },
 };
 

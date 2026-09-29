@@ -9,8 +9,6 @@ const categories = [
   { slug: "toate", label: "Toate" },
   { slug: "nunti", label: "Nunți" },
   { slug: "corporate", label: "Corporate" },
-  { slug: "corturi", label: "Corturi" },
-  { slug: "mobilier", label: "Mobilier" },
   { slug: "iluminat", label: "Iluminat" },
   { slug: "private", label: "Private" },
 ];

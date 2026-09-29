@@ -6,7 +6,7 @@ import FaqAccordion from "@/components/faq/FaqAccordion";
 export const metadata: Metadata = {
   title: "Întrebări Frecvente",
   description:
-    "Răspunsuri la cele mai frecvente întrebări despre serviciile Elites Events — mobilier, corturi, veselă, DJ și logistică pentru evenimente în București, Ilfov, Pitești și Ploiești.",
+    "Răspunsuri la cele mai frecvente întrebări despre serviciile Elites Events — cabină foto, DJ, cocktail bar, coffee corner și logistică pentru evenimente în București, Ilfov, Pitești și Ploiești.",
   alternates: { canonical: "/intrebari-frecvente/" },
 };
 

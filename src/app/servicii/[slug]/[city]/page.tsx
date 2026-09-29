@@ -53,14 +53,14 @@ const CITY_DATA: Record<
     intro:
        "Județul Ilfov găzduiește unele dintre cele mai apreciate venue-uri pentru evenimente din zona metropolitană București. Cu ani de activitate în județ, cunoaștem specificul fiecărei locații și ne adaptăm rapid la cerințele organizatorilor.",
     extendedIntro:
-       "De la domenii elegante în Snagov la grădini generoase în Voluntari și Otopeni, Ilfov este destinația preferată pentru evenimentele outdoor și nunțile în corturi. Proximitatea față de Capitală face logistica eficientă, iar varietatea spațiilor oferă libertate creativă maximă. Colaborăm frecvent cu cele mai cunoscute venue-uri din județ, unde am instalat de la corturi mari și mobilier premium până la sisteme audio complexe.",
+       "De la domenii elegante în Snagov la grădini generoase în Voluntari și Otopeni, Ilfov este destinația preferată pentru evenimentele outdoor și nunțile în grădină. Proximitatea față de Capitală face logistica eficientă, iar varietatea spațiilor oferă libertate creativă maximă. Colaborăm frecvent cu cele mai cunoscute venue-uri din județ, unde am instalat de la sisteme audio complexe și iluminat ambiental până la cocktail baruri și cabine foto.",
     zones:
        "Operăm în toate localitățile județului Ilfov — Voluntari, Otopeni, Buftea, Popești-Leordeni, Pantelimon, Bragadiru și celelalte comune limitrofe Capitalei.",
     localBenefits: [
        "Familiarizați cu cele mai apreciate venue-uri și săli de evenimente din Ilfov",
        "Logistică rapidă datorită proximității față de București și depozitelor noastre",
        "Adaptare la spații exterioare și proprietăți private din zona suburbană",
-       "Experiență vastă cu evenimente outdoor — corturi, iluminat, grup electrogen",
+       "Experiență vastă cu evenimente outdoor — sonorizare, iluminat, grup electrogen",
        "Echipă dedicată pentru montaj în grădini și spații neconvenționale",
      ],
     faqs: [
@@ -70,7 +70,7 @@ const CITY_DATA: Record<
        },
        {
         q: "Aveți experiență cu evenimente în grădini private în Ilfov?",
-        a: "Da, majoritatea evenimentelor din Ilfov sunt în grădini și proprietăți private. Avem soluții pentru alimentare cu energie, corturi pe teren neregulat și montaj în spații cu acces limitat. Facem o evaluare tehnică înainte pentru a ne asigura că totul este în regulă.",
+        a: "Da, majoritatea evenimentelor din Ilfov sunt în grădini și proprietăți private. Avem soluții pentru alimentare cu energie, montaj pe teren neregulat și în spații cu acces limitat. Facem o evaluare tehnică înainte pentru a ne asigura că totul este în regulă.",
        },
        {
         q: "Pot vizita locația înainte pentru a stabili configurația?",
@@ -111,21 +111,21 @@ const CITY_DATA: Record<
   dambovita: {
     name: "Dâmbovița",
     intro:
-       "Dâmbovița are o cerere tot mai mare pentru evenimente private și corporate, iar noi suntem prezenți în tot județul cu servicii complete de logistică — mobilier, corturi, veselă, iluminat, audio și cocktail bar. Fie că organizezi o nuntă în Târgoviște sau o petrecere în aer liber în zona de deal, livrăm și montăm totul la standardele noastre obișnuite.",
+       "Dâmbovița are o cerere tot mai mare pentru evenimente private și corporate, iar noi suntem prezenți în tot județul cu servicii complete — DJ și sisteme audio, iluminat, cocktail bar, coffee corner și cabină foto. Fie că organizezi o nuntă în Târgoviște sau o petrecere în aer liber în zona de deal, livrăm și montăm totul la standardele noastre obișnuite.",
     extendedIntro:
-       "Am deservit nunți, botezuri și evenimente corporate în cele mai cunoscute locații din Dâmbovița — de la săli de evenimente și hoteluri din Târgoviște și Moreni până la cabane și grădini private în zona Peștera și Runcu. Oferim pachete complete care includ mobilier premium, corturi rezistente, veselă elegantă, sisteme audio profesionale și iluminat ambiental. Pentru evenimentele outdoor venim cu soluții complete — grup electrogen, corturi încălzite sau ventilate, și montaj pe teren denivelat. Totul livrat, montat și demontat de echipa noastră, ca să te poți ocupa de restul organizării.",
+       "Am deservit nunți, botezuri și evenimente corporate în cele mai cunoscute locații din Dâmbovița — de la săli de evenimente și hoteluri din Târgoviște și Moreni până la cabane și grădini private în zona Peștera și Runcu. Oferim pachete complete care includ sisteme audio profesionale, iluminat ambiental, cocktail bar, coffee corner și cabină foto. Pentru evenimentele outdoor venim cu soluții complete — grup electrogen, echipamente protejate pentru exterior și montaj pe teren denivelat. Totul livrat, montat și demontat de echipa noastră, ca să te poți ocupa de restul organizării.",
     zones:
        "Acoperim tot județul Dâmbovița — Târgoviște, Moreni, Pucioasa, Găești, Fieni, Răcari, Titu, inclusiv zona montană Peștera, Runcu, Moroeni și toate comunele limitrofe.",
     localBenefits: [
        "Livrare și montaj în tot județul Dâmbovița, fără costuri ascunse de transport",
        "Cunoaștem venue-urile din Târgoviște și județ — săli, cabane, grădini private",
        "Echipă dedicată pentru montaj rapid în orice tip de locație",
-       "Soluții complete pentru evenimente outdoor — corturi, grup electrogen, iluminat",
+       "Soluții complete pentru evenimente outdoor — grup electrogen, iluminat, sonorizare",
        "Aceleași echipamente și standarde de calitate ca în București",
      ],
     faqs: [
        {
-        q: "Livrați mobilier și corturi în tot județul Dâmbovița?",
+        q: "Livrați și montați echipamentele în tot județul Dâmbovița?",
         a: "Da, acoperim întreg județul — Târgoviște, Moreni, Pucioasa, Găești și toate localitățile, inclusiv zona de munte. Livrăm, montăm și demontăm totul, fără costuri suplimentare de transport.",
        },
        {
@@ -140,19 +140,17 @@ const CITY_DATA: Record<
    },
   ploiesti: {
     name: "Ploiești",
-    metaDescription:
-      "Închiriere corturi evenimente în Ploiești și Prahova. Montaj rapid, structuri profesionale pentru nunți și corporate. Solicită ofertă gratuită!",
     intro:
        "Ploiești și județul Prahova oferă un peisaj variat de venue-uri — de la săli clasice în centrul orașului la proprietăți cu spații exterioare în zona suburbană. Suntem prezenți cu același nivel de servicii ca în Capitală, fără niciun compromis.",
     extendedIntro:
-       "Prahova este una dintre cele mai active zone pentru evenimente din România, datorită apropierii de București și a diversității de locații — de la hoteluri moderne din Ploiești la domenii și cabane în zona montană Sinaia-Bușteni. Am deservit evenimente corporate, nunți și petreceri private în cele mai cunoscute venue-uri din județ. Indiferent de anotimp, venim cu soluția potrivită — corturi încălzite pentru sezonul rece sau structuri deschise pentru vara.",
+       "Prahova este una dintre cele mai active zone pentru evenimente din România, datorită apropierii de București și a diversității de locații — de la hoteluri moderne din Ploiești la domenii și cabane în zona montană Sinaia-Bușteni. Am deservit evenimente corporate, nunți și petreceri private în cele mai cunoscute venue-uri din județ. Indiferent de anotimp, venim cu soluția potrivită — de la setup-uri indoor pentru sezonul rece la evenimente în aer liber vara.",
     zones:
        "Acoperim municipiul Ploiești și localitățile din județul Prahova — Câmpina, Sinaia, Breaza, Băicoi și alte localități din apropierea orașului.",
     localBenefits: [
        "Operăm în Ploiești și în principalele localități din județul Prahova",
        "Echipă cu experiență în specificul evenimentelor și locațiilor din regiune",
        "Montaj rapid cu respectarea strictă a programului agreat",
-       "Soluții pentru orice anotimp — corturi încălzite iarna, ventilate vara",
+       "Soluții pentru orice anotimp — setup-uri indoor iarna, outdoor vara",
        "Asistență tehnică pe tot parcursul evenimentului",
      ],
     faqs: [
@@ -162,11 +160,11 @@ const CITY_DATA: Record<
        },
        {
         q: "Puteți livra în zona montană Sinaia-Bușteni?",
-        a: "Da, avem experiență cu livrări în zona montană a Prahovei. Pentru locațiile montane, evaluăm accesul și condițiile specifice în prealabil și ajustăm configurația în consecință (de exemplu, corturi cu ancorare specială pentru teren denivelat).",
+        a: "Da, avem experiență cu livrări în zona montană a Prahovei. Pentru locațiile montane, evaluăm accesul și condițiile specifice în prealabil și ajustăm configurația în consecință (de exemplu, montaj adaptat pentru teren denivelat sau acces dificil).",
        },
        {
         q: "Ce se întâmplă dacă evenimentul meu este în sezonul rece?",
-        a: "Avem soluții pentru orice anotimp — corturi cu pereți completi și sisteme de încălzire, iluminat ambiental cald, și materiale rezistente la intemperii. Am deservit evenimente corporate și nunți decembrie-martie fără probleme.",
+        a: "Avem soluții pentru orice anotimp — iluminat ambiental cald, echipamente audio protejate și coffee corner cu băuturi calde pentru invitați. Am deservit evenimente corporate și nunți decembrie-martie fără probleme.",
        },
      ],
    },

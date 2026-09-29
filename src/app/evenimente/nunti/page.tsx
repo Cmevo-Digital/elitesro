@@ -2,26 +2,24 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { TESTIMONIALS } from "@/lib/constants";
-import { Star, Heart, Tent, GlassWater, Sparkles } from "lucide-react";
+import { Star, Heart, ClipboardList, GlassWater, Sparkles } from "lucide-react";
 import { eventServiceSchema, safeStringify } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Servicii Nunți — Mobilier, Corturi & Logistică",
+  title: "Servicii Nunți — DJ, Cabină Foto, Cocktail Bar & Logistică",
   description:
-    "Servicii complete pentru nunți de 50–150 invitați în București, Ilfov, Pitești și Ploiești. Mobilier premium, corturi, veselă, DJ și logistică completă.",
+    "Servicii complete pentru nunți de 50–150 invitați în București, Ilfov, Pitești și Ploiești. DJ, cabină foto, cocktail bar, coffee corner și logistică completă.",
   alternates: { canonical: "/evenimente/nunti/" },
 };
 
 const weddingServices = [
-  "Mobilier premium (mese, scaune, cocktail tables)",
-  "Corturi elegante pentru nunți outdoor",
-  "Veselă, pahare și tacâmuri complete",
-  "Iluminat ambiental și decorativ",
   "DJ și sisteme audio profesionale",
   "Cabina foto cu imprimare instantă",
+  "Cocktail bar mobil cu barmani profesioniști",
+  "Coffee corner cu barista dedicat",
+  "Iluminat ambiental și decorativ",
   "Logistică completă — livrare, montaj, demontaj",
   "Parteneri foto/video (la cerere)",
-  "Cocktail bar (la cerere)",
 ];
 
 const weddingTestimonials = TESTIMONIALS.filter((t) =>
@@ -31,19 +29,19 @@ const weddingTestimonials = TESTIMONIALS.filter((t) =>
 const weddingFaqs = [
   {
     q: "Cu cât timp înainte trebuie să rezerv pentru nunta mea?",
-    a: "Recomandăm minim 4–6 săptămâni pentru nunți, mai ales dacă ai nevoie de corturi sau pachete complexe. Pentru servicii individuale (doar mobilier sau veselă), 2-3 săptămâni sunt suficiente. Contactează-ne cât mai devreme pentru a verifica disponibilitatea.",
+    a: "Recomandăm minim 4–6 săptămâni pentru nunți, mai ales pentru pachete complexe. Pentru servicii individuale (doar DJ sau cabina foto), 2-3 săptămâni sunt suficiente. Contactează-ne cât mai devreme pentru a verifica disponibilitatea.",
   },
   {
     q: "Puteți amenaja și în grădini private sau locații fără infrastructură?",
-    a: "Da, avem experiență vastă cu nunți în grădini și proprietăți private. Oferim soluții complete — corturi, grup electrogen, iluminat outdoor, podele. Facem o vizită tehnică prealabilă pentru a evalua toate aspectele.",
+    a: "Da, avem experiență vastă cu nunți în grădini și proprietăți private. Aducem sistemul audio, iluminatul outdoor și grupul electrogen, iar cocktail barul și cabina foto se montează oriunde avem acces și curent. Facem o vizită tehnică prealabilă pentru a evalua toate aspectele.",
   },
   {
     q: "Ce se întâmplă dacă vremea nu ține cu noi la nunta outdoor?",
-    a: "Corturile noastre sunt pregătite pentru orice vreme — pereți laterali pentru ploaie și vânt, sisteme de încălzire pentru serile răcoroase. În caz de avertizare meteo severă, discutăm soluții alternative cu tine cu cel puțin 48h înainte.",
+    a: "Echipamentele noastre audio și de iluminat sunt protejate pentru exterior, iar planul B (spațiu acoperit sau interior) îl stabilim din timp împreună cu locația. În caz de avertizare meteo severă, discutăm soluții alternative cu tine cu cel puțin 48h înainte.",
   },
   {
     q: "Puteți personaliza culorile și stilul pentru nunta noastră?",
-    a: "Absolut. De la huse pentru scaune și fețe de masă în culoarea nunții la iluminat în tonuri pastelate sau calde — personalizăm fiecare detaliu. Colaborăm cu ateliere locale pentru țesături și accesorii personalizate.",
+    a: "Absolut. De la template-ul cabinei foto și meniul de cocktailuri signature până la iluminat în tonuri pastelate sau calde — personalizăm fiecare detaliu după culorile și stilul nunții.",
   },
 ];
 
@@ -54,7 +52,7 @@ const processSteps = [
     text: "Discutăm viziunea ta, numărul de invitați, locația și bugetul. Îți oferim recomandări personalizate.",
   },
   {
-    icon: Tent,
+    icon: ClipboardList,
     title: "2. Configurare",
     text: "Stabilim exact ce echipamente ai nevoie, facem o vizită tehnică la locație și îți trimitem oferta.",
   },
@@ -80,7 +78,7 @@ export default function WeddingsPage() {
             eventServiceSchema({
               name: "Servicii Complete Nunți",
               description:
-                "Servicii complete pentru nunți de 50–150 invitați în București, Ilfov, Pitești și Ploiești. Mobilier premium, corturi, veselă, DJ și logistică completă.",
+                "Servicii complete pentru nunți de 50–150 invitați în București, Ilfov, Pitești și Ploiești. DJ, cabină foto, cocktail bar, coffee corner și logistică completă.",
               slug: "nunti",
             }),
           ),
@@ -106,7 +104,7 @@ export default function WeddingsPage() {
               Ziua ta cea mai importantă, executată perfect.
             </h1>
             <p className="mt-4 text-white/60 font-light max-w-lg">
-              De la masa de onoare la ultimul scaun din sală — ne ocupăm de
+              De la primul dans la ultima melodie a serii — ne ocupăm de
               fiecare detaliu logistic pentru ca tu să trăiești momentul.
             </p>
           </div>
@@ -123,8 +121,8 @@ export default function WeddingsPage() {
                 </h2>
                 <p className="text-charcoal/60 text-base leading-relaxed font-light mb-6">
                   Suntem specializați în nunți de 50–150 de persoane în
-                  București, Ilfov, Pitești și Ploiești. Oferim de la mobilier
-                  elegant și corturi premium până la veselă, DJ și cabina foto —
+                  București, Ilfov, Pitești și Ploiești. Oferim DJ și sisteme audio,
+                  cabina foto, cocktail bar și coffee corner —
                   totul coordonat de o singură echipă, pentru ca tu să ai un
                   singur interlocutor.
                 </p>

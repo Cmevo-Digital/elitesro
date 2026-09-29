@@ -89,7 +89,7 @@ export function servicesCatalogSchema(
         url: `${BASE_URL}/servicii/`,
         name: "Servicii Elites Events",
         description:
-          "Catalogul serviciilor Elites Events pentru evenimente: mobilier, corturi, veselă, iluminat, DJ, cocktail bar, coffee corner, cabină foto și logistică completă.",
+          "Catalogul serviciilor Elites Events pentru evenimente: cabină foto, DJ & sisteme audio, cocktail bar, coffee corner și logistică completă.",
         inLanguage: "ro",
         isPartOf: { "@id": ORG_ID },
         mainEntity: { "@id": `${BASE_URL}/servicii/#services` },
@@ -140,7 +140,7 @@ export function quoteRequestServiceSchema() {
     name: "Ofertă personalizată pentru închirieri și logistică evenimente",
     serviceType: "Închirieri și logistică evenimente",
     description:
-      "Cerere de ofertă gratuită pentru mobilier, corturi, veselă, DJ, cabina foto, cocktail bar, coffee corner și logistică de evenimente în București, Ilfov, Pitești, Ploiești și Dâmbovița.",
+      "Cerere de ofertă gratuită pentru DJ, cabina foto, cocktail bar, coffee corner și logistică de evenimente în București, Ilfov, Pitești, Ploiești și Dâmbovița.",
     url: `${BASE_URL}/cerere-oferta/`,
     provider: { "@id": ORG_ID },
     areaServed: AREA_SERVED,

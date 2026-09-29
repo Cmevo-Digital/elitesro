@@ -3,10 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { safeStringify, servicesCatalogSchema } from "@/lib/jsonld";
 import {
-  Armchair,
-  Tent,
-  UtensilsCrossed,
-  Wine,
   Lightbulb,
   Music,
   GlassWater,
@@ -19,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Servicii — Închirieri & Logistică Evenimente",
   description:
-    "Descoperă toate serviciile Elites Events: mobilier, corturi, veselă, iluminat, DJ și logistică completă pentru evenimente în București, Ilfov, Pitești și Ploiești.",
+    "Descoperă toate serviciile Elites Events: cabină foto, DJ & sisteme audio, cocktail bar, coffee corner și logistică completă pentru evenimente în București, Ilfov, Pitești și Ploiești.",
   alternates: { canonical: "/servicii/" },
 };
 
@@ -87,70 +83,6 @@ const services = [
       "Lapte vegetal și băuturi cu gheață",
     ],
     active: true,
-  },
-  {
-    slug: "mobilier-evenimente",
-    title: "Mobilier Evenimente",
-    description:
-      "Mese elegante, scaune premium, lounge seturi și cocktail tables — fiecare piesă aleasă pentru estetică și confort. Disponibile în diverse stiluri pentru a se potrivi viziunii tale.",
-    icon: Armchair,
-    image:
-      "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=900&auto=format&fit=crop",
-    features: [
-      "Mese rotunde și dreptunghiulare",
-      "Scaune Chiavari, Napoleon, tip banchet",
-      "Lounge seturi premium",
-      "Cocktail tables",
-    ],
-    active: false,
-  },
-  {
-    slug: "corturi-evenimente",
-    title: "Corturi & Structuri",
-    description:
-      "Corturi premium pentru nunți și corporate în aer liber. Montaj profesional, structuri stabile, posibilitate de climatizare și acces la electricitate.",
-    icon: Tent,
-    image:
-      "https://images.unsplash.com/photo-1692166927778-056466153552?q=80&w=2340&auto=format&fit=crop",
-    features: [
-      "Corturi pagodă și stretch",
-      "Corturi cu pereți laterali",
-      "Climatizare disponibilă",
-      "Iluminat interior integrat",
-    ],
-    active: false,
-  },
-  {
-    slug: "mese-scaune",
-    title: "Mese, Scaune & Cocktail",
-    description:
-      "Gama completă de mobilier pentru orice configurație — de la cine formale la cocktail parties în picioare.",
-    icon: UtensilsCrossed,
-    image:
-      "https://plus.unsplash.com/premium_photo-1711305771490-2d39ba080f4b?q=80&w=1287&auto=format&fit=crop",
-    features: [
-      "Mese pentru 8–12 persoane",
-      "Scaune în multiple stiluri",
-      "Fețe de masă și huse",
-      "Decoruri de masă",
-    ],
-    active: false,
-  },
-  {
-    slug: "vesela-tacamuri",
-    title: "Veselă, Pahare & Tacâmuri",
-    description:
-      "Seturi complete pentru mese elegante. Farfurii, pahare de vin, apă și șampanie, tacâmuri inox — fiecare piesă curată, verificată și ambalată corespunzător.",
-    icon: Wine,
-    image:
-      "https://images.unsplash.com/photo-1769230361493-f1f365a99878?q=80&w=2338&auto=format&fit=crop",
-    features: [
-      "Farfurii pentru toate cursurile",
-      "Pahare pentru vin, apă, șampanie",
-      "Tacâmuri inox premium",
-      "Serviete și suporturi",
-    ],
-    active: false,
   },
   {
     slug: "iluminat",

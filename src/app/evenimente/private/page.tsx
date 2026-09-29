@@ -14,7 +14,7 @@ import { eventServiceSchema, faqPageSchema, safeStringify } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "Organizare Evenimente Private & Petreceri București & Ilfov",
   description:
-    "Organizare evenimente private și petreceri în București și Ilfov. Închiriere logistică completă: cocktail bar, sonorizare DJ, mobilier și corturi. Cere ofertă!",
+    "Organizare evenimente private și petreceri în București și Ilfov. Închiriere logistică completă: cocktail bar, sonorizare DJ, cabină foto și coffee corner. Cere ofertă!",
   alternates: { canonical: "/evenimente/private/" },
 };
 
@@ -25,9 +25,9 @@ const privatePackages = [
     content:
       "Aniversări de familie, majorat sau reuniuni restrânse în curte, apartament sau grădină.",
     items: [
-      "Mobilier lounge sau mese și scaune",
-      "Iluminat decorativ ambiental",
       "Sistem audio compact + microfon",
+      "Iluminat decorativ ambiental",
+      "Coffee corner cu barista (opțional)",
     ],
   },
   {
@@ -36,10 +36,9 @@ const privatePackages = [
     content:
       "Petreceri tematice sau aniversări mai ample, în curte privată, terasă sau sală închiriată.",
     items: [
-      "Cort sau structură pentru outdoor",
-      "Mobilier complet + veselă și tacâmuri",
       "DJ și sistem audio profesional",
       "Cabina foto cu imprimare instantă",
+      "Iluminat ambiental pentru sală sau outdoor",
     ],
   },
   {
@@ -48,10 +47,10 @@ const privatePackages = [
     content:
       "Petreceri de lux și evenimente exclusiviste care cer execuție la nivel de nuntă sau eveniment corporate.",
     items: [
-      "Cort premium + podea și încălzire/climatizare",
-      "Mobilier de design și decor complet",
       "Cocktail bar cu barman profesionist",
-      "DJ curator, iluminat scenic și cabina foto",
+      "DJ curator și iluminat scenic",
+      "Cabina foto premium cu template personalizat",
+      "Coffee corner cu barista dedicat",
     ],
   },
 ];
@@ -86,11 +85,11 @@ const privateFaqs = [
   },
   {
     q: "Organizați și petreceri pentru copii sau adolescenți?",
-    a: "Da, avem experiență cu evenimente pentru toate vârstele. Pentru petreceri cu copii și adolescenți, recomandăm pachete care includ sistem audio adaptat, cabina foto și zone de lounge. Mobilierul se adaptează în funcție de vârsta participanților.",
+    a: "Da, avem experiență cu evenimente pentru toate vârstele. Pentru petreceri cu copii și adolescenți, recomandăm pachete care includ sistem audio adaptat, cabina foto și coffee corner cu băuturi non-alcoolice. Playlistul și activitățile se adaptează în funcție de vârsta participanților.",
   },
   {
-    q: "Pot închiria doar un cort și sistem audio fără alte servicii?",
-    a: "Da, poți alege exact ce ai nevoie — doar un cort, doar sistem audio sau orice combinație. Nu te obligăm la pachete complete. Fiecare ofertă este personalizată în funcție de cerințele tale specifice.",
+    q: "Pot închiria doar sistem audio sau cabina foto, fără alte servicii?",
+    a: "Da, poți alege exact ce ai nevoie — doar sistem audio, doar cabina foto sau orice combinație. Nu te obligăm la pachete complete. Fiecare ofertă este personalizată în funcție de cerințele tale specifice.",
   },
   {
     q: "Puteți organiza un eveniment privat într-un parc sau spațiu public?",
@@ -98,15 +97,15 @@ const privateFaqs = [
   },
   {
     q: "Cât costă organizarea unui eveniment privat?",
-    a: "Costul depinde de numărul de invitați, locație, durata evenimentului și serviciile alese — de la un simplu mobilier sau sistem audio, până la un pachet complet cu cort, cocktail bar și DJ. Îți trimitem o ofertă personalizată gratuită, fără obligații, în urma unei scurte discuții.",
+    a: "Costul depinde de numărul de invitați, locație, durata evenimentului și serviciile alese — de la un simplu sistem audio sau o cabină foto, până la un pachet complet cu cocktail bar, DJ și iluminat. Îți trimitem o ofertă personalizată gratuită, fără obligații, în urma unei scurte discuții.",
   },
   {
     q: "Cu cât timp înainte trebuie să rezerv un eveniment privat?",
-    a: "Recomandăm 2-3 săptămâni pentru servicii individuale (mobilier, sonorizare) și minim 4 săptămâni pentru pachete complete cu cort și logistică extinsă. În perioadele aglomerate (mai–septembrie), rezervarea din timp îți garantează disponibilitatea echipamentelor dorite.",
+    a: "Recomandăm 2-3 săptămâni pentru servicii individuale (sonorizare, cabină foto) și minim 4 săptămâni pentru pachete complete cu logistică extinsă. În perioadele aglomerate (mai–septembrie), rezervarea din timp îți garantează disponibilitatea echipamentelor dorite.",
   },
   {
     q: "Ce include un pachet de petrecere de lux?",
-    a: "O petrecere de lux presupune, de regulă, cocktail bar cu barman profesionist, mobilier de design, iluminat scenic, DJ curator și cabina foto — toate coordonate ca o experiență unitară. Personalizăm fiecare element în funcție de temă, paleta de culori și numărul de invitați.",
+    a: "O petrecere de lux presupune, de regulă, cocktail bar cu barman profesionist, coffee corner, iluminat scenic, DJ curator și cabina foto — toate coordonate ca o experiență unitară. Personalizăm fiecare element în funcție de temă, paleta de culori și numărul de invitați.",
   },
   {
     q: "Livrați și în afara Bucureștiului?",
@@ -130,7 +129,7 @@ export default function PrivatePage() {
             eventServiceSchema({
               name: "Servicii Evenimente Private",
               description:
-                "Organizare evenimente private și petreceri de lux în București, Ilfov, Pitești și Ploiești. Închiriere logistică completă: cocktail bar, DJ, mobilier și corturi.",
+                "Organizare evenimente private și petreceri de lux în București, Ilfov, Pitești și Ploiești. Închiriere logistică completă: cocktail bar, DJ, cabină foto și coffee corner.",
               slug: "private",
             }),
           ),
@@ -188,24 +187,20 @@ export default function PrivatePage() {
                 </p>
                 <p className="text-charcoal/60 text-base leading-relaxed font-light mb-6">
                   Oferim soluții complete în București, Ilfov, Pitești și
-                  Ploiești — de la mobilier elegant și corturi premium la
-                  sisteme audio, DJ, iluminat ambiental, cocktail bar și cabina
-                  foto. Totul coordonat de o singură echipă, cu livrare, montaj
+                  Ploiești — sisteme audio, DJ, iluminat ambiental, cocktail bar,
+                  coffee corner și cabina foto. Totul coordonat de o singură echipă, cu livrare, montaj
                   și demontaj incluse.
                 </p>
                 <p className="text-charcoal/60 text-base leading-relaxed font-light mb-6">
                   Pentru clienții care își doresc o petrecere de lux, mergem
-                  dincolo de logistica de bază: mobilier de design, iluminat
-                  scenic, cocktail bar cu barman profesionist și un DJ care
+                  dincolo de logistica de bază: iluminat scenic, cocktail bar cu barman profesionist și un DJ care
                   citește atmosfera invitaților. Rezultatul este o experiență
                   coerentă, gândită în detaliu, nu doar o listă de echipamente
                   închiriate.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[
-                    "Mobilier pentru sală sau outdoor",
-                    "Corturi pentru grădini și spații private",
-                    "Veselă și accesorii de masă",
+                    "Coffee corner cu barista dedicat",
                     "DJ și muzică live setup",
                     "Iluminat decorativ și ambiental",
                     "Cocktail bar și barman",
