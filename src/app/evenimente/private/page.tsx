@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Star, Sparkles, ClipboardList, Truck, PartyPopper } from "lucide-react";
+import {
+  Star,
+  Sparkles,
+  ClipboardList,
+  Truck,
+  PartyPopper,
+} from "lucide-react";
 import { TESTIMONIALS } from "@/lib/constants";
 import { eventServiceSchema, faqPageSchema, safeStringify } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Organizare Evenimente Private București & Ilfov | Elites Events",
+  title: "Organizare Evenimente Private & Petreceri București & Ilfov",
   description:
     "Organizare evenimente private și petreceri în București și Ilfov. Închiriere logistică completă: cocktail bar, sonorizare DJ, mobilier și corturi. Cere ofertă!",
   alternates: { canonical: "/evenimente/private/" },
@@ -286,9 +292,9 @@ export default function PrivatePage() {
               Pachete orientative pentru evenimente private
             </h2>
             <p className="text-charcoal/60 text-base leading-relaxed font-light mb-8 max-w-2xl">
-              Fiecare eveniment privat primește o ofertă personalizată, dar
-              iată cum arată, în linii mari, trei niveluri de configurare în
-              funcție de numărul de invitați:
+              Fiecare eveniment privat primește o ofertă personalizată, dar iată
+              cum arată, în linii mari, trei niveluri de configurare în funcție
+              de numărul de invitați:
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-start">
               {privatePackages.map((pkg) => (

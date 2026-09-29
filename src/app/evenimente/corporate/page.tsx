@@ -16,7 +16,7 @@ import { eventServiceSchema, safeStringify } from "@/lib/jsonld";
 export const metadata: Metadata = {
   title: "Evenimente Corporate — Logistică & Echipamente Profesionale",
   description:
-    "Organizăm evenimente corporate profesionale în București, Ilfov, Pitești și Ploiești. Mobilier, sisteme audio, iluminat și logistică pentru conferințe, gale și teambuilding.",
+    "Logistică și echipamente pentru evenimente corporate în București & Ilfov: sonorizare, ecrane LED, mobilier și corturi pentru conferințe și gale.",
   alternates: { canonical: "/evenimente/corporate/" },
 };
 
