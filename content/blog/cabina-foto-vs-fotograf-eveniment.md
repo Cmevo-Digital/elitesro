@@ -5,7 +5,7 @@ description: "Analizăm diferențele dintre cabina foto și fotograful de evenim
 slug: "cabina-foto-vs-fotograf-eveniment"
 date: "2024-07-05"
 author: "Elites Events"
-coverImage: "https://images.unsplash.com/photo-1682097066897-209d0d9e9ae5?q=80&w=1200&auto=format&fit=crop"
+coverImage: "https://images.unsplash.com/photo-1761416351525-fa957d228535?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Cabina foto vs fotograf eveniment: Ghid pentru organizarea amintirilor
