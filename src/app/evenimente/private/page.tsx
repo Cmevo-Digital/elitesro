@@ -12,9 +12,9 @@ import { TESTIMONIALS } from "@/lib/constants";
 import { eventServiceSchema, faqPageSchema, safeStringify } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
-  title: "Organizare Evenimente Private & Petreceri București & Ilfov",
+  title: "Evenimente Private & Petreceri București",
   description:
-    "Organizare evenimente private și petreceri în București și Ilfov. Închiriere logistică completă: cocktail bar, sonorizare DJ, cabină foto și coffee corner. Cere ofertă!",
+    "Logistică și echipamente premium pentru evenimente private în București și Ilfov: cocktail bar mobil, sonorizare DJ, cabină foto și lounge. Cere o ofertă!",
   alternates: { canonical: "/evenimente/private/" },
 };
 
@@ -187,16 +187,16 @@ export default function PrivatePage() {
                 </p>
                 <p className="text-charcoal/60 text-base leading-relaxed font-light mb-6">
                   Oferim soluții complete în București, Ilfov, Pitești și
-                  Ploiești — sisteme audio, DJ, iluminat ambiental, cocktail bar,
-                  coffee corner și cabina foto. Totul coordonat de o singură echipă, cu livrare, montaj
-                  și demontaj incluse.
+                  Ploiești — sisteme audio, DJ, iluminat ambiental, cocktail
+                  bar, coffee corner și cabina foto. Totul coordonat de o
+                  singură echipă, cu livrare, montaj și demontaj incluse.
                 </p>
                 <p className="text-charcoal/60 text-base leading-relaxed font-light mb-6">
                   Pentru clienții care își doresc o petrecere de lux, mergem
-                  dincolo de logistica de bază: iluminat scenic, cocktail bar cu barman profesionist și un DJ care
-                  citește atmosfera invitaților. Rezultatul este o experiență
-                  coerentă, gândită în detaliu, nu doar o listă de echipamente
-                  închiriate.
+                  dincolo de logistica de bază: iluminat scenic, cocktail bar cu
+                  barman profesionist și un DJ care citește atmosfera
+                  invitaților. Rezultatul este o experiență coerentă, gândită în
+                  detaliu, nu doar o listă de echipamente închiriate.
                 </p>
                 <ul className="space-y-3 mb-8">
                   {[

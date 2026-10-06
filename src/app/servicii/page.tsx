@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Servicii — Închirieri & Logistică Evenimente",
+  title: "Închiriere Echipamente & Logistică Evenimente | Elites Events",
   description:
     "Descoperă toate serviciile Elites Events: cabină foto, DJ & sisteme audio, cocktail bar, coffee corner și logistică completă pentru evenimente în București, Ilfov, Pitești și Ploiești.",
   alternates: { canonical: "/servicii/" },
