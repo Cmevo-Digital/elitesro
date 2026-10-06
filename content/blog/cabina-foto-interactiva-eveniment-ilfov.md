@@ -6,6 +6,7 @@ slug: "cabina-foto-interactiva-eveniment-ilfov"
 date: "2026-08-27"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1761416351525-fa957d228535?q=80&w=1200&auto=format&fit=crop"
 ---
 
 ## Cabină Foto Interactivă Eveniment Ilfov: Distracție și Amintiri Unice

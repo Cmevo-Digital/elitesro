@@ -6,6 +6,7 @@ slug: "ecrane-led-lansari-produs-impact-vizual"
 date: "2026-08-24"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1785807047494-0832619a3018?q=80&w=1200&auto=format&fit=crop"
 ---
 
 ## Ecrane LED pentru Lansări de Produs: Impact Vizual Garantat

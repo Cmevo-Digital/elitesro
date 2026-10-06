@@ -6,6 +6,7 @@ slug: "inchiriere-corturi-evenimente-bucuresti-ghid-preturi-logistica"
 date: "2025-02-23"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1768179123386-a86a85f1c35c?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Închiriere Corturi Evenimente București: Ghid Complet de Prețuri, Dimensiuni și Logistică

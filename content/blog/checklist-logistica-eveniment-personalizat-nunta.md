@@ -5,6 +5,7 @@ description: "Organizați detaliile tehnice cu acest checklist de logistică pen
 slug: "checklist-logistica-eveniment-personalizat-nunta"
 date: "2024-05-22"
 author: "Elites Events"
+coverImage: "https://images.unsplash.com/photo-1510076857177-7470076d4098?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Checklist Logistică Eveniment Personalizat pentru Nuntă

@@ -6,6 +6,7 @@ slug: "servicii-complete-evenimente-nunta"
 date: "2026-08-31"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1712314947761-a8d718bd8c32?q=80&w=1200&auto=format&fit=crop"
 ---
 
 ## Servicii Complete Evenimente Nuntă: Ghid Practic pentru Organizare Fără Stres

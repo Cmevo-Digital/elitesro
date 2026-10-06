@@ -5,6 +5,7 @@ description: "Descoperă idei și sfaturi pentru evenimente corporate în Bucure
 slug: "idei-sfaturi-evenimente-corporate-bucuresti-ghid-organizare"
 date: "2026-07-28"
 author: "Elites Events"
+coverImage: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Idei și sfaturi pentru evenimente corporate în București: Ghid de organizare profesională

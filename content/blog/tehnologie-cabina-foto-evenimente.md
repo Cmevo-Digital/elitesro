@@ -5,6 +5,7 @@ description: "Află cum influențează tehnologia cabina foto în evenimente exp
 slug: "tehnologie-cabina-foto-evenimente"
 date: "2024-05-22"
 author: "Elites Events"
+coverImage: "https://images.unsplash.com/photo-1727764894973-28e7283a600c?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Tehnologia cabinei foto în evenimente

@@ -7,6 +7,7 @@ date: "2026-10-06"
 author: "Elites Events"
 category: "Ghiduri"
 cover: "https://placehold.co/1200x525/dde3f0/2d4b8c?text=Unde Poți Organiza Evenimente Private în București"
+coverImage: "https://images.unsplash.com/photo-1761114905078-163aa92141c8?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Unde Poți Organiza Evenimente Private în București: Ghid de Locații și Spații Neconvenționale

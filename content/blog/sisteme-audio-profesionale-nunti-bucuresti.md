@@ -6,6 +6,7 @@ slug: "sisteme-audio-profesionale-nunti-bucuresti"
 date: "2026-08-07"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1563680401337-b77b5e0be9f7?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Sisteme Audio Profesionale pentru Nunți în București

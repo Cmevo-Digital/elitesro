@@ -6,6 +6,7 @@ slug: "inchirieri-corturi-evenimente-bucuresti"
 date: "2026-08-21"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1785858037852-f60925488591?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Închirieri corturi evenimente București: Găsește soluția ideală pentru orice ocazie

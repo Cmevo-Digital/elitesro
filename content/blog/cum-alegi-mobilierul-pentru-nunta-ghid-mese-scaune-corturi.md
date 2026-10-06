@@ -5,6 +5,7 @@ description: "Află cum alegi mobilierul pentru nunta ta cu acest ghid despre me
 slug: "cum-alegi-mobilierul-pentru-nunta-ghid-mese-scaune-corturi"
 date: "2024-05-22"
 author: "Elites Events"
+coverImage: "https://images.unsplash.com/photo-1613067532651-7075a620c900?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Cum alegi mobilierul pentru nunta ta: Ghid alegeri mese, scaune și corturi

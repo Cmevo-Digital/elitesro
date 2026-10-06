@@ -6,6 +6,7 @@ slug: "inchirieri-vesela-nunta-ghid-complet-eleganta-practicabilitate"
 date: "2026-07-31"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1586718520704-f7f9db04b8c0?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Ghid Complet pentru Închirieri Veselă Nuntă: Eleganță și Practicabilitate

@@ -6,6 +6,7 @@ slug: "ghid-complet-alegerea-vesela-tacamuri-nunta-stil-buget-furnizori"
 date: "2026-08-07"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1562050344-f7ad946cee35?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Ghid complet pentru alegerea veselă și tacâmuri la nunta ta: Stil, buget și furnizori

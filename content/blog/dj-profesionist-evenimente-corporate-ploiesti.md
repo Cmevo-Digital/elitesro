@@ -6,6 +6,7 @@ slug: "dj-profesionist-evenimente-corporate-ploiesti"
 date: "2026-09-01"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1200&auto=format&fit=crop"
 ---
 
 ## DJ Profesionist Evenimente Corporate Ploiești

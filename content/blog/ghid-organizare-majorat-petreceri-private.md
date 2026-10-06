@@ -7,6 +7,7 @@ date: "2024-11-15"
 author: "Elites Events"
 category: "Ghiduri"
 cover: "https://placehold.co/1200x525/dde3f0/2d4b8c?text=Ghid Organizare Majorat: Logistică, Muzică și Bar Mobil"
+coverImage: "https://images.unsplash.com/photo-1763652566301-e88adc3d3d89?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Ghid Organizare Majorat și Petreceri Private: Logistică, Muzică și Bar Mobil

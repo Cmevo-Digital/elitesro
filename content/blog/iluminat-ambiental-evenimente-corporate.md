@@ -6,6 +6,7 @@ slug: "iluminat-ambiental-evenimente-corporate"
 date: "2026-08-17"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1599739291060-4578e77dac5d?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Iluminat Ambiental pentru Evenimente Corporate: Cum Creezi o Atmosferă Memorabilă

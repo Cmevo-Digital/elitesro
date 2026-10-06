@@ -6,6 +6,7 @@ slug: "organizare-petreceri-lux"
 date: "2026-09-21"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1780593194924-35f0343e738b?q=80&w=1200&auto=format&fit=crop"
 ---
 
 ## Petreceri de Lux: Ghid Complet pentru Organizare Impecabilă

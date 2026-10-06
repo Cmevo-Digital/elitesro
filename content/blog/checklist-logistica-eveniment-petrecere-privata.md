@@ -5,6 +5,7 @@ description: "Descoperă checklist-ul de logistică pentru petrecerea ta privat�
 slug: "checklist-logistica-eveniment-petrecere-privata"
 date: "2024-05-22"
 author: "Elites Events"
+coverImage: "https://images.unsplash.com/photo-1714978444614-7a197c2309ee?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Checklist logistică eveniment personalizat pentru Petrecere Privată

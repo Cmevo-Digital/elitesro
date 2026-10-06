@@ -6,6 +6,7 @@ slug: "cat-costa-cocktail-bar-mobil-nunta-ghid-buget-2026"
 date: "2026-03-30"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1620525429125-4790f36924cb?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Cât Costă un Cocktail Bar Mobil la Nuntă? Ghid de Buget, Meniuri și Pachete 2026

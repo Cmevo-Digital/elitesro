@@ -6,6 +6,7 @@ slug: "logistica-evenimente-corporate-ploesti"
 date: "2026-08-12"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=1200&auto=format&fit=crop"
 ---
 
 ## Logistică Evenimente Corporate Ploiești: Cum Asiguri Succesul Fără Stres

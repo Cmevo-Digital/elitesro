@@ -6,6 +6,7 @@ slug: "organizeaza-evenimente-private-bucuresti"
 date: "2026-09-09"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1782677733438-2482d7fdde1a?q=80&w=1200&auto=format&fit=crop"
 ---
 
 ## Evenimente Private București: Ghid Complet pentru o Organizare Fără Stres

@@ -5,6 +5,7 @@ description: "Descarcă checklist-ul de logistică pentru evenimente corporate �
 slug: "checklist-logistica-eveniment-corporate"
 date: "2024-05-22"
 author: "Elites Events"
+coverImage: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Checklist logistică eveniment personalizat pentru evenimente corporate

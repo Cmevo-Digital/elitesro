@@ -6,6 +6,7 @@ slug: "solutii-tehnice-evenimente-corporate"
 date: "2026-09-18"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1576514129883-2f1d47a65da6?q=80&w=1200&auto=format&fit=crop"
 ---
 
 ## Soluții Tehnice pentru Evenimente Corporate: Fundamentul unui Succes Solid

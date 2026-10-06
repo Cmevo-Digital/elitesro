@@ -7,6 +7,7 @@ date: "2024-10-24"
 author: "Elites Events"
 category: "Ghiduri"
 cover: "https://placehold.co/1200x525/dde3f0/2d4b8c?text=Soluții tehnice corporate: Sonorizare și scenotehnică"
+coverImage: "https://images.unsplash.com/photo-1558620013-a08999547a36?q=80&w=1200&auto=format&fit=crop"
 ---
 
 # Soluții tehnice complete pentru evenimente corporate: Sonorizare, lumini și scenotehnică

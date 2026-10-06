@@ -6,6 +6,7 @@ slug: "organizare-majorat-de-lux-bucuresti"
 date: "2026-09-04"
 author: "Elites Events"
 category: "Ghiduri"
+coverImage: "https://images.unsplash.com/photo-1580657274234-7339717f4541?q=80&w=1200&auto=format&fit=crop"
 ---
 
 ## Organizare Majorat de Lux București: Planificarea Unui Eveniment Memorabil
